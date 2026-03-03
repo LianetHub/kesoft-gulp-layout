@@ -2,27 +2,36 @@
 <html lang="ru">
     @@include('html/_head.html', { 'title': 'ООО «КЕСОФТ» | «КЕСОФТ» - комплексные решения автоматизации бизнес-процессов' })
 
-    <body>
+    <body class="wms-page">
         <div class="wrapper">
             @@include('html/_header.html', {
             "active": "9"
             })
             <main class="page">
                 <section class="platform">
-                    <div class="platform__container">
-                        <div class="platform__offter">
-                            <h1 class="platform__title">
-                                <span>
-                                    WMS24
-                                </span>
-                                платформа для создания
-                                системы управления складом
-                                под ваши требования
-                            </h1>
-                            <a href="#modal-free" data-modal class="platform__btn btn btn-blue">Бесплатная демонстрация</a>
+                    <div class="platform__content">
+                        <div class="platform__container">
+                            <div class="platform__main">
+                                <div class="platform__offer">
+                                    <h1 class="platform__title">
+                                        WMS24
+                                        <small>больше чем облако</small>
+                                    </h1>
+                                    <p class="platform__desc">Cовременная система управления складом для задач любого масштаба</p>
+                                    <div class="platform__btns">
+                                        <a href="#modal-free" data-modal class="platform__btn btn btn-blue">Попробовать бесплатно</a>
+                                        <a href="#modal-free" data-modal class="platform__btn btn btn-blue-outline">Получить КП</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="platform__image">
-                            <img src="@img/main.png" alt="main">
+                    </div>
+                    <div class="platform__image">
+                        <div class="platform__image-monitor">
+                            <img src="@img/hero-monitor.png" alt="Монитор">
+                        </div>
+                        <div class="platform__image-phone">
+                            <img src="@img/hero-phone.png" alt="Телефон">
                         </div>
                     </div>
                 </section>

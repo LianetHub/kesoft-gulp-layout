@@ -8,6 +8,7 @@
 // ======================================ШРИФТЫ===============================================
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular,500,600,700&display=swap&subset=cyrillic-ext);
 @import url(https://fonts.googleapis.com/css?family=Raleway:regular,700&display=swap&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800&display=swap&subset=cyrillic-ext);
 // &display=swap&subset=cyrillic-ext
 @import "fonts";
 
@@ -50,6 +51,7 @@ body {
 	&.modal-lock {
 		overflow: hidden;
 	}
+
 	&._touch {
 		.submenu {
 			&.open {
@@ -58,6 +60,7 @@ body {
 		}
 	}
 }
+
 // ==================ОБОЛОЧКА==============================
 .wrapper {
 	position: relative;
@@ -95,6 +98,7 @@ body {
 .page {
 	flex: 1 1 auto;
 }
+
 // =======================ОСНОВНОЙ БЛОК===================
 
 @import "pages/home.scss";

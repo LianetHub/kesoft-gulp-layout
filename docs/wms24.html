@@ -8,12 +8,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20260303163601" />
-	<link rel="stylesheet" href="css/reset.min.css?_v=20260303163601" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20260303163601" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20260303174248" />
+	<link rel="stylesheet" href="css/reset.min.css?_v=20260303174248" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20260303174248" />
 </head>
 
-<body>
+<body class="wms-page">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__wrapper lock-padding">
@@ -67,15 +67,31 @@
 		</header>
 		<main class="page">
 			<section class="platform">
-				<div class="platform__container">
-					<div class="platform__offter">
-						<h1 class="platform__title">
-							<span> WMS24 </span> платформа для создания системы управления складом под ваши требования
-						</h1>
-						<a href="#modal-free" data-modal class="platform__btn btn btn-blue">Бесплатная демонстрация</a>
+				<div class="platform__content">
+					<div class="platform__container">
+						<div class="platform__main">
+							<div class="platform__offer">
+								<h1 class="platform__title"> WMS24 <small>больше чем облако</small>
+								</h1>
+								<p class="platform__desc">Cовременная система управления складом для задач любого масштаба</p>
+								<div class="platform__btns">
+									<a href="#modal-free" data-modal class="platform__btn btn btn-blue">Попробовать бесплатно</a>
+									<a href="#modal-free" data-modal class="platform__btn btn btn-blue-outline">Получить КП</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="platform__image">
-						<img src="img/main.png" alt="main">
+				</div>
+				<div class="platform__image">
+					<div class="platform__image-monitor">
+						<picture>
+							<source srcset="img/hero-monitor.webp" type="image/webp"><img src="img/hero-monitor.png" alt="Монитор">
+						</picture>
+					</div>
+					<div class="platform__image-phone">
+						<picture>
+							<source srcset="img/hero-phone.webp" type="image/webp"><img src="img/hero-phone.png" alt="Телефон">
+						</picture>
 					</div>
 				</div>
 			</section>
@@ -86,7 +102,9 @@
 						<div class="opportunity__item">
 							<div class="opportunity__item-title">API для обмена данными с&nbsp;сайтами 1С</div>
 							<div class="opportunity__item-image">
-								<img src="img/opportunity/01.png" alt="opportunity" />
+								<picture>
+									<source srcset="img/opportunity/01.webp" type="image/webp"><img src="img/opportunity/01.png" alt="opportunity" />
+								</picture>
 							</div>
 						</div>
 						<div class="opportunity__main">
@@ -96,25 +114,33 @@
 						<div class="opportunity__item">
 							<div class="opportunity__item-title"> Печать этикеток <br /> товаров и мест хранения </div>
 							<div class="opportunity__item-image">
-								<img src="img/opportunity/02.png" alt="opportunity" />
+								<picture>
+									<source srcset="img/opportunity/02.webp" type="image/webp"><img src="img/opportunity/02.png" alt="opportunity" />
+								</picture>
 							</div>
 						</div>
 						<div class="opportunity__item">
 							<div class="opportunity__item-title"> Бумажные задания <br /> для исполнителей </div>
 							<div class="opportunity__item-image">
-								<img src="img/opportunity/03.png" alt="opportunity" />
+								<picture>
+									<source srcset="img/opportunity/03.webp" type="image/webp"><img src="img/opportunity/03.png" alt="opportunity" />
+								</picture>
 							</div>
 						</div>
 						<div class="opportunity__item">
 							<div class="opportunity__item-title">Веб - интерфейс</div>
 							<div class="opportunity__item-image">
-								<img src="img/opportunity/04.png" alt="opportunity" />
+								<picture>
+									<source srcset="img/opportunity/04.webp" type="image/webp"><img src="img/opportunity/04.png" alt="opportunity" />
+								</picture>
 							</div>
 						</div>
 						<div class="opportunity__item">
 							<div class="opportunity__item-title"> Работа с ТСД <br /> в режиме онлайн </div>
 							<div class="opportunity__item-image">
-								<img src="img/opportunity/05.png" alt="opportunity" />
+								<picture>
+									<source srcset="img/opportunity/05.webp" type="image/webp"><img src="img/opportunity/05.png" alt="opportunity" />
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -424,8 +450,8 @@
 			<button class="cookie-block__btn btn btn-blue btn-cookie">Согласен</button>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20260303163601"></script>
-	<script src="js/app.min.js?_v=20260303163601"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20260303174248"></script>
+	<script src="js/app.min.js?_v=20260303174248"></script>
 </body>
 
 </html>
