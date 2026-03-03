@@ -1,0 +1,20 @@
+.privacy {
+	padding: em(120) em(0) em(50) em(0);
+	// .privacy__container
+	&__container {
+	}
+	// .privacy__title
+	&__title {
+	}
+	// .privacy__sections
+	&__sections {
+		margin-top: 4rem;
+		line-height: 1.65;
+	}
+	// .privacy__section
+	&__section {
+		&:not(:last-child) {
+			margin-bottom: 2.5rem;
+		}
+	}
+}

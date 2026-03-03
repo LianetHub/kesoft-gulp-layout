@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', { 'title': 'ООО «КЕСОФТ» | «КЕСОФТ» - комплексные решения автоматизации бизнес-процессов' })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": "1"
+            })
+            <main class="page">
+                <section class="main">
+                    <div class="main__container">
+                        <div class="main__offer">
+                            <h1 class="main__title">
+                                Ваш склад может
+                                работать эффективнее
+                            </h1>
+                            <p class="main__subtitle">
+                                C помощью оптимизации складских процессов и внедрения WMS от KESOFT, вы можете повысить количественные и качественные показатели работы вашего склада
+                            </p>
+                            <form action="#" name="Главный баннер" class="main__form form">
+                                <div class="form__column">
+                                    <div class="form__column-item icon-user">
+                                        <input type="text" name="Имя" data-required class="form__input form__input-white" placeholder="Имя" />
+                                    </div>
+                                    <div class="form__column-item icon-phone">
+                                        <input type="tel" name="Телефон" data-required class="form__input form__input-white" data-tel-input placeholder="Телефон" />
+                                    </div>
+                                </div>
+                                <div class="form__btn">
+                                    <button type="submit" class="btn btn-blue btn-mw">Заказать звонок</button>
+                                </div>
+                                <label class="form__privacy checkbox checkbox-transparent">
+                                    <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                    <span class="checkbox__content">
+                                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                                        на обработку персональных данных
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="main__image">
+                            <img src="@img/stock.png" alt="Склад">
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_services.html', {
+                'title': "Наши услуги",
+                'large': false,
+                'desc': "Помощь в выборе оборудования для проекта автоматизации"
+                })
+                @@include('html/_choose.html', { "hasBtn": true,
+                "title": "Наши программы"
+                })
+                <section class="possibilities">
+                    <div class="possibilities__container">
+                        <div class="possibilities__main">
+                            <h2 class="possibilities__title title title-sm">
+                                Узнайте о всех возможностях
+                                наших решений, заказав
+                                бесплатную демонстрацию
+                            </h2>
+                            <form action="#" name="Узнайте о всех возможностях" class="possibilities__form form">
+                                <div class="form__column">
+                                    <div class="form__column-item icon-user">
+                                        <input type="text" name="Имя" data-required class="form__input form__input-white" placeholder="Имя" />
+                                    </div>
+                                    <div class="form__column-item icon-phone">
+                                        <input type="tel" name="Телефон" data-required class="form__input form__input-white" data-tel-input placeholder="Телефон" />
+                                    </div>
+                                </div>
+                                <div class="form__btn">
+                                    <button type="submit" class="btn btn-blue btn-mw">Отправить</button>
+                                </div>
+                                <label class="form__privacy checkbox checkbox-transparent">
+                                    <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                    <span class="checkbox__content">
+                                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                                        на обработку персональных данных
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="possibilities__image">
+                            <img src="@img/possibilities.png" alt="Ноутбук">
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_clients.html')
+                @@include('html/_feedback.html', {
+                "title": "Остались вопросы?",
+                "color": "dark"
+                })
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_popup.html', {
+        "name": "Получить консультацию"
+        })
+        @@include('html/_popup-2.html', {
+        "id": "modal-program",
+        "name": "Подобрать программу"
+        })
+        @@include('html/_js.html', {})
+    </body>
+</html>

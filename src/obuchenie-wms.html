@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', { 'title': 'ООО «КЕСОФТ» | «КЕСОФТ» - комплексные решения автоматизации бизнес-процессов' })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": "5"
+            })
+            <main class="page">
+                <section class="main">
+                    <div class="main__container">
+                        <div class="main__offer">
+                            <h1 class="main__title">
+                                Обучение WMS
+                            </h1>
+                            <p class="main__subtitle">
+                                Научим пользоваться системой управления вашего склада в полной мере
+                            </p>
+                            <form action="#" name="Обучение WMS" class="main__form form">
+                                <div class="form__column">
+                                    <div class="form__column-item icon-user">
+                                        <input type="text" name="Имя" data-required class="form__input form__input-white" placeholder="Имя" />
+                                    </div>
+                                    <div class="form__column-item icon-phone">
+                                        <input type="tel" name="Телефон" data-required class="form__input form__input-white" data-tel-input placeholder="Телефон" />
+                                    </div>
+                                </div>
+                                <div class="form__btn">
+                                    <button type="submit" class="btn btn-blue btn-mw">Заказать звонок</button>
+                                </div>
+                                <label class="form__privacy checkbox checkbox-transparent">
+                                    <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                    <span class="checkbox__content">
+                                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                                        на обработку персональных данных
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="main__image main__image-offset-xl">
+                            <img src="@img/learning.png" alt="PC">
+                        </div>
+                    </div>
+                </section>
+                <section class="whom">
+                    <div class="whom__container">
+                        <h2 class="whom__title title title-md">
+                            Кому необходимо <br>
+                            обучение WMS?
+                        </h2>
+                        <ul class="whom__list">
+                            <li class="whom__item">
+                                <div class="whom__item-icon">
+                                    <img src="@img/whom/education.svg" alt="icon">
+                                </div>
+                                <div class="whom__item-caption">
+                                    Вы только планируете
+                                </div>
+                                <div class="whom__item-desc">
+                                    внедрить на складе своей компании WMS и хотели бы предварительно обучить сотрудников работе с ней.
+                                </div>
+                            </li>
+                            <li class="whom__item">
+                                <div class="whom__item-icon">
+                                    <img src="@img/whom/listening.svg" alt="icon">
+                                </div>
+                                <div class="whom__item-caption">
+                                    WMS уже внедрена
+                                </div>
+                                <div class="whom__item-desc">
+                                    Ваши сотрудники не знают, как с ней работать, из-за этого возможности системы используются не полностью, возникают проблемы и сбои.
+                                </div>
+                            </li>
+                            <li class="whom__item">
+                                <div class="whom__item-icon">
+                                    <img src="@img/whom/warehouse.svg" alt="icon">
+                                </div>
+                                <div class="whom__item-caption">
+                                    Вы не используете
+                                </div>
+                                <div class="whom__item-desc">
+                                    услуги Kesoft по техподдержке и администрированию, и вам необходимо обучить штатного администратора работе с WMS.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_choose.html', {
+                "hasBtn": false,
+                "title": "Компания «КЕСОФТ» имеет все необходимые компетенции по обучению работе со следующими программными продуктами"
+                })
+                <section class="possibilities">
+                    <div class="possibilities__container">
+                        <div class="possibilities__main possibilities__main-lg">
+                            <h2 class="possibilities__title title title-md">
+                                Как проходит обучение?
+                            </h2>
+                            <p class="possibilities__subtitle">
+                                Программа обучения подбирается индивидуально, в зависимости от потребностей вашей компании, склада. Мы проводим обучение как на территории клиента, так и онлайн по индивидуальному, предварительно согласованному расписанию.
+                            </p>
+                            <a href="#modal" data-modal class="possibilities__btn btn btn-blue">Подобрать программу</a>
+                        </div>
+                        <div class="possibilities__image">
+                            <img src="@img/possibilities-2.png" alt="Ноутбук">
+                        </div>
+                    </div>
+                </section>
+                <section class="courses">
+                    <div class="courses__container">
+                        <h2 class="courses__title title title-md">
+                            Программы и курсы
+                        </h2>
+                        <ol class="courses__list">
+                            <li class="courses__item">
+                                <div class="courses__item-name">Обзорный тренинг</div>
+                                <div class="courses__item-desc">
+                                    Познакомим с возможностями системы, интерфейсами и терминологией. Еще до внедрения системы мы уже будем «разговаривать на одном языке».
+                                    Это поможет четко сформулировать потребности компании и избежать
+                                    лишних расходов средств на ненужные опции. Ваша команда с первых минут работы до реализации проекта начнет разбираться в особенностях работы системы.
+                                </div>
+                            </li>
+                            <li class="courses__item">
+                                <div class="courses__item-name">Обучение администратора WMS</div>
+                                <div class="courses__item-desc">
+                                    Подготовим специалиста, который отвечает за поддержку и развитие уже внедренной WMS.
+                                </div>
+                            </li>
+                            <li class="courses__item">
+                                <div class="courses__item-name">Курсы операторов</div>
+                                <div class="courses__item-desc">
+                                    Подготовим ваших складских работников — операторов к работе с WMS перед запуском системы. Если у вас произошло обновление штата - наши квалифицированные преподаватели обучат новых сотрудников всем необходимым навыкам.
+                                </div>
+                            </li>
+                            <li class="courses__item">
+                                <div class="courses__item-name">Обучение собственных групп внедрения</div>
+                                <div class="courses__item-desc">
+                                    Поможем снизить риски проекта, если вы решили внедрять WMS самостоятельно: предварительно обучим и подготовим специалистов. Программа обучения разрабатывается индивидуально, в зависимости от состава участников и уровня подготовки.
+                                </div>
+                            </li>
+                            <li class="courses__item">
+                                <div class="courses__item-name">Программы для кладовщиков</div>
+                                <div class="courses__item-desc">
+                                    Подготовим ваших складских работников — кладовщиков к работе с WMS перед запуском системы. А если она давно работает, но у вас произошло большое обновление штата — наши квалифицированные преподаватели обучат новых сотрудников всем необходимым навыкам.
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="feedback feedback-blue">
+                    <div class="feedback__container">
+                        <div class="feedback__text">
+                            <h2 class="feedback__title">
+                                Остались вопросы?
+                            </h2>
+                            <p class="feedback__subtitle">
+                                Если у вас возникли вопросы или вы хотите получить расчет стоимости внедрения WMS24 для вашего склада, заполните два поля и мы свяжемся с вами.
+                            </p>
+                        </div>
+                        <form action="#" name="Остались вопросы?" class="feedback__form form">
+                            <div class="form__column">
+                                <div class="form__column-item icon-user">
+                                    <input type="text" name="Имя" data-required class="form__input form__input-transparent" placeholder="Имя" />
+                                </div>
+                                <div class="form__column-item icon-phone">
+                                    <input type="tel" name="Телефон" data-required class="form__input form__input-transparent" data-tel-input placeholder="Телефон" />
+                                </div>
+                            </div>
+                            <div class="form__btn">
+                                <button type="submit" class="btn btn-white btn-mw">Отправить</button>
+                            </div>
+                            <label class="form__privacy checkbox checkbox-white">
+                                <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                <span class="checkbox__content">
+                                    Соглашаюсь с <a href="#privacy" data-modal="back" class="checkbox__content-link">политикой конфиденциальности</a>
+                                    на&nbsp;обработку персональных данных
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                </section>
+                @@include('html/_services.html', {
+                'title': "Вам может быть интересно",
+                'large': true,
+                'desc': "Оборудование"
+                })
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_popup.html', {
+        "name": "Получить консультацию"
+        })
+        @@include('html/_js.html', {})
+    </body>
+</html>

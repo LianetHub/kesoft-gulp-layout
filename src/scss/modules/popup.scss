@@ -1,0 +1,94 @@
+.popup {
+	position: fixed;
+	background: rgba($color: #203b54, $alpha: 0.8);
+	inset: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.3s linear 0s;
+	z-index: 55555;
+	&.open {
+		opacity: 1;
+		visibility: visible;
+		& .popup__body {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	// .popup__content
+	&__content {
+		position: relative;
+		min-height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 15px;
+		@media (min-width: $md4) {
+			padding: 40px 15px;
+		}
+	}
+	// .popup__body
+	&__body {
+		position: relative;
+		transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+		opacity: 0;
+		transform: translateY(-100%);
+		max-width: rem(505);
+		width: 100%;
+		background: #ffffff;
+		border-radius: rem(5);
+		padding: rem(20) rem(15);
+		@media (min-width: $md5) {
+			padding: rem(40) rem(70);
+		}
+	}
+	&__close {
+		position: absolute;
+		top: rem(15);
+		right: rem(15);
+		@media (min-width: $md5) {
+			font-size: rem(20);
+		}
+		transition: color 0.3s ease 0s;
+		z-index: 2;
+		color: $mainColor;
+		transition: opacity 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+	// .popup__privacy
+	&__privacy {
+	}
+	// .popup__privacy-title
+	&__privacy-title {
+		text-align: center;
+		font-size: 18px;
+		padding: 0px 20px;
+		@media (min-width: $md5) {
+			padding: 0;
+			font-size: 24px;
+		}
+		font-weight: 600;
+		line-height: math.div(29, 24);
+		color: #203b54;
+	}
+	// .popup__privacy-text
+	&__privacy-text {
+		margin: 10px 0px 0px 0px;
+		font-size: 14px;
+		@media (min-width: $md5) {
+			font-size: 16px;
+			margin: 20px 0px 0px 0px;
+		}
+		line-height: math.div(24, 16);
+		& p {
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+}

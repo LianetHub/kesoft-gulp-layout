@@ -1,0 +1,147 @@
+//============ МОДУЛИ ====================
+@import "modules/popup";
+// @import "modules/stepper";
+@import "modules/cookie";
+//============ МОДУЛИ ====================
+.title {
+	font-size: rem(20);
+	@media (min-width: $md5) {
+		font-size: rem(30);
+	}
+	@media (min-width: $md3) {
+		font-size: rem(40);
+	}
+	font-weight: 600;
+	line-height: math.div(54, 40);
+	text-align: center;
+	color: #203b54;
+	position: relative;
+	&.title-lg {
+		font-size: rem(26);
+		@media (min-width: $md5) {
+			font-size: rem(36);
+		}
+		@media (min-width: $md3) {
+			font-size: rem(46);
+		}
+	}
+	&.title-md {
+		font-size: rem(24);
+		@media (min-width: $md4) {
+			font-size: rem(34);
+		}
+		font-weight: 700;
+	}
+	&.title-sm {
+		font-size: rem(20);
+		@media (min-width: $md4) {
+			font-size: rem(24);
+		}
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	width: 32px;
+	height: 32px;
+	@media (min-width: $md3) {
+		width: 35px;
+		height: 35px;
+	}
+	border-radius: 50%;
+	background: rgba($color: #203b54, $alpha: 0.1);
+	color: #203b54;
+	transition: all 0.3s ease 0s;
+	&::after {
+		font-size: 15px;
+		@media (min-width: $md3) {
+			font-size: 16px;
+		}
+		color: currentColor;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			background: darken($color: #203b54, $amount: 10);
+			color: #fff;
+		}
+	}
+}
+
+.pc-only {
+	display: none;
+	@media (min-width: $md4) {
+		display: block;
+	}
+}
+
+.mobile-only {
+	@media (min-width: $md4) {
+		display: none;
+	}
+}
+
+//============ ОБЩИЕ ЭЛЕМЕНТЫ ============
+
+// Стилизация селекта
+// $selectBg: $orange;
+// $selectColor: $mainColor;
+
+// ::-moz-selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	box-shadow: none;
+// }
+// ::selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	-webkit-box-shadow: none;
+// 	box-shadow: none;
+// }
+// ::-moz-selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	box-shadow: none;
+// }
+
+// Стилизация скролла
+
+$scrollbarColor: #203b54;
+$scrollbarHover: darken(
+	$color: #203b54,
+	$amount: 10,
+);
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: #fff;
+}
+::-webkit-scrollbar-thumb {
+	background: $scrollbarColor;
+	border-radius: 8px;
+	@media (any-hover: hover) {
+		&:hover {
+			background: $scrollbarHover;
+		}
+	}
+}
+
+//============ ОБЩИЕ ЭЛЕМЕНТЫ ============
+
+// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ======
+.hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.cover-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ======

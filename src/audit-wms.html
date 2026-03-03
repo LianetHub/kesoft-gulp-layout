@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', { 'title': 'ООО «КЕСОФТ» | «КЕСОФТ» - комплексные решения автоматизации бизнес-процессов' })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": "7"
+            })
+            <main class="page">
+                <section class="main">
+                    <div class="main__container">
+                        <div class="main__offer">
+                            <h1 class="main__title">
+                                Проводим Аудит WMS
+                            </h1>
+                            <p class="main__subtitle">
+                                WMS не работает должным образом?
+                                Не можете завершить внедрение WMS?
+                            </p>
+                            <form action="#" name="Аудит WMS" class="main__form form">
+                                <div class="form__column">
+                                    <div class="form__column-item icon-user">
+                                        <input type="text" name="Имя" data-required class="form__input form__input-white" placeholder="Имя" />
+                                    </div>
+                                    <div class="form__column-item icon-phone">
+                                        <input type="tel" name="Телефон" data-required class="form__input form__input-white" data-tel-input placeholder="Телефон" />
+                                    </div>
+                                </div>
+                                <div class="form__btn">
+                                    <button type="submit" class="btn btn-blue btn-mw">Заказать звонок</button>
+                                </div>
+                                <label class="form__privacy checkbox checkbox-transparent">
+                                    <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                    <span class="checkbox__content">
+                                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                                        на обработку персональных данных
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="main__image main__image-offset-lg">
+                            <img src="@img/audit.png" alt="PC">
+                        </div>
+                    </div>
+                </section>
+                <section class="cycle">
+                    <div class="cycle__container">
+                        <h2 class="cycle__title">Аудит WMS полезен когда</h2>
+                        <ol class="cycle__list">
+                            <li class="cycle__item">Проект внедрения WMS уже идет, но возникают сомнения в положительных результатах</li>
+                            <li class="cycle__item">WMS уже используется в работе, но показатели ее работы не устраивают</li>
+                            <li class="cycle__item">WMS была запущена в работу, но вы перестали ее использовать</li>
+                            <li class="cycle__item">Планируете тиражировать систему на другой склад или расширить функциональность</li>
+                        </ol>
+
+                    </div>
+                </section>
+                <section class="audit-steps">
+                    <div class="audit-steps__container">
+                        <h2 class="audit-steps__title title title-md">
+                            Аудит WMS включает в себя 5 этапов
+                        </h2>
+                        <ol class="audit-steps__list">
+                            <li class="audit-steps__item">
+                                Выезд специалиста&nbsp;на ваш склад
+                            </li>
+                            <li class="audit-steps__item">
+                                Интервью с ключевыми сотрудниками
+                            </li>
+                            <li class="audit-steps__item">
+                                Анализ полученной информации
+                            </li>
+                            <li class="audit-steps__item">
+                                Разработка рекомендаций и плана проекта
+                            </li>
+                            <li class="audit-steps__item">
+                                Предоставление отчета по результатам аудита
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <div class="audit-desc">
+                    <div class="audit-desc__container">
+                        <div class="audit-desc__body">
+                            <div class="audit-desc__image">
+                                <img src="@img/clients.png" alt="Клиенты">
+                            </div>
+                            <div class="audit-desc__text">
+                                Компания <span>KESOFT</span> имеет большой опыт сотрудничества со складами разных типов: продуктов питания, алкогольной продукции, производственные склады, склады 3PL-операторов, склады с серийным учетом и т.д. Это позволяет нам быть в курсе самых актуальных отраслевых проблем складов и предлагать эффективные пути их решения.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="feedback feedback-blue">
+                    <div class="feedback__container">
+                        <div class="feedback__text">
+                            <h2 class="feedback__title title">
+                                Остались вопросы?
+                            </h2>
+                            <p class="feedback__subtitle">
+                                Если у вас возникли вопросы или вы хотите получить расчет стоимости внедрения WMS24 для вашего склада, заполните два поля и мы свяжемся с вами.
+                            </p>
+                        </div>
+                        <form action="#" name="Остались вопросы" class="feedback__form form">
+                            <div class="form__column">
+                                <div class="form__column-item icon-user">
+                                    <input type="text" name="Имя" data-required class="form__input form__input-transparent" placeholder="Имя" />
+                                </div>
+                                <div class="form__column-item icon-phone">
+                                    <input type="tel" name="Телефон" data-required class="form__input form__input-transparent" data-tel-input placeholder="Телефон" />
+                                </div>
+                            </div>
+                            <div class="form__btn">
+                                <button type="submit" class="btn btn-white btn-mw">Отправить</button>
+                            </div>
+                            <label class="form__privacy checkbox checkbox-white">
+                                <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                <span class="checkbox__content">
+                                    Соглашаюсь с <a href="#privacy" data-modal="back" class="checkbox__content-link">политикой конфиденциальности</a>
+                                    на&nbsp;обработку персональных данных
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                </section>
+                @@include('html/_services.html', {
+                'title': "Вам может быть интересно",
+                'large': true,
+                'desc': "Оборудование"
+                })
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_popup.html', {
+        "name": "Получить консультацию"
+        })
+        @@include('html/_js.html', {})
+    </body>
+</html>

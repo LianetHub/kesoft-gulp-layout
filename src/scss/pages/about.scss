@@ -1,0 +1,210 @@
+.about {
+	color: #fff;
+	padding: em(112) em(0) em(0);
+	background: linear-gradient(90deg, #000, #000) 0 66px / cover no-repeat, url("@img/main-bg.svg") 0 0 / cover no-repeat;
+	@media (min-width: $md4) {
+		min-height: 100vh;
+		background: url("@img/about-bg.jpg") center 77px / cover no-repeat, linear-gradient(90deg, #000, #000) 0 77px / cover no-repeat,
+			url("@img/main-bg.svg") 0 0 / cover no-repeat;
+		display: flex;
+		align-items: center;
+		padding: em(120) em(0) em(70);
+	}
+	// .about__container
+	&__container {
+		width: 100%;
+	}
+	// .about__offer
+	&__offer {
+		max-width: 470px;
+	}
+	// .about__title
+	&__title {
+		color: #fff;
+		font-size: rem(26);
+		text-align: left;
+		@media (min-width: $md4) {
+			font-size: rem(38);
+		}
+	}
+	// .about__desc
+	&__desc {
+		margin: em(15) em(0) em(0) em(0);
+		line-height: math.div(27, 20);
+		@media (min-width: $md4) {
+			margin: em(30, 20) em(0) em(0) em(0);
+			font-size: rem(20);
+		}
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 1.8rem;
+			}
+		}
+	}
+}
+
+.certs {
+	padding: em(70) em(0) em(23) em(0);
+	@media (min-width: $md4) {
+		padding: em(130) em(0) em(50) em(0);
+	}
+	// .certs__container
+	&__container {
+	}
+	// .certs__items
+	&__items {
+		display: grid;
+		gap: 30px;
+		@media (min-width: $md4) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	// .certs__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .certs__item-image
+	&__item-image {
+		margin-bottom: rem(-8);
+		height: 290px;
+		@media (min-width: $md4) {
+			margin-bottom: rem(-48);
+		}
+		& img,
+		source {
+			filter: drop-shadow(-8px 4px 18px rgba(0, 0, 0, 0.08));
+			height: 100%;
+			transition: transform 0.3s ease 0s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				& img,
+				source {
+					transform: scale(1.015);
+				}
+			}
+		}
+	}
+	// .certs__item-body
+	&__item-body {
+		flex: 1 1 auto;
+		border-radius: 10px;
+		background: url("@img/blue-bg.svg") 0 0 / cover no-repeat #203b54;
+		color: #fff;
+		padding: em(30);
+		@media (min-width: $md4) {
+			padding: em(67) em(26) em(58) em(30);
+		}
+	}
+	// .certs__item-caption
+	&__item-caption {
+		font-weight: 600;
+		font-size: rem(20);
+		line-height: 110%;
+		@media (min-width: $md4) {
+			font-size: rem(24);
+			line-height: 91.667%;
+		}
+	}
+	// .certs__item-desc
+	&__item-desc {
+		margin: em(10) em(0) em(0) em(0);
+		line-height: 137.5%;
+	}
+}
+
+.clients-info {
+	padding: em(22) em(0) em(45) em(0);
+	@media (min-width: $md4) {
+		padding: em(50) em(0) em(100) em(0);
+	}
+	// .clients-info__container
+	&__container {
+		display: grid;
+		gap: 30px;
+		@media (min-width: $md4) {
+			align-items: center;
+			grid-template-columns: 1.1fr 1fr;
+			gap: 92px;
+		}
+	}
+	// .clients-info__body
+	&__body {
+	}
+	// .clients-info__title
+	&__title {
+		text-align: left;
+	}
+	// .clients-info__text
+	&__text {
+		margin: em(30, 20) em(0) em(0) em(0);
+		color: #222;
+		line-height: 135%;
+		@media (min-width: $md3) {
+			font-size: rem(20);
+		}
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	// .clients-info__image
+	&__image {
+	}
+}
+
+.dignity {
+	padding: em(40) 0;
+	@media (min-width: $md4) {
+		padding: em(70) 0 em(80);
+	}
+	background: rgba(165, 170, 181, 0.1);
+	// .dignity__container
+	&__container {
+	}
+	// .dignity__title
+	&__title {
+	}
+	// .dignity__list
+	&__list {
+		display: grid;
+		grid-auto-rows: 1fr;
+		gap: 15px;
+		margin: em(20) em(0) em(0) em(0);
+		@media (min-width: $md4) {
+			margin: em(30) em(0) em(0) em(0);
+			gap: 30px;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (min-width: $md3) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	// .dignity__item
+	&__item {
+		border-radius: 10px;
+		border: 1px solid #d6d6d6;
+		background: #fff;
+		padding: em(50) em(24) em(30);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .dignity__item-icon
+	&__item-icon {
+		padding: em(0) em(20) em(0) em(0);
+	}
+	// .dignity__item-desc
+	&__item-desc {
+		margin: em(48, 18) em(0) em(0) em(0);
+		color: #222;
+		text-align: center;
+		line-height: 133.333%;
+		@media (min-width: $md5) {
+			font-size: rem(18);
+		}
+	}
+}

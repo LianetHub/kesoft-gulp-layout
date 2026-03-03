@@ -1,0 +1,32 @@
+<section class="feedback @@if(color==='dark'){feedback-black}">
+    <div class="feedback__container">
+        <div class="feedback__text">
+            <h2 class="feedback__title">
+                @@title
+            </h2>
+            <p class="feedback__subtitle">
+                Если у вас возникли вопросы или вы хотите получить расчет стоимости внедрения WMS24 для вашего склада, заполните два поля и мы свяжемся с вами.
+            </p>
+        </div>
+        <form action="#" name="@@title" class="feedback__form form">
+            <div class="form__column">
+                <div class="form__column-item icon-user">
+                    <input type="text" name="Имя" data-required class="form__input @@if(color==='dark'){form__input-transparent}" placeholder="Имя" />
+                </div>
+                <div class="form__column-item icon-phone">
+                    <input type="tel" name="Телефон" data-required class="form__input @@if(color==='dark'){form__input-transparent}" data-tel-input placeholder="Телефон" />
+                </div>
+            </div>
+            <div class="form__btn">
+                <button type="submit" class="btn @@if(color==='white'){btn-blue} @@if(color==='dark'){btn-white} btn-mw">Отправить</button>
+            </div>
+            <label class="form__privacy checkbox @@if(color==='dark'){checkbox-white}">
+                <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                <span class="checkbox__content">
+                    Соглашаюсь с <a href="#privacy" data-modal="back" class="checkbox__content-link">политикой конфиденциальности</a>
+                    на&nbsp;обработку персональных данных
+                </span>
+            </label>
+        </form>
+    </div>
+</section>

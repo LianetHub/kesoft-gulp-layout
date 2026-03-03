@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', { 'title': 'ООО «КЕСОФТ» | Внедрение WMS по фиксированной стоимости' })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": "3"
+            })
+            <main class="page">
+                <section class="main">
+                    <div class="main__container">
+                        <div class="main__offer">
+                            <h1 class="main__title">
+                                Внедрение WMS
+                                по&nbsp;фиксированной
+                                стоимости
+                            </h1>
+                            <p class="main__subtitle">
+                                Стоимость наших услуг не возрастет&nbsp;в процессе реализации проекта. Мы рассчитываем ее до подписания договора и фиксируем в нем.
+                            </p>
+                            <form action="#" name="Внедрение WMS" class="main__form form">
+                                <div class="form__column">
+                                    <div class="form__column-item icon-user">
+                                        <input type="text" name="Имя" data-required class="form__input form__input-white" placeholder="Имя" />
+                                    </div>
+                                    <div class="form__column-item icon-phone">
+                                        <input type="tel" name="Телефон" data-required class="form__input form__input-white" data-tel-input placeholder="Телефон" />
+                                    </div>
+                                </div>
+                                <label class="form__privacy checkbox checkbox-transparent">
+                                    <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                    <span class="checkbox__content">
+                                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                                        на обработку персональных данных
+                                    </span>
+                                </label>
+                                <div class="form__btn">
+                                    <button type="submit" class="btn btn-blue btn-mw">Рассчитать стоимость</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="main__chart">
+                            <img src="@img/chart.png" alt="chart">
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_choose.html', { "hasBtn": true,
+                "title": "Выберите решение"
+                })
+                <section class="structure">
+                    <div class="structure__container">
+                        <h2 class="structure__title title title-md">
+                            Структура стоимости <br>
+                            проекта внедрения WMS24
+                        </h2>
+                        <table class="structure__table structure__table-desktop">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>1C: WMS</th>
+                                    <th>WMS24</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Услуги по внедрению</td>
+                                    <td>от 1,5 млн. рублей</td>
+                                    <td>от 120 тыс. рублей</td>
+                                </tr>
+                                <tr>
+                                    <td>Терминалы сбора данных</td>
+                                    <td colspan="2">
+                                        <p>ударопрочный - 100 тыс. рублей</p>
+                                        <p>
+                                            дальнобойный - 120 тыс. рублей
+                                        </p>
+                                        <p>
+                                            простой - 50 тыс. рублей
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Принтеры этикеток
+                                    </td>
+                                    <td colspan="2">
+                                        <p>
+                                            промышленный - 80 тыс. рублей
+                                        </p>
+                                        <p>
+                                            настольный - 20 тыс. рублей
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Лицензии на ПО
+                                    </td>
+                                    <td>
+                                        от 282 900 рублей
+                                    </td>
+                                    <td>
+                                        <p>
+                                            постоянная лицензия - от 50 тыс. рублей
+                                        </p>
+                                        <p>
+                                            временная лицензия - от 9 тыс. рублей в год
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Wi-Fi и интернет
+                                    </td>
+                                    <td>
+                                        требуется полное покрытие
+                                        бесшовным Wi-Fi
+                                    </td>
+                                    <td>
+                                        достаточно подключение по 3G,
+                                        обязательное наличие интернет
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Сервера и ПО
+                                    </td>
+                                    <td>
+                                        на практике используется
+                                        сервер на базе Windows Server
+                                        с лицензиями MS SQL, серверные
+                                        лицензии 1C
+                                    </td>
+                                    <td>
+                                        сервер на базе Linux,
+                                        минимальная конфигурация -
+                                        2CPU, 2 Gb, 40Gb
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>от 1,7 млн. рублей</span></td>
+                                    <td>
+                                        <span>
+                                            от 200 тыс. рублей
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="structure__table structure__table-mobile">
+                            <thead>
+                                <tr>
+                                    <th>1C: WMS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>Услуги по внедрению</span>
+                                        от 1,5 млн. рублей
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Терминалы сбора данных</span>
+                                        <p>ударопрочный - 100 тыс. рублей</p>
+                                        <p>
+                                            дальнобойный - 120 тыс. рублей
+                                        </p>
+                                        <p>
+                                            простой - 50 тыс. рублей
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Принтеры этикеток</span>
+                                        <p>
+                                            промышленный - 80 тыс. рублей
+                                        </p>
+                                        <p>
+                                            настольный - 20 тыс. рублей
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Лицензии на ПО</span>
+                                        от 282 900 рублей
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Wi-Fi и интернет</span>
+                                        требуется полное покрытие
+                                        бесшовным Wi-Fi
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>
+                                            Сервера и ПО
+                                        </span>
+                                        на практике используется
+                                        сервер на базе Windows Server
+                                        с лицензиями MS SQL, серверные
+                                        лицензии 1C
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span>от 1,7 млн. рублей</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="structure__table structure__table-mobile">
+                            <thead>
+                                <tr>
+                                    <th>WMS24</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>Услуги по внедрению</span>
+                                        от 120 тыс. рублей
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Терминалы сбора данных</span>
+                                        <p>ударопрочный - 100 тыс. рублей</p>
+                                        <p>
+                                            дальнобойный - 120 тыс. рублей
+                                        </p>
+                                        <p>
+                                            простой - 50 тыс. рублей
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Принтеры этикеток</span>
+                                        <p>
+                                            промышленный - 80 тыс. рублей
+                                        </p>
+                                        <p>
+                                            настольный - 20 тыс. рублей
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Лицензии на ПО</span>
+                                        <p>постоянная лицензия -
+                                            от 50 тыс. рублей</p>
+                                        <p>временная лицензия -
+                                            от 9 тыс. рублей в год</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Wi-Fi и интернет</span>
+                                        достаточно подключение по 3G,
+                                        обязательное наличие интернет
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>
+                                            Сервера и ПО
+                                        </span>
+                                        сервер на базе Linux,
+                                        минимальная конфигурация -
+                                        2CPU, 2 Gb, 40Gb
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span>от 200 тыс. рублей</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="approaches">
+                    <div class="approaches__container">
+                        <h2 class="approaches__title title title-md">
+                            Подходы к выполнению проекта
+                        </h2>
+                        <div class="approaches__items">
+                            <div class="approaches__item">
+                                <div class="approaches__item-header">
+                                    <img src="@img/icon-canban.svg" alt="icon">
+                                    Классический подход
+                                </div>
+                                <div class="approaches__item-body">
+                                    <ul class="approaches__item-list">
+                                        <li>В договоре определяется последовательность всех этапов работ и сроки.</li>
+                                        <li>В техническом задании прописывается ожидаемыйконечный результат.</li>
+                                        <li>Фиксируется стоимость за результат.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="approaches__item">
+                                <div class="approaches__item-header">
+                                    <img src="@img/icon-way.svg" alt="icon">
+                                    Работа по методологии SCRUM
+                                </div>
+                                <div class="approaches__item-body">
+                                    <ul class="approaches__item-list">
+                                        <li>
+                                            Работа строится отрезками, за которые реализовываются новые требования, полученные в том числе, и в результате анализа уже работающей части проекта.
+                                        </li>
+                                        <li>
+                                            Фиксируется стоимость за период работ.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="steps">
+                    <div class="steps__container">
+                        <h2 class="steps__title title title-md">Этапы классического проекта</h2>
+                        <ol class="steps__list">
+                            <li class="steps__item">
+                                <div class="steps__item-header">
+                                    <div class="steps__item-time">
+                                        3-6
+                                        недель
+                                    </div>
+                                    <div class="steps__item-icon">
+                                        <img src="@img/steps/01.png" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="steps__item-title">
+                                    Согласование <br>
+                                    требований к <br>
+                                    работе WMS
+                                </div>
+                                <div class="steps__item-desc">
+                                    Схемы процессов, схемы интеграции, сценарий сдачи
+                                    макета WMS
+                                </div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item-header">
+                                    <div class="steps__item-time">
+                                        4-8
+                                        недель
+                                    </div>
+                                    <div class="steps__item-icon">
+                                        <img src="@img/steps/02.png" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="steps__item-title">
+                                    Адаптация WMS в
+                                    соответствии с
+                                    требованиями
+                                </div>
+                                <div class="steps__item-desc">
+                                    Выполнение настроек и
+                                    доработок системы.
+                                    Реализация&nbsp;интеграции с ERP
+                                </div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item-header">
+                                    <div class="steps__item-time">
+                                        2-4
+                                        недели
+                                    </div>
+                                    <div class="steps__item-icon">
+                                        <img src="@img/steps/03.png" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="steps__item-title">
+                                    Обучение <br>
+                                    и тестирование
+                                </div>
+                                <div class="steps__item-desc">
+                                    Обучение пользователей и тестирование WMS в условиях максимально приближенных к реальным
+                                </div>
+                            </li>
+                            <li class="steps__item">
+                                <div class="steps__item-header">
+                                    <div class="steps__item-time">
+                                        1-3
+                                        недели
+                                    </div>
+                                    <div class="steps__item-icon">
+                                        <img src="@img/steps/04.png" alt="icon">
+                                    </div>
+                                </div>
+                                <div class="steps__item-title">
+                                    Запуск WMS в
+                                    эксплуатацию
+                                </div>
+                                <div class="steps__item-desc">
+                                    Поддержка пользователей
+                                    при&nbsp;работе с системой с присутствием нашего
+                                    специалиста на складе
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                @@include('html/_clients.html')
+                <section class="benefits">
+                    <div class="benefits__container">
+                        <h2 class="benefits__title title title-md">
+                            Почему нас выбирают
+                        </h2>
+                        <ul class="benefits__list">
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icon-worker.svg" alt="icon">
+                                </div>
+                                <div class="benefits__item-title">
+                                    Богатая отраслевая <br>
+                                    экспертиза
+                                </div>
+                                <div class="benefits__item-text">
+                                    <p>
+                                        Наши специалисты - участники свыше 170 проектов <br>
+                                        по автоматизации складов.
+                                    </p>
+                                    <p>
+                                        Опыт нашей работы включает сотрудничество со множеством компаний
+                                        различных масштабов из совершенно разных сфер деятальности.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icon-observe.png" alt="icon">
+                                </div>
+                                <div class="benefits__item-title">
+                                    Включаемся в проект <br>
+                                    на любой стадии
+                                </div>
+                                <div class="benefits__item-text">
+                                    <p>
+                                        Если вы начинали проект внедрение WMS но не
+                                        завершили его, мы готовы прожолжить проект, а
+                                        не начинать его сначала.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icon-heart.svg" alt="icon">
+                                </div>
+                                <div class="benefits__item-title">
+                                    После завершения проекта внедрения помогаем развивать и поддерживать систему
+                                </div>
+                                <div class="benefits__item-text">
+                                    <p>
+                                        Есть штат людей и технология <br>
+                                        сопровождения
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_feedback.html', {
+                "title": "Бесплатная консультация",
+                "color": "dark"
+                })
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_popup.html', {
+        "name": "Подобрать программу"
+        })
+        @@include('html/_popup-2.html', {
+        "id": "modal-program",
+        "name": "Подобрать программу"
+        });
+        @@include('html/_js.html', {})
+    </body>
+</html>

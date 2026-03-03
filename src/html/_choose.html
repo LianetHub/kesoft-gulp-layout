@@ -1,0 +1,40 @@
+<section class="choose">
+    <div class="choose__container">
+        <h2 class="choose__title title title-md">
+            @@title
+        </h2>
+        <div class="choose__items">
+            <a href="/upravlenie-skladom.html" class="choose__item">
+                <span class="choose__item-image choose__item-image_lg">
+                    <img src="@img/1C-WMS.png" alt="choose">
+                </span>
+                <span class="choose__item-footer">
+                    <span class="choose__item-caption">
+                        1C: WMS
+                    </span>
+                    <span class="choose__item-desc">
+                        Система корпоративного класса. Эффективна при внедрении на интенсивных складах от 10 пользователей и более 1000 строк заказов в сутки.
+                    </span>
+                </span>
+            </a>
+            <a href="/wms24.html" class="choose__item">
+                <span class="choose__item-image">
+                    <img src="@img/choose/02.png" alt="choose">
+                </span>
+                <span class="choose__item-footer">
+                    <span class="choose__item-caption">
+                        WMS24
+                    </span>
+                    <span class="choose__item-desc">
+                        Облачная система управления складом с удобным интерфейсом и хорошим быстродействием. Быстро внедряется и адаптируется под требования склада.
+                    </span>
+                </span>
+            </a>
+        </div>
+        @@if(hasBtn===true) {
+        <div class="choose__footer">
+            <a href="#modal-program" data-modal class="choose__btn btn btn-blue-outline">Подобрать программу</a>
+        </div>
+        }
+    </div>
+</section>

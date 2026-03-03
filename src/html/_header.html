@@ -1,0 +1,52 @@
+<header class="header">
+    <div class="header__wrapper lock-padding">
+        <div class="header__container">
+            <div class="header__body">
+                <a href="/" class="header__logo">
+                    <img src="@img/logo.svg" alt="logo">
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="/" class="menu__link @@if(active==1){active}">Главная</a>
+                        </li>
+                        <li class="menu__item menu__item_parent">
+                            <a class="menu__link menu__link_parent @@if(active==2){active}">Услуги</a>
+                            <ul class="menu__item-submenu submenu">
+                                <li class="submenu__item">
+                                    <a href="/vnedrenie-wms.html" class="submenu__link @@if(active==3){active}">Внедрение WMS</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="/soprovozhdenie-wms.html" class="submenu__link @@if(active==4){active}">Сопровождение WMS</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="/obuchenie-wms.html" class="submenu__link @@if(active==5){active}">Обучение WMS</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="/audit-wms.html" class="submenu__link @@if(active==7){active}">Аудит WMS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/upravlenie-skladom.html" class="menu__link @@if(active==8){active}">1С:WMS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/wms24.html" class="menu__link @@if(active==9){active}">WMS24</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/o-kompanii.html" class="menu__link @@if(active==11){active}">О Компании</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:+74951313230" class="header__phone icon-phone">
+                    <span>
+                        +7 (495) 131-32-30
+                    </span>
+                </a>
+                <button type="button" class="menu__icon icon-menu">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>

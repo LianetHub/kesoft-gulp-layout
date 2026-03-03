@@ -1,0 +1,52 @@
+$sizeBtn: 50px;
+
+.quantity-item {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	user-select: none;
+	background: #ffffff;
+	color: #000;
+	border-radius: 4px;
+	flex-shrink: 0;
+	overflow: hidden;
+	// .quantity__btn-down
+	&__btn-down,
+	&__btn-up,
+	&__value {
+		width: $sizeBtn;
+		min-height: 40px;
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	&__btn-down,
+	&__btn-up {
+		z-index: 2;
+		transition: background-color 0.3s ease 0s;
+		&:disabled {
+			pointer-events: none;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: #f0edeb;
+			}
+		}
+	}
+
+	&__btn-down {
+		&::before {
+			@extend %ic, .icon-minus;
+		}
+	}
+	&__btn-up {
+		&::before {
+			@extend %ic, .icon-plus;
+		}
+	}
+	// .quantity__value
+	&__value {
+	}
+}

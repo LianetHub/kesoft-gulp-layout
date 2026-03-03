@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', { 'title': 'ООО «КЕСОФТ» | «КЕСОФТ» - комплексные решения автоматизации бизнес-процессов' })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": "8"
+            })
+            <main class="page">
+                <section class="main">
+                    <div class="main__container">
+                        <div class="main__offer">
+                            <h1 class="main__title">
+                                Развивайте свой склад
+                                с помощью 1C: WMS
+                            </h1>
+                            <p class="main__subtitle main__subtitle-lg">
+                                Хотите чтобы ваш склад работал еще эффективнее? Воспользуйтесь самым востребованным решением для автоматизации складов
+                            </p>
+                            <form action="#" name="Развивайте свой склад" class="main__form form">
+                                <div class="form__column">
+                                    <div class="form__column-item icon-user">
+                                        <input type="text" name="Имя" data-required class="form__input form__input-white" placeholder="Имя" />
+                                    </div>
+                                    <div class="form__column-item icon-phone">
+                                        <input type="tel" name="Телефон" data-required class="form__input form__input-white" data-tel-input placeholder="Телефон" />
+                                    </div>
+                                </div>
+                                <div class="form__btn">
+                                    <button type="submit" class="btn btn-blue btn-mw">Заказать звонок</button>
+                                </div>
+                                <label class="form__privacy checkbox checkbox-transparent">
+                                    <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                    <span class="checkbox__content">
+                                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                                        на обработку персональных данных
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="main__image main__image-offset-md">
+                            <img src="@img/1C.png" alt="1C">
+                        </div>
+                    </div>
+                </section>
+                <section class="presentation">
+                    <div class="presentation__container">
+                        <h2 class="presentation__title title title-md">Презентация о программе</h2>
+                        <div class="presentation__body">
+                            <div class="presentation__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/01.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/02.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/03.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/04.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/05.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/06.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/07.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/08.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/09.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/10.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/11.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/12.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/13.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/14.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/15.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/16.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/17.png" alt="slide">
+                                    </div>
+                                    <div class="presentation__slide swiper-slide">
+                                        <img src="@img/presentation/18.png" alt="slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="presentation__slider-controls">
+                                <div class="presentation__slider-prev swiper-button-prev">
+                                    <span>Назад</span>
+                                </div>
+                                <div class="presentation__slider-next swiper-button-next">
+                                    <span>Вперед</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="presentation__footer">
+                            <div class="presentation__footer-image">
+                                <img src="@img/1C-WMS.png" alt="1C">
+                            </div>
+                            <div class="presentation__footer-body">
+                                <div class="presentation__footer-caption title title-md">
+                                    Базовая поставка
+                                </div>
+                                <div class="presentation__footer-desc">
+                                    Основная поставка включает лицензии на использование системы «1С:Предприятие 8» и конфигурации «WMS Логистика. Управление складом» на одном рабочем месте и трех радиотерминалах
+                                </div>
+                                <div class="presentation__footer-price">
+                                    282 900 ₽
+                                </div>
+                                <a href="#modal-system" data-modal class="presentation__footer-btn btn btn-blue">Заказать систему</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container">
+                        <h2 class="price__title title title-md">
+                            Стоимость
+                        </h2>
+                        <div class="price__sections">
+                            <div class="price__section">
+                                <div class="price__section-caption">
+                                    Радиотерминал
+                                </div>
+                                <ul class="price__list">
+                                    <li class="price__item">
+                                        <div class="price__item-num">1</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на один радиотерминал</div>
+                                        <div class="price__item-value">24 750 ₽</div>
+                                        <a href="#modal-radio" data-modal class="price__item-btn btn btn-blue">Заказать</a>
+                                    </li>
+                                    <li class="price__item">
+                                        <div class="price__item-num">5</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на пять радиотерминалов</div>
+                                        <div class="price__item-value">105 600 ₽</div>
+                                        <a href="#modal-radio" data-modal class="price__item-btn btn btn-blue">Заказать</a>
+                                    </li>
+                                    <li class="price__item">
+                                        <div class="price__item-num">10</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на десять радиотерминалов</div>
+                                        <div class="price__item-value">177 320 ₽</div>
+                                        <a href="#modal-radio" data-modal class="price__item-btn btn btn-blue">Заказать</a>
+                                    </li>
+                                    <li class="price__item">
+                                        <div class="price__item-num">20</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на двадцать радиотерминалов</div>
+                                        <div class="price__item-value">290 400 ₽</div>
+                                        <a href="#modal-radio" data-modal class="price__item-btn btn btn-blue">Заказать</a>
+                                    </li>
+                                    <li class="price__item">
+                                        <div class="price__item-num">50</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на пятьдесят радиотерминалов</div>
+                                        <div class="price__item-value">677 600 ₽</div>
+                                        <a href="#modal-radio" data-modal class="price__item-btn btn btn-blue">Заказать</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price__section">
+                                <div class="price__section-caption">
+                                    Рабочее место
+                                </div>
+                                <ul class="price__list price__list-blue">
+                                    <li class="price__item">
+                                        <div class="price__item-num">1</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на один рабочее место</div>
+                                        <div class="price__item-value">6 300 ₽</div>
+                                        <a href="#modal-place" data-modal class="price__item-btn btn btn-white">Заказать</a>
+                                    </li>
+                                    <li class="price__item">
+                                        <div class="price__item-num">5</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на пять рабочих мест</div>
+                                        <div class="price__item-value">21 600 ₽</div>
+                                        <a href="#modal-place" data-modal class="price__item-btn btn btn-white">Заказать</a>
+                                    </li>
+                                    <li class="price__item">
+                                        <div class="price__item-num">10</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на десять рабочих мест</div>
+                                        <div class="price__item-value">41 400 ₽</div>
+                                        <a href="#modal-place" data-modal class="price__item-btn btn btn-white">Заказать</a>
+                                    </li>
+                                    <li class="price__item">
+                                        <div class="price__item-num">20</div>
+                                        <div class="price__item-desc">ККлиентская <br class="pc-only"> лицензия на двадцать рабочих мест</div>
+                                        <div class="price__item-value">78 000 ₽</div>
+                                        <a href="#modal-place" data-modal class="price__item-btn btn btn-white">Заказать</a>
+                                    </li>
+                                    <li class="price__item">
+                                        <div class="price__item-num">50</div>
+                                        <div class="price__item-desc">Клиентская <br class="pc-only"> лицензия на пятьдесят рабочих мест</div>
+                                        <div class="price__item-value">187 200 ₽</div>
+                                        <a href="#modal-place" data-modal class="price__item-btn btn btn-white">Заказать</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reasons">
+                    <div class="reasons__container">
+                        <h2 class="reasons__title title title-md">
+                            Причины купить 1С:WMS у Кесофт
+                        </h2>
+                        <ul class="reasons__list">
+                            <li class="reasons__item">
+                                <a href="#cert-1" data-modal class="reasons__item-image">
+                                    <img src="@img/reasons/cert.jpg" alt="image">
+                                </a>
+                                <div class="reasons__item-caption">
+                                    Официальный партнер 1С
+                                </div>
+                                <div class="reasons__item-desc">
+                                    С момента основания компании, основная специализация - автоматизация складов с помощью программы «1С:Предприятие 8. WMS Логистика. Управление складом.» Все специалисты прошли необходимую сертификацию и имеют многолетний опыт работы с данным решением.
+                                </div>
+                            </li>
+                            <li class="reasons__item">
+                                <div class="reasons__item-image">
+                                    <img src="@img/reasons/partners.png" alt="image">
+                                </div>
+                                <div class="reasons__item-caption">
+                                    Нам доверяют
+                                </div>
+                                <div class="reasons__item-desc">
+                                    Компания <span>KESOFT</span> имеет большой опыт сотрудничества со складами разных типов: продуктов питания, алкогольной продукции, производственные склады, склады 3PL-операторов, склады с серийным учетом и т.д.
+                                </div>
+                            </li>
+                            <li class="reasons__item">
+                                <div class="reasons__item-image">
+                                    <img src="@img/reasons/team.svg" alt="image">
+                                </div>
+                                <div class="reasons__item-caption">
+                                    Опытная команда
+                                </div>
+                                <div class="reasons__item-desc">
+                                    На счету основателей компании больше 170 проектов по автоматизации складов. Наша отраслевая экспертиза охватывает предприятия из разных отраслей: от
+                                    производства, легкой промышленности, продуктов питания, алкогольной продукции до фармацевтики, запчастей и оборудования
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="feedback feedback-blue">
+                    <div class="feedback__container">
+                        <div class="feedback__text">
+                            <h2 class="feedback__title title">
+                                Консультация о программе
+                                и лицензиях
+                            </h2>
+                            <p class="feedback__subtitle">
+                                Если у вас остались вопросы – заполните поля, и наши специалисты раскажут подробнее о программе и помогут с подбором необходимого количества лицензий дли терминалов сбора данных и компьтеров
+                            </p>
+                        </div>
+                        <form action="#" name="Консультация о программе" class="feedback__form form">
+                            <div class="form__column">
+                                <div class="form__column-item icon-user">
+                                    <input type="text" name="Имя" data-required class="form__input form__input-transparent" placeholder="Имя" />
+                                </div>
+                                <div class="form__column-item icon-phone">
+                                    <input type="tel" name="Телефон" data-required class="form__input form__input-transparent" data-tel-input placeholder="Телефон" />
+                                </div>
+                            </div>
+                            <div class="form__btn">
+                                <button type="submit" class="btn btn-white btn-mw">Отправить</button>
+                            </div>
+                            <label class="form__privacy checkbox checkbox-white">
+                                <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                                <span class="checkbox__content">
+                                    Соглашаюсь с <a href="#privacy" data-modal="back" class="checkbox__content-link">политикой конфиденциальности</a>
+                                    на&nbsp;обработку персональных данных
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                </section>
+                @@include('html/_services.html', {
+                'title': "Вам может быть интересно",
+                'large': true,
+                'desc': "Оборудование"
+                })
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_popup.html', {
+        "name": "Получить консультацию"
+        })
+        @@include('html/_popup-2.html', {
+        "id": "modal-radio",
+        "name": "Заказать радиотерминал"
+        })
+        @@include('html/_popup-2.html', {
+        "id": "modal-system",
+        "name": "Заказать систему"
+        })
+        @@include('html/_popup-2.html', {
+        "id": "modal-place",
+        "name": "Заказать рабочее место"
+        })
+        <div id="cert-1" class="popup">
+            <div class="popup__content">
+                <button type="button" class="popup__close icon-close"></button>
+                <div class="popup__image">
+                    <img src="@img/certs/01.jpg" alt="cert">
+                </div>
+            </div>
+        </div>
+        @@include('html/_js.html', {})
+    </body>
+</html>

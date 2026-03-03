@@ -1,0 +1,128 @@
+<section class="services">
+    <div class="services__container">
+        <h2 class="services__title title title-md">
+            @@title
+        </h2>
+        <ul class="services__list">
+            <li class="services__item">
+                <div class="services__item-main">
+                    <div class="services__item-title">
+                        Внедрение WMS
+                    </div>
+                    <a href="/vnedrenie-wms.html" class="services__item-btn btn btn-blue">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services__item-icon">
+                    <img src="@img/services/planning.svg" alt="icon">
+                </div>
+            </li>
+            @@if (large===true) {
+            <li class="services__item">
+                <div class="services__item-main">
+                    <div class="services__item-title">
+                        Сопровождение ВМС
+                    </div>
+                    <a href="/soprovozhdenie-wms.html" class="services__item-btn btn btn-blue">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services__item-icon">
+                    <img src="@img/services/people.svg" alt="icon">
+                </div>
+            </li>
+            }
+            @@if (large===false) {
+            <li class="services__item">
+                <div class="services__item-main">
+                    <div class="services__item-title">
+                        Техническая поддержка и администри&shy;рование WMS
+                    </div>
+                    <a href="/soprovozhdenie-wms.html" class="services__item-btn btn btn-blue">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services__item-icon">
+                    <img src="@img/services/people.svg" alt="icon">
+                </div>
+            </li>
+            }
+            <li class="services__item">
+                <div class="services__item-main">
+                    <div class="services__item-title">
+                        Аудит WMS
+                    </div>
+                    <a href="/audit-wms.html" class="services__item-btn btn btn-blue">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services__item-icon">
+                    <img src="@img/services/audit.svg" alt="icon">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="services__item-main">
+                    <div class="services__item-title">
+                        Обучение WMS
+                    </div>
+                    <a href="/obuchenie-wms.html" class="services__item-btn btn btn-blue">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services__item-icon">
+                    <img src="@img/services/education.svg" alt="icon">
+                </div>
+            </li>
+            @@if (large===true) {
+            <li class="services__item">
+                <div class="services__item-main">
+                    <div class="services__item-title">
+                        1C WMS
+                    </div>
+                    <a href="/upravlenie-skladom.html" class="services__item-btn btn btn-blue">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services__item-icon">
+                    <img src="@img/services/programming.svg" alt="icon">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="services__item-main">
+                    <div class="services__item-title">
+                        WMS 24
+                    </div>
+                    <a href="/wms24.html" class="services__item-btn btn btn-blue">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services__item-icon">
+                    <img src="@img/services/clouds.svg" alt="icon">
+                </div>
+            </li>
+            <li class="services__item">
+                <div class="services__item-main">
+                    <div class="services__item-title">
+                        О компании
+                    </div>
+                    <a href="/o-kompanii.html" class="services__item-btn btn btn-blue">
+                        Подробнее
+                    </a>
+                </div>
+                <div class="services__item-icon">
+                    <img src="@img/services/building.svg" alt="icon">
+                </div>
+            </li>
+            }
+        </ul>
+        <div class="services__footer">
+            <div class="services__footer-image">
+                <img src="@img/services/support.svg" alt="support">
+            </div>
+            <div class="services__footer-desc">
+                @@desc
+            </div>
+            <a href="#modal-equipment" data-modal class="services__footer-btn btn btn-white btn-sm">Бесплатная консультация</a>
+        </div>
+    </div>
+</section>

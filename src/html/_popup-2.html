@@ -1,0 +1,31 @@
+<div id="@@id" class="popup">
+    <div class="popup__content">
+        <div class="popup__body">
+            <button type="button" class="popup__close icon-close"></button>
+            <form action="#" name="@@name" class="popup__form form">
+                <div class="form__title">@@name</div>
+                <div class="form__column">
+                    <div class="form__column-item icon-user">
+                        <input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
+                    </div>
+                    <div class="form__column-item icon-phone">
+                        <input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
+                    </div>
+                    <div class="form__column-item">
+                        <textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
+                    </div>
+                </div>
+                <label class="form__privacy checkbox">
+                    <input type="checkbox" data-required class="checkbox__input hidden" hidden />
+                    <span class="checkbox__content">
+                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                        на обработку персональных данных
+                    </span>
+                </label>
+                <div class="form__btn">
+                    <button type="submit" class="btn btn-blue btn-mw">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

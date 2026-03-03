@@ -1,0 +1,113 @@
+.footer {
+    padding: em(35) em(0) em(0) em(0);
+    // .footer__container
+    &__container {
+    }
+    // .footer__body
+    &__body {
+        @media (min-width: $md4) {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+    // .footer__main
+    &__main {
+        @media (min-width: $md4) {
+            flex: 0 0 25%;
+        }
+    }
+    // .footer__logo
+    &__logo {
+        max-width: 126px;
+        display: inline-block;
+        @media (min-width: $md4) {
+            max-width: 145px;
+        }
+    }
+    // .footer__subtitle
+    &__subtitle {
+        margin: em(12, 14) em(0) em(0) em(0);
+        color: #222;
+        font-size: rem(14);
+        letter-spacing: 0.056px;
+        @media (min-width: $md4) {
+            margin: em(23, 14) em(0) em(0) em(0);
+        }
+    }
+    // .footer__menu
+    &__menu {
+        margin: rem(20) em(0) em(0) em(0);
+        gap: rem(15);
+        display: grid;
+        @media (min-width: $md4) {
+            margin: em(0) em(0) em(0) em(18);
+            flex: 0 1 34%;
+        }
+        @media (min-width: $md3) {
+            column-gap: 30px;
+            row-gap: 33px;
+            grid-template-columns: 1fr 3fr;
+        }
+    }
+    // .footer__menu-item
+    &__menu-item {
+    }
+    // .footer__menu-link
+    &__menu-link {
+        transition: color 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                color: #ce1515;
+            }
+        }
+    }
+    // .footer__contacts
+    &__contacts {
+        margin: em(20) em(0) em(0) em(0);
+        display: grid;
+        color: #222;
+        letter-spacing: 0.064px;
+        gap: rem(15);
+        @media (min-width: $md4) {
+            margin: em(0) em(0) em(0) auto;
+            flex: 0 1 37%;
+            column-gap: rem(14);
+            row-gap: rem(10);
+        }
+        @media (min-width: $md2) {
+            grid-template-columns: 1.4fr 1fr;
+        }
+    }
+    // .footer__contacts-item
+    &__contacts-item {
+        display: flex;
+        &::before {
+            font-size: rem(16);
+            width: 16px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: em(0) rem(5) em(0) em(0);
+        }
+    }
+    // .footer__contacts-link
+    &__contacts-link {
+        transition: color 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                color: #ce1515;
+            }
+        }
+    }
+    // .footer__copy
+    &__copy {
+        margin: em(34) em(0) em(0) em(0);
+        border-top: rem(1) solid rgba($color: #222, $alpha: 0.1);
+        padding: rem(10) em(0);
+        color: #222;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0.056px;
+    }
+}
