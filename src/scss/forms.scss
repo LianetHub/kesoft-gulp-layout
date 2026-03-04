@@ -256,7 +256,12 @@
 // <BUTTONS (a.btn+tab)>==============================
 $btn-font-family-base: #{$fontfamily}, sans-serif;
 $btn-font-size-base: rem(14);
-$btn-font-size-md: rem(16);
+$btn-font-weight: 400;
+$btn-line-height: math.div(22, 16);
+$btn-letter-spacing: 0.064px;
+
+$btn-font-size-desktop: rem(16);
+$btn-border-radius: rem(5);
 
 $btn-padding-y: em(11);
 $btn-padding-x: em(27);
@@ -271,8 +276,13 @@ $btn-bg-outline: rgba(171, 184, 197, 0.3);
 :root {
 	--btn-font-family: #{$btn-font-family-base};
 	--btn-font-size: #{$btn-font-size-base};
+	--btn-font-weight: #{$btn-font-weight};
+	--btn-line-height: #{$btn-line-height};
+	--btn-letter-spacing: #{$btn-letter-spacing};
+
 	--btn-padding-y: #{$btn-padding-y};
 	--btn-padding-x: #{$btn-padding-x};
+	--btn-border-radius: #{$btn-border-radius};
 
 	--btn-blue: #{$btn-blue-base};
 	--btn-blue-hover: #{darken($btn-blue-base, 5%)};
@@ -284,6 +294,17 @@ $btn-bg-outline: rgba(171, 184, 197, 0.3);
 }
 
 .wms-page {
+	--btn-font-family: #{$font-manrope},
+	sans-serif;
+	--btn-font-size: #{rem(16)};
+	--btn-font-weight: 600;
+	--btn-line-height: normal;
+	--btn-letter-spacing: normal;
+
+	--btn-border-radius: #{rem(12)};
+	--btn-padding-y: #{em(21)};
+	--btn-padding-x: #{em(23.5)};
+
 	--btn-blue: #0F2862;
 	--btn-blue-hover: #{darken(#0F2862, 5%)};
 	--btn-blue-active: #{darken(#0F2862, 10%)};
@@ -301,17 +322,17 @@ $btn-bg-outline: rgba(171, 184, 197, 0.3);
 	align-items: center;
 	transition: all 0.3s ease 0s;
 	user-select: none;
-	line-height: math.div(22, 16);
-	border-radius: rem(5);
-
+	line-height: var(--btn-line-height, #{$btn-line-height});
+	border-radius: var(--btn-border-radius, #{$btn-border-radius});
+	font-weight: var(--btn-font-weight, #{$btn-font-weight});
 	font-family: var(--btn-font-family, #{$btn-font-family-base});
 	font-size: var(--btn-font-size, #{$btn-font-size-base});
 	padding: var(--btn-padding-y, #{$btn-padding-y}) var(--btn-padding-x, #{$btn-padding-x});
 
-	letter-spacing: 0.064px;
+	letter-spacing: var(--btn-letter-spacing, #{$btn-letter-spacing});
 
 	@media (min-width: $md4) {
-		--btn-font-size: #{$btn-font-size-md};
+		--btn-font-size: #{$btn-font-size-desktop};
 	}
 
 	&.btn-blue {

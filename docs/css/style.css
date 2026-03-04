@@ -7,6 +7,15 @@
 }
 
 @font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Raleway-VariableFont_wght.woff") format("woff");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Manrope-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
@@ -18,15 +27,6 @@
 @font-face {
   font-family: "NotoSans";
   src: url("../fonts/NotoSans-VariableFont_wdth,wght.woff2") format("woff2 supports variations"), url("../fonts/NotoSans-VariableFont_wdth,wght.woff2") format("woff2-variations"), url("../fonts/NotoSans-VariableFont_wdth,wght.woff") format("woff");
-  font-weight: 100 900;
-  font-stretch: 75% 125%;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Raleway-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
@@ -625,8 +625,12 @@ body._touch .submenu.open {
 :root {
   --btn-font-family: NotoSans, sans-serif;
   --btn-font-size: 0.875rem;
+  --btn-font-weight: 400;
+  --btn-line-height: 1.375;
+  --btn-letter-spacing: 0.064px;
   --btn-padding-y: 0.6875em;
   --btn-padding-x: 1.6875em;
+  --btn-border-radius: 0.3125rem;
   --btn-blue: #203b54;
   --btn-blue-hover: #192e42;
   --btn-blue-active: #12212f;
@@ -637,6 +641,15 @@ body._touch .submenu.open {
 }
 
 .wms-page {
+  --btn-font-family: Manrope,
+  sans-serif;
+  --btn-font-size: 1rem;
+  --btn-font-weight: 600;
+  --btn-line-height: normal;
+  --btn-letter-spacing: normal;
+  --btn-border-radius: 0.75rem;
+  --btn-padding-y: 1.3125em;
+  --btn-padding-x: 1.46875em;
   --btn-blue: #0F2862;
   --btn-blue-hover: #0c1f4c;
   --btn-blue-active: #081636;
@@ -662,12 +675,13 @@ body._touch .submenu.open {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  line-height: 1.375;
-  border-radius: 0.3125rem;
+  line-height: var(--btn-line-height, 1.375);
+  border-radius: var(--btn-border-radius, 0.3125rem);
+  font-weight: var(--btn-font-weight, 400);
   font-family: var(--btn-font-family, NotoSans, sans-serif);
   font-size: var(--btn-font-size, 0.875rem);
   padding: var(--btn-padding-y, 0.6875em) var(--btn-padding-x, 1.6875em);
-  letter-spacing: 0.064px;
+  letter-spacing: var(--btn-letter-spacing, 0.064px);
 }
 
 .btn.btn-blue {
@@ -1960,9 +1974,17 @@ body._touch .submenu.open {
   line-height: 132%;
 }
 
+.platform__btns {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
 .platform__btn {
-  margin: 1.75em 0em 0em 0em;
   width: 100%;
+  min-width: 15.125rem;
 }
 
 .platform__image {
@@ -4412,7 +4434,6 @@ body._touch .submenu.open {
 
   .platform__btn {
     width: auto;
-    margin: 2.125em 0em 0em 0em;
   }
 
   .opportunity__main::before {
@@ -5174,7 +5195,7 @@ body._touch .submenu.open {
   }
 
   .platform__main {
-    padding: 5em 0em;
+    padding: 0 0 7.25em 0em;
   }
 
   .opportunity {

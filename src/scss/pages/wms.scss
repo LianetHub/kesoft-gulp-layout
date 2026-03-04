@@ -43,7 +43,7 @@
 		}
 
 		@media (min-width: $md3) {
-			padding: em(80) em(0);
+			padding: 0 0 em(116) em(0);
 		}
 	}
 
@@ -77,14 +77,21 @@
 		line-height: 132%;
 	}
 
+	// .platform__btns
+	&__btns {
+		margin-top: 3rem;
+		display: flex;
+		gap: 1rem;
+	}
+
 	// .platform__btn
 	&__btn {
-		margin: em(28) em(0) em(0) em(0);
 		width: 100%;
+		min-width: 15.125rem;
 
 		@media (min-width: $md4) {
 			width: auto;
-			margin: em(34) em(0) em(0) em(0);
+
 		}
 	}
 
