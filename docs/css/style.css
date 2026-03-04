@@ -4550,10 +4550,12 @@ body._touch .submenu.open {
     padding: 0.75em 0em 0.75em 1.0625em;
   }
 
+  .no-webp .about{
+    background: url("../img/about-bg.jpg") center 77px/cover no-repeat, -webkit-gradient(linear, left top, right top, from(#000), to(#000)) 0 77px/cover no-repeat, url("../img/main-bg.svg") 0 0/cover no-repeat;
+    background: url("../img/about-bg.jpg") center 77px/cover no-repeat, linear-gradient(90deg, #000, #000) 0 77px/cover no-repeat, url("../img/main-bg.svg") 0 0/cover no-repeat; }
+
   .about {
     min-height: 100vh;
-    background: url("../img/about-bg.jpg") center 77px/cover no-repeat, -webkit-gradient(linear, left top, right top, from(#000), to(#000)) 0 77px/cover no-repeat, url("../img/main-bg.svg") 0 0/cover no-repeat;
-    background: url("../img/about-bg.jpg") center 77px/cover no-repeat, linear-gradient(90deg, #000, #000) 0 77px/cover no-repeat, url("../img/main-bg.svg") 0 0/cover no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5527,4 +5529,9 @@ body._touch .submenu.open {
         -ms-transform: scale(1.15);
             transform: scale(1.15);
   }
+}
+
+@media (min-width: 47.99875rem){
+
+  .webp .about{ background: url(../img/about-bg.webp) center 77px/cover no-repeat, -webkit-gradient(linear, left top, right top, from(#000), to(#000)) 0 77px/cover no-repeat, url(../img/main-bg.svg) 0 0/cover no-repeat; background: url(../img/about-bg.webp) center 77px/cover no-repeat, linear-gradient(90deg, #000, #000) 0 77px/cover no-repeat, url(../img/main-bg.svg) 0 0/cover no-repeat; }
 }
