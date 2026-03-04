@@ -254,7 +254,7 @@
 }
 
 // <BUTTONS (a.btn+tab)>==============================
-$btn-font-family-base: "Noto Sans", sans-serif;
+$btn-font-family-base: #{$fontfamily}, sans-serif;
 $btn-font-size-base: rem(14);
 $btn-font-size-md: rem(16);
 

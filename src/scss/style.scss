@@ -6,10 +6,6 @@
 // ======================================МИКСИНЫ==============================================
 
 // ======================================ШРИФТЫ===============================================
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular,500,600,700&display=swap&subset=cyrillic-ext);
-@import url(https://fonts.googleapis.com/css?family=Raleway:regular,700&display=swap&subset=cyrillic-ext);
-@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800&display=swap&subset=cyrillic-ext);
-// &display=swap&subset=cyrillic-ext
 @import "fonts";
 
 // ======================================ШРИФТЫ===============================================
@@ -19,7 +15,9 @@
 // ======================================ИКОНОЧНЫЙ ШРИФТ======================================
 
 // Шрифт по умолчанию
-$fontfamily: "Noto Sans";
+$fontfamily: "NotoSans";
+$font-raleway: "Raleway";
+$font-manrope: "Manrope";
 // Шрифт по умолчанию
 
 // ПЕРЕМЕННЫЕ
