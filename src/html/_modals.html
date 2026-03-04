@@ -2,8 +2,8 @@
     <div class="popup__content">
         <div class="popup__body">
             <button type="button" class="popup__close icon-close"></button>
-            <form action="#" name="@@name" class="popup__form form">
-                <div class="form__title">@@name</div>
+            <form action="#" name="Получить консультацию" class="popup__form form">
+                <div class="form__title">Получить консультацию</div>
                 <div class="form__column">
                     <div class="form__column-item icon-user">
                         <input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
@@ -14,16 +14,25 @@
                     <div class="form__column-item">
                         <textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
                     </div>
+                    <input tabindex="-1" type="text" autocomplete="off" style="
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: -5000px;
+                                " name="areYouHuman" />
                 </div>
                 <label class="form__privacy checkbox">
                     <input type="checkbox" data-required class="checkbox__input hidden" hidden />
                     <span class="checkbox__content">
-                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                        Соглашаюсь с
+                        <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
                         на обработку персональных данных
                     </span>
                 </label>
                 <div class="form__btn">
-                    <button type="submit" class="btn btn-blue btn-mw">Отправить</button>
+                    <button type="submit" class="btn btn-blue btn-mw">
+                        Отправить
+                    </button>
                 </div>
             </form>
         </div>
@@ -45,16 +54,25 @@
                     <div class="form__column-item">
                         <textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
                     </div>
+                    <input tabindex="-1" type="text" autocomplete="off" style="
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: -5000px;
+                                " name="areYouHuman" />
                 </div>
                 <label class="form__privacy checkbox">
                     <input type="checkbox" data-required class="checkbox__input hidden" hidden />
                     <span class="checkbox__content">
-                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                        Соглашаюсь с
+                        <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
                         на обработку персональных данных
                     </span>
                 </label>
                 <div class="form__btn">
-                    <button type="submit" class="btn btn-blue btn-mw">Отправить</button>
+                    <button type="submit" class="btn btn-blue btn-mw">
+                        Отправить
+                    </button>
                 </div>
             </form>
         </div>
@@ -65,9 +83,28 @@
         <div class="popup__body">
             <button type="button" class="popup__close icon-close"></button>
             <div class="popup__form form">
-                <div class="form__title">Ваша заявка успешно отправлена!</div>
-                <div class="form__subtitle">В ближайшее время с вами свяжется наш консультант</div>
-                <div class="form__succes"><img src="img/succes.svg" alt="succes" /></div>`
+                <div class="form__title">
+                    Ваша заявка успешно отправлена!
+                </div>
+                <div class="form__subtitle">
+                    В ближайшее время с вами свяжется наш консультант
+                </div>
+                <div class="form__succes">
+                    <img src="@img/succes.svg" alt="succes" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="error" class="popup">
+    <div class="popup__content">
+        <div class="popup__body">
+            <button type="button" class="popup__close icon-close"></button>
+            <div class="popup__form form">
+                <div class="form__title">
+                    Ошибка при отправке заявки
+                </div>
+                <div class="form__subtitle"></div>
             </div>
         </div>
     </div>
@@ -75,9 +112,14 @@
 <div class="cookie-block hidden">
     <div class="cookie-block__container">
         <div class="cookie-block__title">
-            Наш сайт, как и большинство других, использует файлы cookie и другие похожие технологии (веб-маяки, пиксельные тэги и т. п.), чтобы предоставлять услуги, наиболее
-            отвечающие вашим потребностям, а также накапливать статистическую информацию для анализа и улучшения наших услуг и сайтов.
+            Наш сайт, как и большинство других, использует файлы cookie
+            и другие похожие технологии (веб-маяки, пиксельные тэги и т.
+            п.), чтобы предоставлять услуги, наиболее отвечающие вашим
+            потребностям, а также накапливать статистическую информацию
+            для анализа и улучшения наших услуг и сайтов.
         </div>
-        <button class="cookie-block__btn btn btn-blue btn-cookie">Согласен</button>
+        <button class="cookie-block__btn btn btn-blue btn-cookie">
+            Согласен
+        </button>
     </div>
 </div>

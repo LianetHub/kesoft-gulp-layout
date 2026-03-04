@@ -1,9 +1,9 @@
-<div id="@@id" class="popup">
+<div id="modal-program" class="popup">
     <div class="popup__content">
         <div class="popup__body">
             <button type="button" class="popup__close icon-close"></button>
-            <form action="#" name="@@name" class="popup__form form">
-                <div class="form__title">@@name</div>
+            <form action="#" name="Подобрать программу" class="popup__form form">
+                <div class="form__title">Подобрать программу</div>
                 <div class="form__column">
                     <div class="form__column-item icon-user">
                         <input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
@@ -14,16 +14,25 @@
                     <div class="form__column-item">
                         <textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
                     </div>
+                    <input tabindex="-1" type="text" autocomplete="off" style="
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: -5000px;
+                                " name="areYouHuman" />
                 </div>
                 <label class="form__privacy checkbox">
                     <input type="checkbox" data-required class="checkbox__input hidden" hidden />
                     <span class="checkbox__content">
-                        Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
+                        Соглашаюсь с
+                        <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
                         на обработку персональных данных
                     </span>
                 </label>
                 <div class="form__btn">
-                    <button type="submit" class="btn btn-blue btn-mw">Отправить</button>
+                    <button type="submit" class="btn btn-blue btn-mw">
+                        Отправить
+                    </button>
                 </div>
             </form>
         </div>

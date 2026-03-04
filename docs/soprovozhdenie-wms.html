@@ -1,561 +1,1241 @@
 <!doctype html>
 <html lang="ru">
+    <head>
+        <title>
+            Сопровождение 1С WMS - настройка, доработка, обучение - «КЕСОФТ»
+        </title>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Компания «КЕСОФТ» предлагает полное сопровождение 1С WMS - настраиваем, обучаем, поддерживаем, дорабатываем, выгодные условия. ☎️Наш номер телефона: +7 (495) 409-00-90"
+        />
 
-	<head>
-		<title> Сопровождение 1С WMS - настройка, доработка, обучение - «КЕСОФТ» </title>
-		<meta charset="UTF-8" />
-		<meta name="format-detection" content="telephone=no" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Компания «КЕСОФТ» предлагает полное сопровождение 1С WMS - настраиваем, обучаем, поддерживаем, дорабатываем, выгодные условия. ☎️Наш номер телефона: +7 (495) 409-00-90" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231128114141" />
-		<link rel="stylesheet" href="css/reset.min.css?_v=20231128114141" />
-		<link rel="stylesheet" href="css/style.min.css?_v=20231128114141" />
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript">
-			(function (m, e, t, r, i, k, a) {
-				m[i] = m[i] || function () {
-					(m[i].a = m[i].a || []).push(arguments);
-				};
-				m[i].l = 1 * new Date();
-				for (var j = 0; j < document.scripts.length; j++) {
-					if (document.scripts[j].src === r) {
-						return;
-					}
-				}
-				((k = e.createElement(t)),
-					(a = e.getElementsByTagName(t)[0]),
-					(k.async = 1),
-					(k.src = r), a.parentNode.insertBefore(k, a));
-			})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym",);
-			ym(47718151, "init", {
-				clickmap: true,
-				trackLinks: true,
-				accurateTrackBounce: true,
-				webvisor: true,
-			});
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231128114141"
+        />
+        <link rel="stylesheet" href="css/reset.min.css?_v=20231128114141" />
+        <link rel="stylesheet" href="css/style.min.css?_v=20231128114141" />
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] =
+                    m[i] ||
+                    function () {
+                        (m[i].a = m[i].a || []).push(arguments);
+                    };
+                m[i].l = 1 * new Date();
+                for (var j = 0; j < document.scripts.length; j++) {
+                    if (document.scripts[j].src === r) {
+                        return;
+                    }
+                }
+                ((k = e.createElement(t)),
+                    (a = e.getElementsByTagName(t)[0]),
+                    (k.async = 1),
+                    (k.src = r),
+                    a.parentNode.insertBefore(k, a));
+            })(
+                window,
+                document,
+                "script",
+                "https://mc.yandex.ru/metrika/tag.js",
+                "ym",
+            );
 
-		</script>
-		<noscript>
-			<div>
-				<picture>
-					<source srcset="https://mc.yandex.ru/watch/47718151" type="image/webp"><img src="https://mc.yandex.ru/watch/47718151" style="position: absolute; left: -9999px" alt="" />
-				</picture>
-			</div>
-		</noscript>
-		<!-- /Yandex.Metrika counter -->
-	</head>
+            ym(47718151, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+            });
+        </script>
+        <noscript
+            ><div>
+                <img
+                    src="https://mc.yandex.ru/watch/47718151"
+                    style="position: absolute; left: -9999px"
+                    alt=""
+                /></div
+        ></noscript>
+        <!-- /Yandex.Metrika counter -->
+    </head>
 
-	<body>
-		<div class="wrapper">
-			<header class="header">
-				<div class="header__wrapper lock-padding">
-					<div class="header__container">
-						<div class="header__body">
-							<a href="/" class="header__logo">
-								<img src="img/logo.svg" alt="logo" />
-							</a>
-							<nav class="header__menu menu">
-								<ul class="menu__list">
-									<li class="menu__item">
-										<a href="/" class="menu__link">Главная</a>
-									</li>
-									<li class="menu__item menu__item_parent">
-										<a class="menu__link menu__link_parent">Услуги</a>
-										<ul class="menu__item-submenu submenu">
-											<li class="submenu__item">
-												<a href="/vnedrenie-wms.html" class="submenu__link">Внедрение WMS</a>
-											</li>
-											<li class="submenu__item">
-												<a href="/soprovozhdenie-wms.html" class="submenu__link active">Сопровождение WMS</a>
-											</li>
-											<li class="submenu__item">
-												<a href="/obuchenie-wms.html" class="submenu__link">Обучение WMS</a>
-											</li>
-											<li class="submenu__item">
-												<a href="/audit-wms.html" class="submenu__link">Аудит WMS</a>
-											</li>
-										</ul>
-									</li>
-									<li class="menu__item">
-										<a href="/1c-wms-logistika-upravlenie-skladom.html" class="menu__link">1С:WMS</a>
-									</li>
-									<li class="menu__item">
-										<a href="/wms24.html" class="menu__link">WMS24</a>
-									</li>
-									<li class="menu__item">
-										<a href="/o-kompanii.html" class="menu__link">О Компании</a>
-									</li>
-								</ul>
-							</nav>
-							<a href="tel:+74951313230" class="header__phone icon-phone">
-								<span> +7 (495) 409-00-90 </span>
-							</a>
-							<button type="button" class="menu__icon icon-menu">
-								<span></span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</header>
-			<main class="page">
-				<section class="main">
-					<div class="main__container">
-						<div class="main__offer main__offer-bg">
-							<div class="main__offer-content">
-								<h1 class="main__title"> Сопровождение <br />
-									<span>1С WMS</span>
-								</h1>
-								<ul class="main__list">
-									<li class="main__list-item">
-										<div class="main__list-icon">
-											<img src="img/escort/administration.svg" alt="icon" />
-										</div> администрирование
-									</li>
-									<li class="main__list-item">
-										<div class="main__list-icon">
-											<img src="img/escort/settings.svg" alt="icon" />
-										</div> настройка
-									</li>
-									<li class="main__list-item">
-										<div class="main__list-icon">
-											<img src="img/escort/customer-support.svg" alt="icon" />
-										</div> техподдержка
-									</li>
-									<li class="main__list-item">
-										<div class="main__list-icon">
-											<img src="img/escort/education.svg" alt="icon" />
-										</div> обучение
-									</li>
-									<li class="main__list-item">
-										<div class="main__list-icon">
-											<img src="img/escort/revision.svg" alt="icon" />
-										</div> доработка
-									</li>
-								</ul>
-							</div>
-							<form action="#" name="Сопровождение 1С WMS" class="main__form form">
-								<div class="form__column">
-									<div class="form__column-item icon-user">
-										<input type="text" name="Имя" data-required class="form__input form__input-white" placeholder="Имя" />
-									</div>
-									<div class="form__column-item icon-phone">
-										<input type="tel" name="Телефон" data-required class="form__input form__input-white" data-tel-input placeholder="Телефон" />
-									</div>
-									<input tabindex="-1" type="text" autocomplete="off" style="
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__wrapper lock-padding">
+                    <div class="header__container">
+                        <div class="header__body">
+                            <a href="/" class="header__logo">
+                                <img src="img/logo.svg" alt="logo" />
+                            </a>
+                            <nav class="header__menu menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="/" class="menu__link"
+                                            >Главная</a
+                                        >
+                                    </li>
+                                    <li class="menu__item menu__item_parent">
+                                        <a class="menu__link menu__link_parent"
+                                            >Услуги</a
+                                        >
+                                        <ul class="menu__item-submenu submenu">
+                                            <li class="submenu__item">
+                                                <a
+                                                    href="/vnedrenie-wms.html"
+                                                    class="submenu__link"
+                                                    >Внедрение WMS</a
+                                                >
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a
+                                                    href="/soprovozhdenie-wms.html"
+                                                    class="submenu__link active"
+                                                    >Сопровождение WMS</a
+                                                >
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a
+                                                    href="/obuchenie-wms.html"
+                                                    class="submenu__link"
+                                                    >Обучение WMS</a
+                                                >
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a
+                                                    href="/audit-wms.html"
+                                                    class="submenu__link"
+                                                    >Аудит WMS</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a
+                                            href="/1c-wms-logistika-upravlenie-skladom.html"
+                                            class="menu__link"
+                                            >1С:WMS</a
+                                        >
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/wms24.html" class="menu__link"
+                                            >WMS24</a
+                                        >
+                                    </li>
+                                    <li class="menu__item">
+                                        <a
+                                            href="/o-kompanii.html"
+                                            class="menu__link"
+                                            >О Компании</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a
+                                href="tel:+74951313230"
+                                class="header__phone icon-phone"
+                            >
+                                <span> +7 (495) 409-00-90 </span>
+                            </a>
+                            <button type="button" class="menu__icon icon-menu">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <section class="main">
+                    <div class="main__container">
+                        <div class="main__offer main__offer-bg">
+                            <div class="main__offer-content">
+                                <h1 class="main__title">
+                                    Сопровождение
+                                    <br />
+                                    <span>1С WMS</span>
+                                </h1>
+                                <ul class="main__list">
+                                    <li class="main__list-item">
+                                        <div class="main__list-icon">
+                                            <img
+                                                src="img/escort/administration.svg"
+                                                alt="icon"
+                                            />
+                                        </div>
+                                        администрирование
+                                    </li>
+                                    <li class="main__list-item">
+                                        <div class="main__list-icon">
+                                            <img
+                                                src="img/escort/settings.svg"
+                                                alt="icon"
+                                            />
+                                        </div>
+                                        настройка
+                                    </li>
+                                    <li class="main__list-item">
+                                        <div class="main__list-icon">
+                                            <img
+                                                src="img/escort/customer-support.svg"
+                                                alt="icon"
+                                            />
+                                        </div>
+                                        техподдержка
+                                    </li>
+                                    <li class="main__list-item">
+                                        <div class="main__list-icon">
+                                            <img
+                                                src="img/escort/education.svg"
+                                                alt="icon"
+                                            />
+                                        </div>
+                                        обучение
+                                    </li>
+                                    <li class="main__list-item">
+                                        <div class="main__list-icon">
+                                            <img
+                                                src="img/escort/revision.svg"
+                                                alt="icon"
+                                            />
+                                        </div>
+                                        доработка
+                                    </li>
+                                </ul>
+                            </div>
+                            <form
+                                action="#"
+                                name="Сопровождение 1С WMS"
+                                class="main__form form"
+                            >
+                                <div class="form__column">
+                                    <div class="form__column-item icon-user">
+                                        <input
+                                            type="text"
+                                            name="Имя"
+                                            data-required
+                                            class="form__input form__input-white"
+                                            placeholder="Имя"
+                                        />
+                                    </div>
+                                    <div class="form__column-item icon-phone">
+                                        <input
+                                            type="tel"
+                                            name="Телефон"
+                                            data-required
+                                            class="form__input form__input-white"
+                                            data-tel-input
+                                            placeholder="Телефон"
+                                        />
+                                    </div>
+                                    <input
+                                        tabindex="-1"
+                                        type="text"
+                                        autocomplete="off"
+                                        style="
                                             opacity: 0;
                                             position: absolute;
                                             top: 0;
                                             left: -5000px;
-                                        " name="areYouHuman" />
-								</div>
-								<div class="form__btn">
-									<button type="submit" class="btn btn-blue btn-mw"> Заказать звонок </button>
-								</div>
-								<label class="form__privacy checkbox checkbox-transparent">
-									<input type="checkbox" data-required class="checkbox__input hidden" hidden />
-									<span class="checkbox__content"> Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a> на обработку персональных данных </span>
-								</label>
-							</form>
-						</div>
-						<div class="main__image main__image-offset">
-							<picture>
-								<<<<<<< HEAD <source srcset="img/escort.webp" type="image/webp" />
-								<img src="img/escort.png" width="405" alt="1C" />
-								=======
-								<source srcset="img/escort.webp" type="image/webp"><img src="img/escort.png" width="405" alt="1C">
-								>>>>>>> landing-page
-							</picture>
-						</div>
-					</div>
-				</section>
-				<section class="description">
-					<div class="description__container">
-						<h2 class="description__title title title-md"> Что мы можем делать <br /> для вашей WMS </h2>
-						<div class="description__items">
-							<div class="description__item">
-								<div class="description__item-main">
-									<div class="description__caption title title-sm"> Администрируем </div>
-									<ul class="description__list">
-										<li> Проверяем и устраняем причины неотбора товара по заказу </li>
-										<li> Добавляем новых пользователей в систему и назначаем им права </li>
-										<li> Восстанавливаем систему из бэкапа </li>
-									</ul>
-								</div>
-								<div class="description__item-image">
-									<img src="img/description/people.svg" alt="icon" />
-								</div>
-							</div>
-							<div class="description__item floated">
-								<div class="description__item-image">
-									<img src="img/description/settings.svg" alt="icon" />
-								</div>
-								<div class="description__item-main">
-									<div class="description__caption title title-sm"> Настраиваем </div>
-									<ul class="description__list">
-										<li> Добавляем в систему настройки&nbsp;для&nbsp;новых товаров </li>
-										<li> Добавляем в систему новые адреса&nbsp;хранения </li>
-										<li> Настраиваем порядок обхода для ячеек при размещении, отборе и инвентаризации </li>
-									</ul>
-								</div>
-							</div>
-							<div class="description__item floated">
-								<div class="description__item-image">
-									<img src="img/description/research-and-development.svg" alt="icon" />
-								</div>
-								<div class="description__item-main">
-									<div class="description__caption title title-sm"> Развиваем и дорабатываем </div>
-									<ul class="description__list">
-										<li>Создаем новые отчеты</li>
-										<li>Добавляем новые алгоритмы</li>
-										<li> Настраиваем и добавляем новые процессы на ТСД </li>
-										<li> Анализируем существующие бизнес-процессы на складе и дорабатываем систему под новые требования </li>
-										<li> Дорабатываем обмен данными со смежными системами (УТ, УПП) </li>
-									</ul>
-								</div>
-							</div>
-							<div class="description__item">
-								<div class="description__item-main">
-									<div class="description__caption title title-sm"> Обучаем </div>
-									<ul class="description__list">
-										<li> Обучаем сотрудников работе с&nbsp;новым функционалом </li>
-										<li> Контролируем уровень знаний&nbsp;текущих сотрудников </li>
-									</ul>
-								</div>
-								<div class="description__item-image">
-									<img src="img/description/education.svg" alt="icon" />
-								</div>
-							</div>
-							<div class="description__item">
-								<dv class="description__item-main">
-									<div class="description__caption title title-sm"> Оптимизируем </div>
-									<ul class="description__list">
-										<li> Анализируем возникающие ошибки,&nbsp;выявляем причины их возникновения и устраняем их </li>
-										<li> Анализируем производительность системы, выявляем причины замедляющие те или иные процессы&nbsp;и устраняем их </li>
-									</ul>
-								</dv>
-								<div class="description__item-image">
-									<img src="img/description/optimization.svg" alt="icon" />
-								</div>
-							</div>
-							<div class="description__item">
-								<dv class="description__item-main">
-									<div class="description__caption title title-sm"> Консультируем </div>
-									<ul class="description__list">
-										<li> Консультируем пользователей по возникающим вопросам при работе с системой </li>
-										<li> Выявляем ошибки, вызванные некорректными действиями сотрудников при работе с системой, консультируем как избежать ошибок в будущем </li>
-									</ul>
-								</dv>
-								<div class="description__item-image">
-									<img src="img/description/interview.svg" alt="icon" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="cases">
-					<div class="cases__container">
-						<h2 class="cases__title title title-md">Кейсы</h2>
-						<ul class="cases__list">
-							<li class="cases__item">
-								<div class="cases__item-header">
-									<div class="cases__item-main">
-										<div class="cases__item-image">
-											<picture>
-												<<<<<<< HEAD <source srcset="img/cases/01.webp" type="image/webp" />
-												<img src="img/cases/01.jpg" class="cover-image" alt="Магазин" />
-												=======
-												<source srcset="img/cases/01.webp" type="image/webp"><img src="img/cases/01.jpg" class="cover-image" alt="Магазин">
-												>>>>>>> landing-page
-											</picture>
-										</div>
-										<div class="cases__item-body">
-											<div class="cases__item-title"> СНЕЖНАЯ КОРОЛЕВА </div>
-											<div class="cases__item-desc"> Крупнейшая сеть мультибрендовых магазинов обеспечивает 3 миллиона покупок в год </div>
-										</div>
-									</div>
-									<div class="cases__item-slider swiper">
-										<div class="swiper-wrapper">
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 1 </div>
-												<div class="cases__item-text"> Когда появляется новый работник на складе, начальник склада обращается к Администратору WMS для добавления нового пользователя. Администратор WMS добавляет пользователя, назначает ему права доступа, настраивает рабочее место, проводит вводный инструктаж по работе с системой. </div>
-											</div>
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 2 </div>
-												<div class="cases__item-text"> Администратор WMS по запросу сотрудника Снежной Королевы помогает проводить работы по выявлению и устранению расхождений остатков товаров между WMS и Управление торговлей. </div>
-											</div>
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 3 </div>
-												<div class="cases__item-text"> От начальника склада поступил вопрос, почему данные отчета по Контролю ожидаемых приемок не совпадают с реальными данными по приемке. Проведена настройка отчета под его требования. Проведена консультация по работе с данным отчетом. </div>
-											</div>
-										</div>
-										<div class="cases__item-controls">
-											<div class="cases__item-prev swiper-button-prev"></div>
-											<div class="cases__item-pagination swiper-pagination"></div>
-											<div class="cases__item-next swiper-button-next"></div>
-										</div>
-									</div>
-								</div>
-								<div class="cases__item-footer">
-									<blockquote class="cases__item-quote"> «Работы по улучшению процессов в нашей компании не прекращаются никогда. Этот подход распространяется и на склад. Иногда нам требуется просто доработка системы, а иногда нужно срочно устранить последствия в виде ошибок, которые выявляются при внедрении новшеств. Работая в связке со специалистами Кесофт, мы чувствуем себя уверенно и комфортно, принимая решение о новых изменениях» </blockquote>
-									<div class="cases__item-author"> Заузолков Дмитрий - директор департамента ИТ ООО “СК Трейд” </div>
-								</div>
-							</li>
-							<li class="cases__item">
-								<div class="cases__item-header">
-									<div class="cases__item-main">
-										<div class="cases__item-image">
-											<picture>
-												<<<<<<< HEAD <source srcset="img/cases/02.webp" type="image/webp" />
-												<img src="img/cases/02.jpg" class="cover-image" alt="Магазин" />
-												=======
-												<source srcset="img/cases/02.webp" type="image/webp"><img src="img/cases/02.jpg" class="cover-image" alt="Магазин">
-												>>>>>>> landing-page
-											</picture>
-										</div>
-										<div class="cases__item-body">
-											<div class="cases__item-title"> КОТОФЕЙ </div>
-											<div class="cases__item-desc"> “Котофей” - бренд с 80‑летней историей и 3 миллиона пар обуви в год. </div>
-										</div>
-									</div>
-									<div class="cases__item-slider swiper">
-										<div class="swiper-wrapper">
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 1 </div>
-												<div class="cases__item-text"> Наиболее частый вопрос возникающий у пользователей - почему не отобрался товар по заказу на отгрузку. Причины могут быть разными и во многих случаях разобраться в них может только сотрудник глубоко понимающий принципы работы системы, т.е. Администратор WMS. </div>
-											</div>
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 2 </div>
-												<div class="cases__item-text"> При работе с ТСД у кладовщика не отображались некоторые задачи, которые ему нужно выполнять в соответствии со своими должностными обязанностями. Администратор WMS проанализировал настройки для данного пользователя и сделал необходимые изменения, после которых кладовщик начал получать на ТСД все задачи. </div>
-											</div>
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 3 </div>
-												<div class="cases__item-text"> От пользователей поступил запрос на изменение отображаемых данных окна со списком заказов на отгрузку. В результате обработки запроса Администратор WMS добавил в список отображение реквизитов «Ворота отгрузки» и «Ячейка отгрузки». </div>
-											</div>
-										</div>
-										<div class="cases__item-controls">
-											<div class="cases__item-prev swiper-button-prev"></div>
-											<div class="cases__item-pagination swiper-pagination"></div>
-											<div class="cases__item-next swiper-button-next"></div>
-										</div>
-									</div>
-								</div>
-								<div class="cases__item-footer">
-									<blockquote class="cases__item-quote"> «WMS уже работает - наличие штатного Администратора WMS избыточно. В то же время, разные многие вопросы требуют быстрой реакции. Кесофт предложили хорошие условия по сопровождению системы, они полностью нас устраивают, т.к. позволяют экономить на поддержке эксплуатации системы, и получать все необходимое» </blockquote>
-									<div class="cases__item-author"> Беляев Дмитрий - начальник логистического склада АО “Егорьевск-обувь” </div>
-								</div>
-							</li>
-							<li class="cases__item">
-								<div class="cases__item-header">
-									<div class="cases__item-main">
-										<div class="cases__item-image">
-											<picture>
-												<<<<<<< HEAD <source srcset="img/cases/03.webp" type="image/webp" />
-												<img src="img/cases/03.jpg" class="cover-image" alt="Магазин" />
-												=======
-												<source srcset="img/cases/02.webp" type="image/webp"><img src="img/cases/02.jpg" class="cover-image" alt="Магазин">
-												>>>>>>> landing-page
-											</picture>
-										</div>
-										<div class="cases__item-body">
-											<div class="cases__item-title"> БЕТХОВЕН </div>
-											<div class="cases__item-desc"> Крупнейшая сеть зоомагазинов. Ассортимент товаров насчитывает более 17000 наименований. </div>
-										</div>
-									</div>
-									<div class="cases__item-slider swiper">
-										<div class="swiper-wrapper">
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 1 </div>
-												<div class="cases__item-text"> Периодически на&nbsp;складе пересматривают распределение мест хранения по&nbsp;ячейкам в&nbsp;зонах хранения, отбора или&nbsp;отгрузки. Поэтому, администратор WMS получает задание создать новые ячейки или&nbsp;отключить ненужные. После этого, чаще всего, возникает необходимость исправить или&nbsp;полностью переделать порядок обхода при&nbsp;отборе в&nbsp;данных зонах. </div>
-											</div>
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 2 </div>
-												<div class="cases__item-text"> Когда склад Бетховен начинает работу с&nbsp;новой курьерской компанией, в&nbsp;WMS необходимо выполнить ряд настроек. Администратор WMS создает зону и&nbsp;ячейку для&nbsp;сбора готовых заказов, добавляет новый макет этикетки для&nbsp;упаковки, вносит изменения в&nbsp;алгоритмы системы и&nbsp;в&nbsp;меню ТСД. </div>
-											</div>
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 3 </div>
-												<div class="cases__item-text"> Когда появляется новый работник на&nbsp;складе, начальник склада обращается к&nbsp;Администратору WMS для&nbsp;добавления нового пользователя. Администратор WMS добавляет пользователя, назначает ему права доступа, настраивает рабочее место, проводит вводный инструктаж по&nbsp;работе с&nbsp;системой. </div>
-											</div>
-											<div class="cases__item-slide swiper-slide">
-												<div class="cases__item-caption"> Кейс 4 </div>
-												<div class="cases__item-text"> Склад Бетховен отгружает заказы для&nbsp;разных категорий клиентов. Для&nbsp;некоторых клиентов существуют особые условия отгрузки заказов. В&nbsp;связи с&nbsp;этим, возникает необходимость изменять настройки алгоритмов отбора, доработать печатные формы или&nbsp;настроить в&nbsp;системе выделение под&nbsp;клиента ворот для&nbsp;отгрузки. </div>
-											</div>
-										</div>
-										<div class="cases__item-controls">
-											<div class="cases__item-prev swiper-button-prev"></div>
-											<div class="cases__item-pagination swiper-pagination"></div>
-											<div class="cases__item-next swiper-button-next"></div>
-										</div>
-									</div>
-								</div>
-								<div class="cases__item-footer">
-									<blockquote class="cases__item-quote"> В процессе работы у пользователей системы возникают вопросы по работе с программой, например, почему не отобрался товар в заказ или почему товар подпитался в количестве одной штуки, хотя ожидалась подпитка целой упаковкой; в результате обработки таких вопросов, пользователи получают ответ, почему система сработала именно таким образом в такой ситуации. Дополнительно в настройки системы могут быть внесены изменения. Администратор из Кесофт помогает быстро устранять возникшие затруднения в работе. </blockquote>
-									<div class="cases__item-author"> Кавецкий Дмитрий - руководитель отдела поддержки бизнес-процессов ООО “Пет Ритейл” </div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="work">
-					<div class="work__container">
-						<h2 class="work__title title title-md"> Как мы работаем с&nbsp;задачами </h2>
-						<div class="work__columns">
-							<div class="work__column">
-								<div class="work__column-caption">
-									<span>Без предварительной</span> оценки трудозатрат
-								</div>
-								<div class="work__column-chart">
-									<img src="img/work-1.svg" class="pc-only" alt="chart" />
-									<img src="img/work-1-mobile.svg" class="mobile-only" alt="chart" />
-								</div>
-								<ul class="work__column-list">
-									<li> Заявка передается по телефону или отправляется на <a href="mailto:support@kesoft.ru">support@kesoft.ru</a>
-									</li>
-									<li>Заявке назначается приоритет.</li>
-									<li> Не позже чем предусмотрено тарифным планом и приоритетом, заявка берется в работу. При необходимости, специалист Кесофт связывается с инициатором для уточнения деталей. </li>
-									<li> По ходу выполнения заявки специалист Кесофт информирует инициатора. </li>
-								</ul>
-							</div>
-							<div class="work__column">
-								<div class="work__column-caption">
-									<span>С предварительной</span> оценкой трудозатрат
-								</div>
-								<div class="work__column-chart">
-									<img src="img/work-2.svg" class="pc-only" alt="chart" />
-									<img src="img/work-2-mobile.svg" class="mobile-only" alt="chart" />
-								</div>
-								<ul class="work__column-list">
-									<li> Заявка по задаче отправляется на <a href="mailto:support@kesoft.ru">support@kesoft.ru</a>
-									</li>
-									<li> Не позже чем предусмотрено тарифным планом заявка берется в работу. При необходимости, специалист Кесофт связывается с инициатором для уточнения деталей. </li>
-									<li> Заявка оценивается в часах и передается на согласование ответственному сотруднику Заказчика. </li>
-									<li> После подтверждения оценки задача берется в работу. </li>
-									<li> Ежемесячно оформляется отчет по работам и отправляется на согласование ответственному сотруднику Заказчика. </li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="feedback">
-					<div class="feedback__container">
-						<div class="feedback__text">
-							<h2 class="feedback__title"> Стоимость часа доработок 1С WMS <strong>4000 рублей</strong>
-							</h2>
-							<p class="feedback__subtitle"> Свяжитесь с нами и мы подготовим индивидуальное коммерческое предложение </p>
-						</div>
-						<form action="#" name="Стоимость часа работ" class="feedback__form form">
-							<div class="form__column">
-								<div class="form__column-item icon-user">
-									<input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
-								</div>
-								<div class="form__column-item icon-phone">
-									<input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
-								</div>
-								<input tabindex="-1" type="text" autocomplete="off" style="
+                                        "
+                                        name="areYouHuman"
+                                    />
+                                </div>
+                                <div class="form__btn">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-blue btn-mw"
+                                    >
+                                        Заказать звонок
+                                    </button>
+                                </div>
+                                <label
+                                    class="form__privacy checkbox checkbox-transparent"
+                                >
+                                    <input
+                                        type="checkbox"
+                                        data-required
+                                        class="checkbox__input hidden"
+                                        hidden
+                                    />
+                                    <span class="checkbox__content">
+                                        Соглашаюсь с
+                                        <a
+                                            href="/privacy.html"
+                                            class="checkbox__content-link"
+                                            >политикой конфиденциальности</a
+                                        >
+                                        на обработку персональных данных
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="main__image main__image-offset">
+                            <picture
+                                ><source
+                                    srcset="img/escort.webp"
+                                    type="image/webp" />
+                                <img src="img/escort.png" width="405" alt="1C"
+                            /></picture>
+                        </div>
+                    </div>
+                </section>
+                <section class="description">
+                    <div class="description__container">
+                        <h2 class="description__title title title-md">
+                            Что мы можем делать
+                            <br />
+                            для вашей WMS
+                        </h2>
+                        <div class="description__items">
+                            <div class="description__item">
+                                <div class="description__item-main">
+                                    <div
+                                        class="description__caption title title-sm"
+                                    >
+                                        Администрируем
+                                    </div>
+                                    <ul class="description__list">
+                                        <li>
+                                            Проверяем и устраняем причины
+                                            неотбора товара по заказу
+                                        </li>
+                                        <li>
+                                            Добавляем новых пользователей в
+                                            систему и назначаем им права
+                                        </li>
+                                        <li>
+                                            Восстанавливаем систему из бэкапа
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description__item-image">
+                                    <img
+                                        src="img/description/people.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="description__item floated">
+                                <div class="description__item-image">
+                                    <img
+                                        src="img/description/settings.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                                <div class="description__item-main">
+                                    <div
+                                        class="description__caption title title-sm"
+                                    >
+                                        Настраиваем
+                                    </div>
+                                    <ul class="description__list">
+                                        <li>
+                                            Добавляем в систему
+                                            настройки&nbsp;для&nbsp;новых
+                                            товаров
+                                        </li>
+                                        <li>
+                                            Добавляем в систему новые
+                                            адреса&nbsp;хранения
+                                        </li>
+                                        <li>
+                                            Настраиваем порядок обхода для ячеек
+                                            при размещении, отборе и
+                                            инвентаризации
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="description__item floated">
+                                <div class="description__item-image">
+                                    <img
+                                        src="img/description/research-and-development.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                                <div class="description__item-main">
+                                    <div
+                                        class="description__caption title title-sm"
+                                    >
+                                        Развиваем и дорабатываем
+                                    </div>
+                                    <ul class="description__list">
+                                        <li>Создаем новые отчеты</li>
+                                        <li>Добавляем новые алгоритмы</li>
+                                        <li>
+                                            Настраиваем и добавляем новые
+                                            процессы на ТСД
+                                        </li>
+                                        <li>
+                                            Анализируем существующие
+                                            бизнес-процессы на складе и
+                                            дорабатываем систему под новые
+                                            требования
+                                        </li>
+                                        <li>
+                                            Дорабатываем обмен данными со
+                                            смежными системами (УТ, УПП)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="description__item">
+                                <div class="description__item-main">
+                                    <div
+                                        class="description__caption title title-sm"
+                                    >
+                                        Обучаем
+                                    </div>
+                                    <ul class="description__list">
+                                        <li>
+                                            Обучаем сотрудников работе
+                                            с&nbsp;новым функционалом
+                                        </li>
+                                        <li>
+                                            Контролируем уровень
+                                            знаний&nbsp;текущих сотрудников
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="description__item-image">
+                                    <img
+                                        src="img/description/education.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="description__item">
+                                <dv class="description__item-main">
+                                    <div
+                                        class="description__caption title title-sm"
+                                    >
+                                        Оптимизируем
+                                    </div>
+                                    <ul class="description__list">
+                                        <li>
+                                            Анализируем возникающие
+                                            ошибки,&nbsp;выявляем причины их
+                                            возникновения и устраняем их
+                                        </li>
+                                        <li>
+                                            Анализируем производительность
+                                            системы, выявляем причины
+                                            замедляющие те или иные
+                                            процессы&nbsp;и устраняем их
+                                        </li>
+                                    </ul>
+                                </dv>
+                                <div class="description__item-image">
+                                    <img
+                                        src="img/description/optimization.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="description__item">
+                                <dv class="description__item-main">
+                                    <div
+                                        class="description__caption title title-sm"
+                                    >
+                                        Консультируем
+                                    </div>
+                                    <ul class="description__list">
+                                        <li>
+                                            Консультируем пользователей по
+                                            возникающим вопросам при работе с
+                                            системой
+                                        </li>
+                                        <li>
+                                            Выявляем ошибки, вызванные
+                                            некорректными действиями сотрудников
+                                            при работе с системой, консультируем
+                                            как избежать ошибок в будущем
+                                        </li>
+                                    </ul>
+                                </dv>
+                                <div class="description__item-image">
+                                    <img
+                                        src="img/description/interview.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="cases">
+                    <div class="cases__container">
+                        <h2 class="cases__title title title-md">Кейсы</h2>
+                        <ul class="cases__list">
+                            <li class="cases__item">
+                                <div class="cases__item-header">
+                                    <div class="cases__item-main">
+                                        <div class="cases__item-image">
+                                            <picture
+                                                ><source
+                                                    srcset="img/cases/01.webp"
+                                                    type="image/webp" />
+                                                <img
+                                                    src="img/cases/01.jpg"
+                                                    class="cover-image"
+                                                    alt="Магазин"
+                                            /></picture>
+                                        </div>
+                                        <div class="cases__item-body">
+                                            <div class="cases__item-title">
+                                                СНЕЖНАЯ КОРОЛЕВА
+                                            </div>
+                                            <div class="cases__item-desc">
+                                                Крупнейшая сеть мультибрендовых
+                                                магазинов обеспечивает 3
+                                                миллиона покупок в год
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cases__item-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 1
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    Когда появляется новый
+                                                    работник на складе,
+                                                    начальник склада обращается
+                                                    к Администратору WMS для
+                                                    добавления нового
+                                                    пользователя. Администратор
+                                                    WMS добавляет пользователя,
+                                                    назначает ему права доступа,
+                                                    настраивает рабочее место,
+                                                    проводит вводный инструктаж
+                                                    по работе с системой.
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 2
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    Администратор WMS по запросу
+                                                    сотрудника Снежной Королевы
+                                                    помогает проводить работы по
+                                                    выявлению и устранению
+                                                    расхождений остатков товаров
+                                                    между WMS и Управление
+                                                    торговлей.
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 3
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    От начальника склада
+                                                    поступил вопрос, почему
+                                                    данные отчета по Контролю
+                                                    ожидаемых приемок не
+                                                    совпадают с реальными
+                                                    данными по приемке.
+                                                    Проведена настройка отчета
+                                                    под его требования.
+                                                    Проведена консультация по
+                                                    работе с данным отчетом.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-controls">
+                                            <div
+                                                class="cases__item-prev swiper-button-prev"
+                                            ></div>
+                                            <div
+                                                class="cases__item-pagination swiper-pagination"
+                                            ></div>
+                                            <div
+                                                class="cases__item-next swiper-button-next"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cases__item-footer">
+                                    <blockquote class="cases__item-quote">
+                                        «Работы по улучшению процессов в нашей
+                                        компании не прекращаются никогда. Этот
+                                        подход распространяется и на склад.
+                                        Иногда нам требуется просто доработка
+                                        системы, а иногда нужно срочно устранить
+                                        последствия в виде ошибок, которые
+                                        выявляются при внедрении новшеств.
+                                        Работая в связке со специалистами
+                                        Кесофт, мы чувствуем себя уверенно и
+                                        комфортно, принимая решение о новых
+                                        изменениях»
+                                    </blockquote>
+                                    <div class="cases__item-author">
+                                        Заузолков Дмитрий - директор
+                                        департамента ИТ ООО “СК Трейд”
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cases__item">
+                                <div class="cases__item-header">
+                                    <div class="cases__item-main">
+                                        <div class="cases__item-image">
+                                            <picture
+                                                ><source
+                                                    srcset="img/cases/02.webp"
+                                                    type="image/webp" />
+                                                <img
+                                                    src="img/cases/02.jpg"
+                                                    class="cover-image"
+                                                    alt="Магазин"
+                                            /></picture>
+                                        </div>
+                                        <div class="cases__item-body">
+                                            <div class="cases__item-title">
+                                                КОТОФЕЙ
+                                            </div>
+                                            <div class="cases__item-desc">
+                                                “Котофей” - бренд с 80‑летней
+                                                историей и 3 миллиона пар обуви
+                                                в год.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cases__item-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 1
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    Наиболее частый вопрос
+                                                    возникающий у пользователей
+                                                    - почему не отобрался товар
+                                                    по заказу на отгрузку.
+                                                    Причины могут быть разными и
+                                                    во многих случаях
+                                                    разобраться в них может
+                                                    только сотрудник глубоко
+                                                    понимающий принципы работы
+                                                    системы, т.е. Администратор
+                                                    WMS.
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 2
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    При работе с ТСД у
+                                                    кладовщика не отображались
+                                                    некоторые задачи, которые
+                                                    ему нужно выполнять в
+                                                    соответствии со своими
+                                                    должностными обязанностями.
+                                                    Администратор WMS
+                                                    проанализировал настройки
+                                                    для данного пользователя и
+                                                    сделал необходимые
+                                                    изменения, после которых
+                                                    кладовщик начал получать на
+                                                    ТСД все задачи.
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 3
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    От пользователей поступил
+                                                    запрос на изменение
+                                                    отображаемых данных окна со
+                                                    списком заказов на отгрузку.
+                                                    В результате обработки
+                                                    запроса Администратор WMS
+                                                    добавил в список отображение
+                                                    реквизитов «Ворота отгрузки»
+                                                    и «Ячейка отгрузки».
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-controls">
+                                            <div
+                                                class="cases__item-prev swiper-button-prev"
+                                            ></div>
+                                            <div
+                                                class="cases__item-pagination swiper-pagination"
+                                            ></div>
+                                            <div
+                                                class="cases__item-next swiper-button-next"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cases__item-footer">
+                                    <blockquote class="cases__item-quote">
+                                        «WMS уже работает - наличие штатного
+                                        Администратора WMS избыточно. В то же
+                                        время, разные многие вопросы требуют
+                                        быстрой реакции. Кесофт предложили
+                                        хорошие условия по сопровождению
+                                        системы, они полностью нас устраивают,
+                                        т.к. позволяют экономить на поддержке
+                                        эксплуатации системы, и получать все
+                                        необходимое»
+                                    </blockquote>
+                                    <div class="cases__item-author">
+                                        Беляев Дмитрий - начальник
+                                        логистического склада АО
+                                        “Егорьевск-обувь”
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cases__item">
+                                <div class="cases__item-header">
+                                    <div class="cases__item-main">
+                                        <div class="cases__item-image">
+                                            <picture
+                                                ><source
+                                                    srcset="img/cases/03.webp"
+                                                    type="image/webp" />
+                                                <img
+                                                    src="img/cases/03.jpg"
+                                                    class="cover-image"
+                                                    alt="Магазин"
+                                            /></picture>
+                                        </div>
+                                        <div class="cases__item-body">
+                                            <div class="cases__item-title">
+                                                БЕТХОВЕН
+                                            </div>
+                                            <div class="cases__item-desc">
+                                                Крупнейшая сеть зоомагазинов.
+                                                Ассортимент товаров насчитывает
+                                                более 17000 наименований.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cases__item-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 1
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    Периодически на&nbsp;складе
+                                                    пересматривают распределение
+                                                    мест хранения
+                                                    по&nbsp;ячейкам в&nbsp;зонах
+                                                    хранения, отбора
+                                                    или&nbsp;отгрузки. Поэтому,
+                                                    администратор WMS получает
+                                                    задание создать новые ячейки
+                                                    или&nbsp;отключить ненужные.
+                                                    После этого, чаще всего,
+                                                    возникает необходимость
+                                                    исправить или&nbsp;полностью
+                                                    переделать порядок обхода
+                                                    при&nbsp;отборе
+                                                    в&nbsp;данных зонах.
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 2
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    Когда склад Бетховен
+                                                    начинает работу с&nbsp;новой
+                                                    курьерской компанией,
+                                                    в&nbsp;WMS необходимо
+                                                    выполнить ряд настроек.
+                                                    Администратор WMS создает
+                                                    зону и&nbsp;ячейку
+                                                    для&nbsp;сбора готовых
+                                                    заказов, добавляет новый
+                                                    макет этикетки
+                                                    для&nbsp;упаковки, вносит
+                                                    изменения в&nbsp;алгоритмы
+                                                    системы и&nbsp;в&nbsp;меню
+                                                    ТСД.
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 3
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    Когда появляется новый
+                                                    работник на&nbsp;складе,
+                                                    начальник склада обращается
+                                                    к&nbsp;Администратору WMS
+                                                    для&nbsp;добавления нового
+                                                    пользователя. Администратор
+                                                    WMS добавляет пользователя,
+                                                    назначает ему права доступа,
+                                                    настраивает рабочее место,
+                                                    проводит вводный инструктаж
+                                                    по&nbsp;работе
+                                                    с&nbsp;системой.
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="cases__item-slide swiper-slide"
+                                            >
+                                                <div
+                                                    class="cases__item-caption"
+                                                >
+                                                    Кейс 4
+                                                </div>
+                                                <div class="cases__item-text">
+                                                    Склад Бетховен отгружает
+                                                    заказы для&nbsp;разных
+                                                    категорий клиентов.
+                                                    Для&nbsp;некоторых клиентов
+                                                    существуют особые условия
+                                                    отгрузки заказов.
+                                                    В&nbsp;связи с&nbsp;этим,
+                                                    возникает необходимость
+                                                    изменять настройки
+                                                    алгоритмов отбора,
+                                                    доработать печатные формы
+                                                    или&nbsp;настроить
+                                                    в&nbsp;системе выделение
+                                                    под&nbsp;клиента ворот
+                                                    для&nbsp;отгрузки.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cases__item-controls">
+                                            <div
+                                                class="cases__item-prev swiper-button-prev"
+                                            ></div>
+                                            <div
+                                                class="cases__item-pagination swiper-pagination"
+                                            ></div>
+                                            <div
+                                                class="cases__item-next swiper-button-next"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cases__item-footer">
+                                    <blockquote class="cases__item-quote">
+                                        В процессе работы у пользователей
+                                        системы возникают вопросы по работе с
+                                        программой, например, почему не
+                                        отобрался товар в заказ или почему товар
+                                        подпитался в количестве одной штуки,
+                                        хотя ожидалась подпитка целой упаковкой;
+                                        в результате обработки таких вопросов,
+                                        пользователи получают ответ, почему
+                                        система сработала именно таким образом в
+                                        такой ситуации. Дополнительно в
+                                        настройки системы могут быть внесены
+                                        изменения. Администратор из Кесофт
+                                        помогает быстро устранять возникшие
+                                        затруднения в работе.
+                                    </blockquote>
+                                    <div class="cases__item-author">
+                                        Кавецкий Дмитрий - руководитель отдела
+                                        поддержки бизнес-процессов ООО “Пет
+                                        Ритейл”
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="work">
+                    <div class="work__container">
+                        <h2 class="work__title title title-md">
+                            Как мы работаем с&nbsp;задачами
+                        </h2>
+                        <div class="work__columns">
+                            <div class="work__column">
+                                <div class="work__column-caption">
+                                    <span>Без предварительной</span>
+                                    оценки трудозатрат
+                                </div>
+                                <div class="work__column-chart">
+                                    <img
+                                        src="img/work-1.svg"
+                                        class="pc-only"
+                                        alt="chart"
+                                    />
+                                    <img
+                                        src="img/work-1-mobile.svg"
+                                        class="mobile-only"
+                                        alt="chart"
+                                    />
+                                </div>
+                                <ul class="work__column-list">
+                                    <li>
+                                        Заявка передается по телефону или
+                                        отправляется на
+                                        <a href="mailto:support@kesoft.ru"
+                                            >support@kesoft.ru</a
+                                        >
+                                    </li>
+                                    <li>Заявке назначается приоритет.</li>
+                                    <li>
+                                        Не позже чем предусмотрено тарифным
+                                        планом и приоритетом, заявка берется в
+                                        работу. При необходимости, специалист
+                                        Кесофт связывается с инициатором для
+                                        уточнения деталей.
+                                    </li>
+                                    <li>
+                                        По ходу выполнения заявки специалист
+                                        Кесофт информирует инициатора.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="work__column">
+                                <div class="work__column-caption">
+                                    <span>С предварительной</span>
+                                    оценкой трудозатрат
+                                </div>
+                                <div class="work__column-chart">
+                                    <img
+                                        src="img/work-2.svg"
+                                        class="pc-only"
+                                        alt="chart"
+                                    />
+                                    <img
+                                        src="img/work-2-mobile.svg"
+                                        class="mobile-only"
+                                        alt="chart"
+                                    />
+                                </div>
+                                <ul class="work__column-list">
+                                    <li>
+                                        Заявка по задаче отправляется на
+                                        <a href="mailto:support@kesoft.ru"
+                                            >support@kesoft.ru</a
+                                        >
+                                    </li>
+                                    <li>
+                                        Не позже чем предусмотрено тарифным
+                                        планом заявка берется в работу. При
+                                        необходимости, специалист Кесофт
+                                        связывается с инициатором для уточнения
+                                        деталей.
+                                    </li>
+                                    <li>
+                                        Заявка оценивается в часах и передается
+                                        на согласование ответственному
+                                        сотруднику Заказчика.
+                                    </li>
+                                    <li>
+                                        После подтверждения оценки задача
+                                        берется в работу.
+                                    </li>
+                                    <li>
+                                        Ежемесячно оформляется отчет по работам
+                                        и отправляется на согласование
+                                        ответственному сотруднику Заказчика.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feedback">
+                    <div class="feedback__container">
+                        <div class="feedback__text">
+                            <h2 class="feedback__title">
+                                Стоимость часа доработок 1С WMS
+                                <strong>4000 рублей</strong>
+                            </h2>
+                            <p class="feedback__subtitle">
+                                Свяжитесь с нами и мы подготовим индивидуальное
+                                коммерческое предложение
+                            </p>
+                        </div>
+                        <form
+                            action="#"
+                            name="Стоимость часа работ"
+                            class="feedback__form form"
+                        >
+                            <div class="form__column">
+                                <div class="form__column-item icon-user">
+                                    <input
+                                        type="text"
+                                        name="Имя"
+                                        data-required
+                                        class="form__input"
+                                        placeholder="Имя"
+                                    />
+                                </div>
+                                <div class="form__column-item icon-phone">
+                                    <input
+                                        type="tel"
+                                        name="Телефон"
+                                        data-required
+                                        class="form__input"
+                                        data-tel-input
+                                        placeholder="Телефон"
+                                    />
+                                </div>
+                                <input
+                                    tabindex="-1"
+                                    type="text"
+                                    autocomplete="off"
+                                    style="
                                         opacity: 0;
                                         position: absolute;
                                         top: 0;
                                         left: -5000px;
-                                    " name="areYouHuman" />
-							</div>
-							<div class="form__btn">
-								<button type="submit" class="btn btn-blue btn-mw"> Отправить </button>
-							</div>
-							<label class="form__privacy checkbox">
-								<input type="checkbox" data-required class="checkbox__input hidden" hidden />
-								<span class="checkbox__content"> Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a> на&nbsp;обработку персональных данных </span>
-							</label>
-						</form>
-					</div>
-				</section>
-				<section class="services">
-					<div class="services__container">
-						<h2 class="services__title title title-md"> Вам может быть интересно </h2>
-						<ul class="services__list">
-							<li class="services__item">
-								<div class="services__item-main">
-									<div class="services__item-title"> Внедрение WMS </div>
-									<a href="/vnedrenie-wms.html" class="services__item-btn btn btn-blue"> Подробнее </a>
-								</div>
-								<div class="services__item-icon">
-									<img src="img/services/planning.svg" alt="icon" />
-								</div>
-							</li>
-							<li class="services__item">
-								<div class="services__item-main">
-									<div class="services__item-title"> Сопровождение ВМС </div>
-									<a href="/soprovozhdenie-wms.html" class="services__item-btn btn btn-blue"> Подробнее </a>
-								</div>
-								<div class="services__item-icon">
-									<img src="img/services/people.svg" alt="icon" />
-								</div>
-							</li>
-							<li class="services__item">
-								<div class="services__item-main">
-									<div class="services__item-title"> Аудит WMS </div>
-									<a href="/audit-wms.html" class="services__item-btn btn btn-blue"> Подробнее </a>
-								</div>
-								<div class="services__item-icon">
-									<img src="img/services/audit.svg" alt="icon" />
-								</div>
-							</li>
-							<li class="services__item">
-								<div class="services__item-main">
-									<div class="services__item-title"> Обучение WMS </div>
-									<a href="/obuchenie-wms.html" class="services__item-btn btn btn-blue"> Подробнее </a>
-								</div>
-								<div class="services__item-icon">
-									<img src="img/services/education.svg" alt="icon" />
-								</div>
-							</li>
-							<li class="services__item">
-								<div class="services__item-main">
-									<div class="services__item-title"> 1C WMS </div>
-									<a href="/1c-wms-logistika-upravlenie-skladom.html" class="services__item-btn btn btn-blue"> Подробнее </a>
-								</div>
-								<div class="services__item-icon">
-									<img src="img/services/programming.svg" alt="icon" />
-								</div>
-							</li>
-							<li class="services__item">
-								<div class="services__item-main">
-									<div class="services__item-title"> WMS 24 </div>
-									<a href="/wms24.html" class="services__item-btn btn btn-blue"> Подробнее </a>
-								</div>
-								<div class="services__item-icon">
-									<img src="img/services/clouds.svg" alt="icon" />
-								</div>
-							</li>
-							<li class="services__item">
-								<div class="services__item-main">
-									<div class="services__item-title"> О компании </div>
-									<a href="/o-kompanii.html" class="services__item-btn btn btn-blue"> Подробнее </a>
-								</div>
-								<div class="services__item-icon">
-									<img src="img/services/building.svg" alt="icon" />
-								</div>
-							</li>
-						</ul>
-						<div class="services__footer">
-							<div class="services__footer-image">
-								<img src="img/services/support.svg" alt="support" />
-							</div>
-							<div class="services__footer-desc"> Оборудование </div>
-							<a href="#modal-equipment" data-modal class="services__footer-btn btn btn-white btn-sm">Бесплатная консультация</a>
-						</div>
-					</div>
-				</section>
-			</main>
-			<footer class="footer">
-				<div class="footer__container">
-					<div class="footer__body">
-						<div class="footer__main">
-							<a href="/" class="footer__logo">
-								<img src="img/logo.svg" alt="logo" />
-							</a>
-							<div class="footer__subtitle"> ООО “Кесофт” ИНН 9705101364 </div>
-						</div>
-						<!--
+                                    "
+                                    name="areYouHuman"
+                                />
+                            </div>
+                            <div class="form__btn">
+                                <button
+                                    type="submit"
+                                    class="btn btn-blue btn-mw"
+                                >
+                                    Отправить
+                                </button>
+                            </div>
+                            <label class="form__privacy checkbox">
+                                <input
+                                    type="checkbox"
+                                    data-required
+                                    class="checkbox__input hidden"
+                                    hidden
+                                />
+                                <span class="checkbox__content">
+                                    Соглашаюсь с
+                                    <a
+                                        href="/privacy.html"
+                                        class="checkbox__content-link"
+                                        >политикой конфиденциальности</a
+                                    >
+                                    на&nbsp;обработку персональных данных
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                </section>
+                <section class="services">
+                    <div class="services__container">
+                        <h2 class="services__title title title-md">
+                            Вам может быть интересно
+                        </h2>
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <div class="services__item-main">
+                                    <div class="services__item-title">
+                                        Внедрение WMS
+                                    </div>
+                                    <a
+                                        href="/vnedrenie-wms.html"
+                                        class="services__item-btn btn btn-blue"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="services__item-icon">
+                                    <img
+                                        src="img/services/planning.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </li>
+
+                            <li class="services__item">
+                                <div class="services__item-main">
+                                    <div class="services__item-title">
+                                        Сопровождение ВМС
+                                    </div>
+                                    <a
+                                        href="/soprovozhdenie-wms.html"
+                                        class="services__item-btn btn btn-blue"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="services__item-icon">
+                                    <img
+                                        src="img/services/people.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </li>
+
+                            <li class="services__item">
+                                <div class="services__item-main">
+                                    <div class="services__item-title">
+                                        Аудит WMS
+                                    </div>
+                                    <a
+                                        href="/audit-wms.html"
+                                        class="services__item-btn btn btn-blue"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="services__item-icon">
+                                    <img
+                                        src="img/services/audit.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-main">
+                                    <div class="services__item-title">
+                                        Обучение WMS
+                                    </div>
+                                    <a
+                                        href="/obuchenie-wms.html"
+                                        class="services__item-btn btn btn-blue"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="services__item-icon">
+                                    <img
+                                        src="img/services/education.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </li>
+
+                            <li class="services__item">
+                                <div class="services__item-main">
+                                    <div class="services__item-title">
+                                        1C WMS
+                                    </div>
+                                    <a
+                                        href="/1c-wms-logistika-upravlenie-skladom.html"
+                                        class="services__item-btn btn btn-blue"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="services__item-icon">
+                                    <img
+                                        src="img/services/programming.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-main">
+                                    <div class="services__item-title">
+                                        WMS 24
+                                    </div>
+                                    <a
+                                        href="/wms24.html"
+                                        class="services__item-btn btn btn-blue"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="services__item-icon">
+                                    <img
+                                        src="img/services/clouds.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-main">
+                                    <div class="services__item-title">
+                                        О компании
+                                    </div>
+                                    <a
+                                        href="/o-kompanii.html"
+                                        class="services__item-btn btn btn-blue"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="services__item-icon">
+                                    <img
+                                        src="img/services/building.svg"
+                                        alt="icon"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="services__footer">
+                            <div class="services__footer-image">
+                                <img
+                                    src="img/services/support.svg"
+                                    alt="support"
+                                />
+                            </div>
+                            <div class="services__footer-desc">
+                                Оборудование
+                            </div>
+                            <a
+                                href="#modal-equipment"
+                                data-modal
+                                class="services__footer-btn btn btn-white btn-sm"
+                                >Бесплатная консультация</a
+                            >
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__body">
+                        <div class="footer__main">
+                            <a href="/" class="footer__logo">
+                                <img src="img/logo.svg" alt="logo" />
+                            </a>
+                            <div class="footer__subtitle">
+                                ООО “Кесофт” ИНН 9705101364
+                            </div>
+                        </div>
+                        <!--
             <ul class="footer__menu">
                 <li class="footer__menu-item">
                     <a href="" class="footer__menu-link">Оферта</a>
@@ -571,129 +1251,251 @@
                 </li>
             </ul>
             -->
-						<ul class="footer__contacts">
-							<li class="footer__contacts-item icon-location"> Москва, ул. Кржижановского, д. 29, к. 5 </li>
-							<li class="footer__contacts-item icon-phone">
-								<a href="tel:+74951313230" class="footer__contacts-link"> +7 (495) 409-00-90 </a>
-							</li>
-							<li class="footer__contacts-item icon-earth">
-								<a href="https://kesoft.ru/" class="footer__contacts-link"> https://kesoft.ru/ </a>
-							</li>
-							<li class="footer__contacts-item icon-mail">
-								<a href="mailto:info@kesoft.ru" class="footer__contacts-link"> info@kesoft.ru </a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__copy"></div>
-				</div>
-			</footer>
-		</div>
-		<div id="modal" class="popup">
-			<div class="popup__content">
-				<div class="popup__body">
-					<button type="button" class="popup__close icon-close"></button>
-					<form action="#" name="Получить консультацию" class="popup__form form">
-						<div class="form__title">Получить консультацию</div>
-						<div class="form__column">
-							<div class="form__column-item icon-user">
-								<input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
-							</div>
-							<div class="form__column-item icon-phone">
-								<input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
-							</div>
-							<div class="form__column-item">
-								<textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
-							</div>
-							<input tabindex="-1" type="text" autocomplete="off" style="
+                        <ul class="footer__contacts">
+                            <li class="footer__contacts-item icon-location">
+                                Москва, ул. Кржижановского, д. 29, к. 5
+                            </li>
+                            <li class="footer__contacts-item icon-phone">
+                                <a
+                                    href="tel:+74951313230"
+                                    class="footer__contacts-link"
+                                >
+                                    +7 (495) 409-00-90
+                                </a>
+                            </li>
+                            <li class="footer__contacts-item icon-earth">
+                                <a
+                                    href="https://kesoft.ru/"
+                                    class="footer__contacts-link"
+                                >
+                                    https://kesoft.ru/
+                                </a>
+                            </li>
+                            <li class="footer__contacts-item icon-mail">
+                                <a
+                                    href="mailto:info@kesoft.ru"
+                                    class="footer__contacts-link"
+                                >
+                                    info@kesoft.ru
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copy"></div>
+                </div>
+            </footer>
+        </div>
+        <div id="modal" class="popup">
+            <div class="popup__content">
+                <div class="popup__body">
+                    <button
+                        type="button"
+                        class="popup__close icon-close"
+                    ></button>
+                    <form
+                        action="#"
+                        name="Получить консультацию"
+                        class="popup__form form"
+                    >
+                        <div class="form__title">Получить консультацию</div>
+                        <div class="form__column">
+                            <div class="form__column-item icon-user">
+                                <input
+                                    type="text"
+                                    name="Имя"
+                                    data-required
+                                    class="form__input"
+                                    placeholder="Имя"
+                                />
+                            </div>
+                            <div class="form__column-item icon-phone">
+                                <input
+                                    type="tel"
+                                    name="Телефон"
+                                    data-required
+                                    class="form__input"
+                                    data-tel-input
+                                    placeholder="Телефон"
+                                />
+                            </div>
+                            <div class="form__column-item">
+                                <textarea
+                                    name="Сообщение"
+                                    class="form__textarea"
+                                    placeholder="Сообщение"
+                                ></textarea>
+                            </div>
+                            <input
+                                tabindex="-1"
+                                type="text"
+                                autocomplete="off"
+                                style="
                                     opacity: 0;
                                     position: absolute;
                                     top: 0;
                                     left: -5000px;
-                                " name="areYouHuman" />
-						</div>
-						<label class="form__privacy checkbox">
-							<input type="checkbox" data-required class="checkbox__input hidden" hidden />
-							<span class="checkbox__content"> Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a> на обработку персональных данных </span>
-						</label>
-						<div class="form__btn">
-							<button type="submit" class="btn btn-blue btn-mw"> Отправить </button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div id="modal-equipment" class="popup">
-			<div class="popup__content">
-				<div class="popup__body">
-					<button type="button" class="popup__close icon-close"></button>
-					<form action="#" name="Получить консультацию Оборудование" class="popup__form form">
-						<div class="form__title">Получить консультацию</div>
-						<div class="form__column">
-							<div class="form__column-item icon-user">
-								<input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
-							</div>
-							<div class="form__column-item icon-phone">
-								<input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
-							</div>
-							<div class="form__column-item">
-								<textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
-							</div>
-							<input tabindex="-1" type="text" autocomplete="off" style="
+                                "
+                                name="areYouHuman"
+                            />
+                        </div>
+                        <label class="form__privacy checkbox">
+                            <input
+                                type="checkbox"
+                                data-required
+                                class="checkbox__input hidden"
+                                hidden
+                            />
+                            <span class="checkbox__content">
+                                Соглашаюсь с
+                                <a
+                                    href="/privacy.html"
+                                    class="checkbox__content-link"
+                                    >политикой конфиденциальности</a
+                                >
+                                на обработку персональных данных
+                            </span>
+                        </label>
+                        <div class="form__btn">
+                            <button type="submit" class="btn btn-blue btn-mw">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="modal-equipment" class="popup">
+            <div class="popup__content">
+                <div class="popup__body">
+                    <button
+                        type="button"
+                        class="popup__close icon-close"
+                    ></button>
+                    <form
+                        action="#"
+                        name="Получить консультацию Оборудование"
+                        class="popup__form form"
+                    >
+                        <div class="form__title">Получить консультацию</div>
+                        <div class="form__column">
+                            <div class="form__column-item icon-user">
+                                <input
+                                    type="text"
+                                    name="Имя"
+                                    data-required
+                                    class="form__input"
+                                    placeholder="Имя"
+                                />
+                            </div>
+                            <div class="form__column-item icon-phone">
+                                <input
+                                    type="tel"
+                                    name="Телефон"
+                                    data-required
+                                    class="form__input"
+                                    data-tel-input
+                                    placeholder="Телефон"
+                                />
+                            </div>
+                            <div class="form__column-item">
+                                <textarea
+                                    name="Сообщение"
+                                    class="form__textarea"
+                                    placeholder="Сообщение"
+                                ></textarea>
+                            </div>
+                            <input
+                                tabindex="-1"
+                                type="text"
+                                autocomplete="off"
+                                style="
                                     opacity: 0;
                                     position: absolute;
                                     top: 0;
                                     left: -5000px;
-                                " name="areYouHuman" />
-						</div>
-						<label class="form__privacy checkbox">
-							<input type="checkbox" data-required class="checkbox__input hidden" hidden />
-							<span class="checkbox__content"> Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a> на обработку персональных данных </span>
-						</label>
-						<div class="form__btn">
-							<button type="submit" class="btn btn-blue btn-mw"> Отправить </button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div id="succes" class="popup">
-			<div class="popup__content">
-				<div class="popup__body">
-					<button type="button" class="popup__close icon-close"></button>
-					<div class="popup__form form">
-						<div class="form__title"> Ваша заявка успешно отправлена! </div>
-						<div class="form__subtitle"> В ближайшее время с вами свяжется наш консультант </div>
-						<div class="form__succes">
-							<img src="img/succes.svg" alt="succes" />
-						</div> `
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="error" class="popup">
-			<div class="popup__content">
-				<div class="popup__body">
-					<button type="button" class="popup__close icon-close"></button>
-					<div class="popup__form form">
-						<div class="form__title"> Ошибка при отправке заявки </div>
-						<div class="form__subtitle"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="cookie-block hidden">
-			<div class="cookie-block__container">
-				<div class="cookie-block__title"> Наш сайт, как и большинство других, использует файлы cookie и другие похожие технологии (веб-маяки, пиксельные тэги и т. п.), чтобы предоставлять услуги, наиболее отвечающие вашим потребностям, а также накапливать статистическую информацию для анализа и улучшения наших услуг и сайтов. </div>
-				<button class="cookie-block__btn btn btn-blue btn-cookie"> Согласен </button>
-			</div>
-		</div>
-		<<<<<<< HEAD <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231128114141">
-			</script>
-			<script src="js/app.min.js?_v=20231128114141"></script>
-			=======
-			<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20260303174248"></script>
-			<script src="js/app.min.js?_v=20260303174248"></script>
-			>>>>>>> landing-page
-	</body>
-
+                                "
+                                name="areYouHuman"
+                            />
+                        </div>
+                        <label class="form__privacy checkbox">
+                            <input
+                                type="checkbox"
+                                data-required
+                                class="checkbox__input hidden"
+                                hidden
+                            />
+                            <span class="checkbox__content">
+                                Соглашаюсь с
+                                <a
+                                    href="/privacy.html"
+                                    class="checkbox__content-link"
+                                    >политикой конфиденциальности</a
+                                >
+                                на обработку персональных данных
+                            </span>
+                        </label>
+                        <div class="form__btn">
+                            <button type="submit" class="btn btn-blue btn-mw">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="succes" class="popup">
+            <div class="popup__content">
+                <div class="popup__body">
+                    <button
+                        type="button"
+                        class="popup__close icon-close"
+                    ></button>
+                    <div class="popup__form form">
+                        <div class="form__title">
+                            Ваша заявка успешно отправлена!
+                        </div>
+                        <div class="form__subtitle">
+                            В ближайшее время с вами свяжется наш консультант
+                        </div>
+                        <div class="form__succes">
+                            <img src="img/succes.svg" alt="succes" />
+                        </div>
+                        `
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="error" class="popup">
+            <div class="popup__content">
+                <div class="popup__body">
+                    <button
+                        type="button"
+                        class="popup__close icon-close"
+                    ></button>
+                    <div class="popup__form form">
+                        <div class="form__title">
+                            Ошибка при отправке заявки
+                        </div>
+                        <div class="form__subtitle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-block hidden">
+            <div class="cookie-block__container">
+                <div class="cookie-block__title">
+                    Наш сайт, как и большинство других, использует файлы cookie
+                    и другие похожие технологии (веб-маяки, пиксельные тэги и т.
+                    п.), чтобы предоставлять услуги, наиболее отвечающие вашим
+                    потребностям, а также накапливать статистическую информацию
+                    для анализа и улучшения наших услуг и сайтов.
+                </div>
+                <button class="cookie-block__btn btn btn-blue btn-cookie">
+                    Согласен
+                </button>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231128114141"></script>
+        <script src="js/app.min.js?_v=20231128114141"></script>
+    </body>
 </html>
