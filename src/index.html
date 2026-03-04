@@ -1,60 +1,9 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <title>
-            «КЕСОФТ» - комплексные решения для автоматизации бизнес-процессов
-            склада
-        </title>
-        <meta charset="UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Компания «КЕСОФТ» предлагает комплексные услуги по автоматизации бизнес-процессов склада, выгодные цены и условия сотрудничества. ☎️Наш номер телефона: +7 (495) 409-00-90" />
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231128114141" />
-        <link rel="stylesheet" href="css/reset.min.css?_v=20231128114141" />
-        <link rel="stylesheet" href="css/style.min.css?_v=20231128114141" />
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-            (function (m, e, t, r, i, k, a) {
-                m[i] =
-                    m[i] ||
-                    function () {
-                        (m[i].a = m[i].a || []).push(arguments);
-                    };
-                m[i].l = 1 * new Date();
-                for (var j = 0; j < document.scripts.length; j++) {
-                    if (document.scripts[j].src === r) {
-                        return;
-                    }
-                }
-                ((k = e.createElement(t)),
-                    (a = e.getElementsByTagName(t)[0]),
-                    (k.async = 1),
-                    (k.src = r),
-                    a.parentNode.insertBefore(k, a));
-            })(
-                window,
-                document,
-                "script",
-                "https://mc.yandex.ru/metrika/tag.js",
-                "ym",
-            );
-
-            ym(47718151, "init", {
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                webvisor: true,
-            });
-        </script>
-        <noscript>
-            <div>
-                <img src="https://mc.yandex.ru/watch/47718151" style="position: absolute; left: -9999px" alt="" />
-            </div>
-        </noscript>
-        <!-- /Yandex.Metrika counter -->
-    </head>
+    @@include('./html/_head.html', {
+    "title": "«КЕСОФТ» - комплексные решения для автоматизации бизнес-процессов склада",
+    "desc": "Компания «КЕСОФТ» предлагает комплексные услуги по автоматизации бизнес-процессов склада, выгодные цены и условия сотрудничества. ☎️Наш номер телефона: +7 (495) 409-00-90"
+    })
 
     <body>
         <div class="wrapper">
@@ -105,10 +54,7 @@
                             </form>
                         </div>
                         <div class="main__image">
-                            <picture>
-                                <source srcset="img/stock.webp" type="image/webp" />
-                                <img src="img/stock.png" alt="Склад" />
-                            </picture>
+                            <img src="@img/stock.png" alt="Склад" />
                         </div>
                     </div>
                 </section>
@@ -128,7 +74,7 @@
                                     </a>
                                 </div>
                                 <div class="services__item-icon">
-                                    <img src="img/services/planning.svg" alt="icon" />
+                                    <img src="@img/services/planning.svg" alt="icon" />
                                 </div>
                             </li>
 
@@ -143,7 +89,7 @@
                                     </a>
                                 </div>
                                 <div class="services__item-icon">
-                                    <img src="img/services/people.svg" alt="icon" />
+                                    <img src="@img/services/people.svg" alt="icon" />
                                 </div>
                             </li>
 
@@ -157,7 +103,7 @@
                                     </a>
                                 </div>
                                 <div class="services__item-icon">
-                                    <img src="img/services/audit.svg" alt="icon" />
+                                    <img src="@img/services/audit.svg" alt="icon" />
                                 </div>
                             </li>
                             <li class="services__item">
@@ -170,7 +116,7 @@
                                     </a>
                                 </div>
                                 <div class="services__item-icon">
-                                    <img src="img/services/education.svg" alt="icon" />
+                                    <img src="@img/services/education.svg" alt="icon" />
                                 </div>
                             </li>
                         </ul>
@@ -194,10 +140,7 @@
                         <div class="choose__items">
                             <a href="/1c-wms-logistika-upravlenie-skladom.html" class="choose__item">
                                 <span class="choose__item-image choose__item-image_lg">
-                                    <picture>
-                                        <source srcset="img/1C-WMS.webp" type="image/webp" />
-                                        <img src="img/1C-WMS.png" alt="choose" />
-                                    </picture>
+                                    <img src="@img/1C-WMS.png" alt="choose" />
                                 </span>
                                 <span class="choose__item-footer">
                                     <span class="choose__item-caption">
@@ -213,10 +156,7 @@
                             </a>
                             <a href="/wms24.html" class="choose__item">
                                 <span class="choose__item-image">
-                                    <picture>
-                                        <source srcset="img/choose/02.webp" type="image/webp" />
-                                        <img src="img/choose/02.png" alt="choose" />
-                                    </picture>
+                                    <img src="@img/choose/02.png" alt="choose" />
                                 </span>
                                 <span class="choose__item-footer">
                                     <span class="choose__item-caption">
@@ -275,10 +215,7 @@
                             </form>
                         </div>
                         <div class="possibilities__image">
-                            <picture>
-                                <source srcset="img/possibilities.webp" type="image/webp" />
-                                <img src="img/possibilities.png" alt="Ноутбук" />
-                            </picture>
+                            <img src="@img/possibilities.png" alt="Ноутбук" />
                         </div>
                     </div>
                 </section>
@@ -296,106 +233,55 @@
                         <div class="clients__slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/01.png" />
-                                        <img src="img/clients/01.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/01.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/02.png" />
-                                        <img src="img/clients/02.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/02.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/03.png" />
-                                        <img src="img/clients/03.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/03.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/04.png" />
-                                        <img src="img/clients/04.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/04.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/05.png" />
-                                        <img src="img/clients/05.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/05.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/06.png" />
-                                        <img src="img/clients/06.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/06.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/07.png" />
-                                        <img src="img/clients/07.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/07.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/08.png" />
-                                        <img src="img/clients/08.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/08.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/09.png" />
-                                        <img src="img/clients/09.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/09.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/10.png" />
-                                        <img src="img/clients/10.png" alt="client" />
-                                    </picture>
+                                    <img src="img/clients/10.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/11.png" />
-                                        <img src="img/clients/11.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/11.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/12.png" />
-                                        <img src="img/clients/12.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/12.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/13.png" />
-                                        <img src="img/clients/13.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/13.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/14.png" />
-                                        <img src="img/clients/14.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/14.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/15.png" />
-                                        <img src="img/clients/15.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/15.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/16.png" />
-                                        <img src="img/clients/16.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/16.png" alt="client" />
                                 </div>
                                 <div class="clients__slide swiper-slide">
-                                    <picture>
-                                        <source srcset="img/clients/17.png" />
-                                        <img src="img/clients/17.png" alt="client" />
-                                    </picture>
+                                    <img src="@img/clients/17.png" alt="client" />
                                 </div>
                             </div>
                         </div>

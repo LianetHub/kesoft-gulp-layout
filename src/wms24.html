@@ -1,110 +1,15 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <title>WMS24 — Облачная система управления складом от «КЕСОФТ»</title>
-        <meta charset="UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Компания «КЕСОФТ» предлагает создание облачной системы управления складом на базе платформы WMS24, гибкие условия сотрудничества. ☎️Наш номер телефона: +7 (495) 409-00-90" />
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231128114141" />
-        <link rel="stylesheet" href="css/reset.min.css?_v=20231128114141" />
-        <link rel="stylesheet" href="css/style.min.css?_v=20231128114141" />
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-            (function (m, e, t, r, i, k, a) {
-                m[i] =
-                    m[i] ||
-                    function () {
-                        (m[i].a = m[i].a || []).push(arguments);
-                    };
-                m[i].l = 1 * new Date();
-                for (var j = 0; j < document.scripts.length; j++) {
-                    if (document.scripts[j].src === r) {
-                        return;
-                    }
-                }
-                ((k = e.createElement(t)),
-                    (a = e.getElementsByTagName(t)[0]),
-                    (k.async = 1),
-                    (k.src = r),
-                    a.parentNode.insertBefore(k, a));
-            })(
-                window,
-                document,
-                "script",
-                "https://mc.yandex.ru/metrika/tag.js",
-                "ym",
-            );
-
-            ym(47718151, "init", {
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                webvisor: true,
-            });
-        </script>
-        <noscript>
-            <div>
-                <img src="https://mc.yandex.ru/watch/47718151" style="position: absolute; left: -9999px" alt="" />
-            </div>
-        </noscript>
-        <!-- /Yandex.Metrika counter -->
-    </head>
+    @@include('./html/_head.html', {
+    "title": "WMS24 — Облачная система управления складом от «КЕСОФТ»",
+    "desc": "Компания «КЕСОФТ» предлагает создание облачной системы управления складом на базе платформы WMS24, гибкие условия сотрудничества. ☎️Наш номер телефона: +7 (495) 409-00-90"
+    })
 
     <body class="wms-page">
         <div class="wrapper">
-            <header class="header">
-                <div class="header__wrapper lock-padding">
-                    <div class="header__container">
-                        <div class="header__body">
-                            <a href="/" class="header__logo">
-                                <img src="img/logo.svg" alt="logo" />
-                            </a>
-                            <nav class="header__menu menu">
-                                <ul class="menu__list">
-                                    <li class="menu__item">
-                                        <a href="/" class="menu__link">Главная</a>
-                                    </li>
-                                    <li class="menu__item menu__item_parent">
-                                        <a class="menu__link menu__link_parent">Услуги</a>
-                                        <ul class="menu__item-submenu submenu">
-                                            <li class="submenu__item">
-                                                <a href="/vnedrenie-wms.html" class="submenu__link">Внедрение WMS</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="/soprovozhdenie-wms.html" class="submenu__link">Сопровождение WMS</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="/obuchenie-wms.html" class="submenu__link">Обучение WMS</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="/audit-wms.html" class="submenu__link">Аудит WMS</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href="/1c-wms-logistika-upravlenie-skladom.html" class="menu__link">1С:WMS</a>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href="/wms24.html" class="menu__link active">WMS24</a>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href="/o-kompanii.html" class="menu__link">О Компании</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <a href="tel:+74951313230" class="header__phone icon-phone">
-                                <span> +7 (495) 409-00-90 </span>
-                            </a>
-                            <button type="button" class="menu__icon icon-menu">
-                                <span></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            @@include('./html/_header.html', {
+            "active": 3
+            })
             <main class="page">
                 <section class="platform">
                     <div class="platform__content">
@@ -456,57 +361,7 @@
                     </div>
                 </section>
             </main>
-            <footer class="footer">
-                <div class="footer__container">
-                    <div class="footer__body">
-                        <div class="footer__main">
-                            <a href="/" class="footer__logo">
-                                <img src="img/logo.svg" alt="logo" />
-                            </a>
-                            <div class="footer__subtitle">
-                                ООО “Кесофт” ИНН 9705101364
-                            </div>
-                        </div>
-                        <!--
-            <ul class="footer__menu">
-                <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">Оферта</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a href="/privacy.html" class="footer__menu-link">Политика конфиденциальности</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">Компания</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">Контакты</a>
-                </li>
-            </ul>
-            -->
-                        <ul class="footer__contacts">
-                            <li class="footer__contacts-item icon-location">
-                                Москва, ул. Кржижановского, д. 29, к. 5
-                            </li>
-                            <li class="footer__contacts-item icon-phone">
-                                <a href="tel:+74951313230" class="footer__contacts-link">
-                                    +7 (495) 409-00-90
-                                </a>
-                            </li>
-                            <li class="footer__contacts-item icon-earth">
-                                <a href="https://kesoft.ru/" class="footer__contacts-link">
-                                    https://kesoft.ru/
-                                </a>
-                            </li>
-                            <li class="footer__contacts-item icon-mail">
-                                <a href="mailto:info@kesoft.ru" class="footer__contacts-link">
-                                    info@kesoft.ru
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__copy"></div>
-                </div>
-            </footer>
+            @@include('./html/_footer.html')
         </div>
         <div id="modal-free" class="popup">
             <div class="popup__content">
@@ -714,7 +569,6 @@
                 </button>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231128114141"></script>
-        <script src="js/app.min.js?_v=20231128114141"></script>
+        @@include('./html/_js.html')
     </body>
 </html>
