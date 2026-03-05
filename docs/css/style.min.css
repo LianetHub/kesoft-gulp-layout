@@ -2577,6 +2577,87 @@ body._touch .submenu.open {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+.opportunity__extras {
+  margin-top: 1rem;
+  background: #F6F7FA;
+  padding: 1.875rem;
+  border-radius: 0.75rem;
+  display: grid;
+  grid-template-columns: 0.925fr 1fr 1fr;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.opportunity__extras::before {
+  content: "";
+  position: absolute;
+  bottom: -3.38rem;
+  left: -11.25rem;
+  pointer-events: none;
+  width: 37.5rem;
+  height: 37.5rem;
+  border-radius: 50%;
+  background: rgba(169, 214, 234, 0.5);
+  z-index: -1;
+  filter: blur(6.25rem);
+}
+.opportunity__extras .opportunity__block {
+  background: transparent;
+  border-radius: 0.75rem;
+  border: 0.0625rem solid rgba(4, 52, 150, 0.5);
+  padding: 1.875rem;
+}
+.opportunity__extras .opportunity__block:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.opportunity__extras-column {
+  display: flex;
+  flex-direction: column;
+}
+.opportunity__extras-title {
+  text-align: left;
+  background: #fff;
+  margin: -1.875rem 0.625rem 0 -1.875rem;
+  padding: 1.25rem 0 1.25rem 0rem;
+  letter-spacing: -0.0425rem;
+  border-radius: 0 0 0.75rem 0;
+  position: relative;
+  z-index: 2;
+}
+.opportunity__extras-title::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M12 0C5.37258 0 0 5.37258 0 12V0H12Z' fill='white'/%3E%3C/svg%3E");
+}
+.opportunity__extras-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M12 0C5.37258 0 0 5.37258 0 12V0H12Z' fill='white'/%3E%3C/svg%3E");
+}
+.opportunity__visual {
+  margin-top: 2rem;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.opportunity__visual-text {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 142%;
+}
+.opportunity__visual-image {
+  margin: 0 0 -1.875rem -1.875rem;
+}
 
 .variants {
   padding: 6.25rem 0;

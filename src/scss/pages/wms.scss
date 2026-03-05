@@ -231,6 +231,106 @@
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
 	}
+
+	// .opportunity__extras
+	&__extras {
+		margin-top: 1rem;
+		background: #F6F7FA;
+		padding: rem(30);
+		border-radius: 0.75rem;
+		display: grid;
+		grid-template-columns: 0.925fr 1fr 1fr;
+		gap: 1rem;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -3.38rem;
+			left: -11.25rem;
+			pointer-events: none;
+			width: 37.5rem;
+			height: 37.5rem;
+			border-radius: 50%;
+			background: rgba(169, 214, 234, 0.50);
+			z-index: -1;
+			filter: blur(rem(100));
+		}
+
+		.opportunity__block {
+			background: transparent;
+			border-radius: 0.75rem;
+			border: rem(1) solid rgba(4, 52, 150, 0.50);
+			padding: rem(30);
+
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	// .opportunity__extras-column
+	&__extras-column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .opportunity__extras-title
+	&__extras-title {
+		text-align: left;
+		background: #fff;
+		margin: rem(-30) rem(10) 0 rem(-30);
+		padding: rem(20) 0 rem(20) rem(0);
+		letter-spacing: -0.0425rem;
+		border-radius: 0 0 0.75rem 0;
+		position: relative;
+		z-index: 2;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: rem(12);
+			height: rem(12);
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M12 0C5.37258 0 0 5.37258 0 12V0H12Z' fill='white'/%3E%3C/svg%3E");
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 100%;
+			width: rem(12);
+			height: rem(12);
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M12 0C5.37258 0 0 5.37258 0 12V0H12Z' fill='white'/%3E%3C/svg%3E");
+		}
+	}
+
+	// .opportunity__visual
+	&__visual {
+		margin-top: 2rem;
+		flex: 1 1 auto;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	// .opportunity__visual-text
+	&__visual-text {
+		font-size: 1.375rem;
+		font-weight: 500;
+		line-height: 142%;
+	}
+
+	// .opportunity__visual-image
+	&__visual-image {
+		margin: 0 0 rem(-30) rem(-30);
+	}
+
+
 }
 
 .variants {
