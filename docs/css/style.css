@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Manrope-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
   font-display: swap;
+}
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
   font-family: "NotoSans";
@@ -45,6 +45,14 @@
 [class^=icon-]:before,
 [class*=" icon-"]:before {
   display: block;
+}
+
+.icon-left:before {
+  content: "\e90a";
+}
+
+.icon-right:before {
+  content: "\e90b";
 }
 
 .icon-plus:before, .variants__column-list li:before {
@@ -2690,6 +2698,168 @@ body._touch .submenu.open {
   flex: 1 1 auto;
   font-size: 1.1875rem;
   line-height: 142%;
+}
+
+.wms-cases {
+  padding: 3.125rem 0;
+}
+.wms-cases__container {
+  display: flex;
+  flex-direction: column;
+}
+.wms-cases__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.25rem;
+}
+.wms-cases__title {
+  padding: 0;
+}
+.wms-cases__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+@media (min-width: 47.99875rem) {
+  .wms-cases__controls {
+    gap: 0.94rem;
+  }
+}
+.wms-cases__prev, .wms-cases__next {
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  transform: none;
+  margin: 0;
+  width: 3.875rem;
+  height: 3.875rem;
+  background: transparent;
+  border: 0.1125rem solid #0F2862;
+}
+.wms-cases__prev::after, .wms-cases__next::after {
+  display: none;
+}
+.wms-cases__slider {
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  margin-top: 0.94rem;
+}
+@media (min-width: 47.99875rem) {
+  .wms-cases__slider {
+    margin-top: 2.25rem;
+  }
+}
+
+.case {
+  display: grid;
+  text-align: center;
+  gap: 1rem;
+  border-radius: 0.75rem;
+  background: #F6F7FA;
+  color: #0F2862;
+  padding: 2.5rem;
+}
+@media (min-width: 47.99875rem) {
+  .case {
+    gap: 3.75rem;
+    text-align: left;
+    grid-template-columns: 0.785fr 1fr;
+  }
+}
+.case__image img {
+  border-radius: 0.625rem;
+}
+.case__body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.25rem;
+}
+.case__caption.title {
+  text-align: left;
+  line-height: 135%;
+}
+.case__location {
+  margin-top: 0.5rem;
+  line-height: 142%;
+}
+@media (min-width: 61.99875rem) {
+  .case__location {
+    margin-top: 0.5rem;
+    font-size: 1.1875rem;
+  }
+}
+.case__props {
+  margin-top: 2rem;
+  margin-bottom: auto;
+  font-size: 1.1875rem;
+  line-height: 142%;
+}
+.case__props li {
+  position: relative;
+  padding-left: 1.6875rem;
+}
+.case__props li::before {
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  left: 0.25rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: rgba(4, 52, 150, 0.5);
+}
+.case__props li:not(:last-child) {
+  margin-bottom: 0.31rem;
+}
+@media (min-width: 61.99875rem) {
+  .case__props li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+.case__client {
+  margin-top: 1.875rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  letter-spacing: 0.00513rem;
+  justify-content: center;
+  font-weight: 600;
+  line-height: 142%;
+}
+@media (min-width: 61.99875rem) {
+  .case__client {
+    font-size: 1.1875rem;
+  }
+}
+@media (min-width: 47.99875rem) {
+  .case__client {
+    justify-content: flex-start;
+  }
+}
+.case__client-link {
+  color: #203b54;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+@media (any-hover: hover) {
+  .case__client-link:hover {
+    text-decoration: none;
+  }
+}
+.case__actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.case__action {
+  max-width: 15.25rem;
+  width: 100%;
 }
 
 .feedback {

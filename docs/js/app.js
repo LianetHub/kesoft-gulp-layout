@@ -85,6 +85,16 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
+	if (document.querySelector('.wms-cases__slider')) {
+		new Swiper('.wms-cases__slider', {
+			navigation: {
+				nextEl: ".wms-cases__next",
+				prevEl: ".wms-cases__prev"
+			}
+		})
+	};
+
+
 	const headerElement = document.querySelector(".header");
 
 	const callback = function (entries, observer) {

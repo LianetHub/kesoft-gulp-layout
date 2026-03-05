@@ -18,6 +18,14 @@
   }
 }
 
+.icon-left:before {
+  content: "\e90a";
+}
+
+.icon-right:before {
+  content: "\e90b";
+}
+
 .icon-plus:before {
   content: "\e909";
 }
