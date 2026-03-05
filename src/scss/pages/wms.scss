@@ -9,10 +9,10 @@
 
 		&.title-lg {
 			font-size: rem(29);
+			line-height: 124%;
 
 			@media (min-width: $md5) {
 				font-size: rem(36);
-				line-height: 124%;
 			}
 
 			@media (min-width:$md2) {
@@ -24,6 +24,7 @@
 		&.title-md {
 
 			font-weight: 700;
+			font-size: 1.625rem;
 
 			@media (min-width:$md5) {
 				font-size: rem(29);
@@ -39,20 +40,50 @@
 
 	[class*="__container"] {
 		max-width: rem(1320);
-		padding: 0 2.5rem;
+		padding: 0 rem(20);
+
+		@media (min-width:$md5) {
+			padding: 0 2.5rem;
+		}
+	}
+
+	.swiper-pagination {
+
+		&.swiper-pagination-bullets {
+			position: static;
+			margin-top: 0.25rem;
+			transform: none;
+
+			.swiper-pagination-bullet {
+				background: #F6F7FA;
+				opacity: 1;
+				width: rem(10);
+				height: rem(10);
+				--swiper-pagination-bullet-horizontal-gap: #{rem(6)};
+
+				&.swiper-pagination-bullet-active {
+					background: #0F2862;
+				}
+			}
+		}
 	}
 }
 
 .platform {
-	padding: em(90) em(0) em(1) em(0);
+	padding-bottom: rem(1);
 	background: url("@img/wms24-bg.svg") center 100% / contain no-repeat,
 		#EDEFF7;
 
 	display: flex;
 	flex-direction: column;
-	padding-top: rem(237);
-	margin-bottom: rem(52);
+	padding-top: rem(176);
+	margin-bottom: rem(43);
 
+	@media (min-width:$md4) {
+		margin-bottom: rem(52);
+		padding-top: rem(237);
+
+	}
 
 	@media (min-width:$md3) {
 		padding-top: rem(120);
@@ -82,6 +113,7 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+
 	}
 
 	// .platform__main
@@ -94,6 +126,11 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding: 0 rem(10);
+
+		@media (min-width:$md5) {
+			padding: 0;
+		}
 
 		@media (min-width: $md4) {
 			margin: 0;
@@ -124,7 +161,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-size: 5rem;
+		font-size: 3.75rem;
+
+		@media (min-width:$md5) {
+			font-size: 5rem;
+
+		}
 
 		@media (min-width:$md3) {
 			font-size: 6.25rem;
@@ -137,18 +179,28 @@
 		}
 
 		& small {
-			font-size: em(2, 6.25);
 			line-height: 135%;
 			text-transform: uppercase;
+			font-size: em(1.375, 3.75);
+
+			@media (min-width:$md5) {
+				font-size: em(2, 6.25);
+
+			}
 		}
 	}
 
 	// .platform__desc
 	&__desc {
 		margin-top: 1rem;
-		font-size: 1.375rem;
 		font-weight: 600;
 		line-height: 132%;
+		font-size: 1.1875rem;
+
+		@media (min-width:$md5) {
+			font-size: 1.375rem;
+
+		}
 
 		@media (min-width:$md3) {
 			margin-top: 1.5rem;
@@ -162,6 +214,13 @@
 		display: flex;
 		gap: 1rem;
 		margin-top: 3.875rem;
+		flex-direction: column;
+		width: 100%;
+
+		@media (min-width:$md5) {
+			width: auto;
+			flex-direction: row;
+		}
 
 		@media (min-width:$md3) {
 			margin-top: 3rem;
@@ -182,11 +241,15 @@
 
 	// .platform__image
 	&__image {
-
 		position: relative;
-		margin-top: 3.75rem;
+		margin-top: 2.75rem;
+		padding-left: 2.25rem;
 
-		padding-left: 4.25rem;
+		@media (min-width:$md5) {
+			margin-top: 3.75rem;
+			padding-left: 4.25rem;
+
+		}
 
 		@media (min-width:$md3) {
 			margin-top: 0;
@@ -201,7 +264,12 @@
 
 	// .platform__image-monitor
 	&__image-monitor {
-		margin-right: rem(-58);
+
+		margin-right: rem(-105);
+
+		@media (min-width:$md5) {
+			margin-right: rem(-58);
+		}
 
 		@media (min-width:$md2) {
 			margin-right: rem(-240);
@@ -217,11 +285,17 @@
 	// .platform__image-phone
 	&__image-phone {
 		position: absolute;
-		max-width: min(40%, 13.8125rem);
 
+		left: 1rem;
+		max-width: min(40%, 8.6875rem);
+		bottom: rem(-43);
 
-		left: 3.2rem;
-		bottom: rem(-52);
+		@media (min-width:$md4) {
+			bottom: rem(-52);
+			left: 3.2rem;
+			max-width: min(40%, 13.8125rem);
+
+		}
 
 		@media (min-width:$md2) {
 			bottom: rem(-74);
@@ -237,7 +311,11 @@
 }
 
 .opportunity {
-	padding: rem(80) 0;
+	padding: rem(60) 0;
+
+	@media (min-width:$md4) {
+		padding: rem(80) 0;
+	}
 
 	@media (min-width:$md2) {
 		padding: rem(100) 0;
@@ -266,7 +344,11 @@
 	&__column {
 		gap: 1rem;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+
+		@media (min-width:$md4) {
+			grid-template-columns: repeat(2, 1fr);
+
+		}
 
 		@media (min-width:$md2) {
 			display: flex;
@@ -295,10 +377,17 @@
 		flex: 1 1 auto;
 
 		&.opportunity__block--image {
-			padding: 0;
-			grid-row: 1 / 4;
-			grid-column: 2 / 3;
-			order: 1;
+			display: none;
+
+			@media (min-width:$md4) {
+				display: block;
+				padding: 0;
+				grid-row: 1 / 4;
+				grid-column: 2 / 3;
+				order: 1;
+
+
+			}
 
 			@media (min-width:$md2) {
 				order: 0;
@@ -314,7 +403,11 @@
 		font-weight: 700;
 		line-height: 116%;
 		text-transform: uppercase;
-		font-size: 1.25rem;
+		font-size: 1.1875rem;
+
+		@media (min-width:$md5) {
+			font-size: 1.25rem;
+		}
 
 		@media (min-width:$md2) {
 			font-size: 1.375rem;
@@ -326,7 +419,10 @@
 	&__block-list {
 		margin-top: 1rem;
 		line-height: 142%;
-		font-size: 1.125rem;
+
+		@media (min-width:$md4) {
+			font-size: 1.125rem;
+		}
 
 		@media (min-width:$md2) {
 			font-size: 1.1875rem;
@@ -335,10 +431,20 @@
 
 		& li {
 			position: relative;
-			padding-left: rem(27);
+			padding-left: rem(22);
+
+			@media (min-width:$md4) {
+				padding-left: rem(27);
+
+			}
 
 			&:not(:last-child) {
-				margin-bottom: 0.75rem;
+				margin-bottom: 0.65rem;
+
+				@media (min-width:$md4) {
+					margin-bottom: 0.75rem;
+
+				}
 			}
 
 			&::before {
@@ -353,8 +459,6 @@
 			}
 		}
 	}
-
-
 
 	// .opportunity__row
 	&__row {
@@ -378,12 +482,21 @@
 		overflow: hidden;
 
 		margin-top: 1.5rem;
-		grid-template-columns: repeat(2, 1fr);
+
 
 		.opportunity__block {
 			background: transparent;
 			border-radius: 0.75rem;
 			border: rem(1) solid rgba(4, 52, 150, 0.50);
+
+			.opportunity__block-list {
+				font-size: 1.1875rem;
+
+				@media (min-width:$md4) {
+					font-size: 1.125rem;
+				}
+
+			}
 
 			@media (min-width:$md2) {
 				padding: rem(30);
@@ -393,6 +506,10 @@
 			&:not(:last-child) {
 				margin-bottom: 1rem;
 			}
+		}
+
+		@media (min-width:$md4) {
+			grid-template-columns: repeat(2, 1fr);
 		}
 
 		@media (min-width:$md2) {
@@ -428,7 +545,10 @@
 		flex-direction: column;
 
 		&:first-child {
-			grid-column: span 2;
+			@media (min-width:$md4) {
+				grid-column: span 2;
+
+			}
 
 			@media (min-width:$md2) {
 				grid-column: auto;
@@ -491,9 +611,14 @@
 
 	// .opportunity__visual-text
 	&__visual-text {
-		font-size: 1.375rem;
 		font-weight: 500;
 		line-height: 142%;
+		font-size: 1.125rem;
+
+		@media (min-width:$md4) {
+			font-size: 1.375rem;
+
+		}
 	}
 
 	// .opportunity__visual-image
@@ -512,7 +637,11 @@
 .variants {
 	background: #EDEFF7;
 	overflow: hidden;
-	padding: rem(80) 0;
+	padding: rem(60) 0;
+
+	@media (min-width:$md4) {
+		padding: rem(80) 0;
+	}
 
 	@media (min-width:$md2) {
 		padding: rem(100) 0;
@@ -570,7 +699,11 @@
 
 	// .variants__column-list
 	&__column-list {
-		margin-top: 1rem;
+		margin-top: 0.75rem;
+
+		@media (min-width:$md5) {
+			margin-top: 1rem;
+		}
 
 		@media (min-width:$md3) {
 			margin-top: 2rem;
@@ -583,9 +716,13 @@
 			position: relative;
 			line-height: 142%;
 
-			font-size: 1.125rem;
 
 			padding: 1.2rem 1.25rem 1.2rem rem(57);
+
+			@media (min-width:$md5) {
+				font-size: 1.125rem;
+
+			}
 
 			@media (min-width:$md3) {
 				padding: 1.45rem 1.5rem 1.45rem rem(61);
@@ -609,10 +746,18 @@
 			&::before {
 
 				position: absolute;
-				top: 1.5rem;
-				left: 1.5rem;
+				font-size: 1.5625rem;
+				top: 1.75rem;
+				left: 1.25rem;
 				color: #7C97C9;
 				@extend %ic, .icon-plus;
+
+
+				@media (min-width:$md4) {
+					top: 1.5rem;
+					left: 1.5rem;
+				}
+
 			}
 		}
 	}
@@ -667,7 +812,11 @@
 }
 
 .implementation {
-	padding: rem(80) 0 rem(40);
+	padding: rem(60) 0 rem(30);
+
+	@media (min-width:$md5) {
+		padding: rem(80) 0 rem(40);
+	}
 
 	@media (min-width:$md2) {
 		padding: rem(100) 0 rem(50);
@@ -698,7 +847,12 @@
 		background: #F6F7FA;
 		display: flex;
 		flex-direction: column;
-		padding: rem(30);
+		padding: 1.25rem;
+
+		@media (min-width:$md5) {
+			padding: rem(30);
+
+		}
 
 		@media (min-width:$md3) {
 			padding: 1.25rem 1.25rem 1.875rem 1.25rem;
@@ -708,7 +862,11 @@
 
 	// .implementation__card-image
 	&__card-image {
-		height: rem(300);
+		height: rem(250);
+
+		@media (min-width:$md5) {
+			height: rem(300);
+		}
 
 		& img {
 			border-radius: 0.375rem;
@@ -735,7 +893,7 @@
 		line-height: 135%;
 		text-transform: uppercase;
 		color: #0F2862;
-		font-size: rem(30);
+		font-size: rem(22);
 
 		& br {
 			display: none;
@@ -743,6 +901,10 @@
 			@media (min-width:$md3) {
 				display: block;
 			}
+		}
+
+		@media (min-width:$md5) {
+			font-size: rem(30);
 		}
 
 		@media (min-width:$md3) {
@@ -756,7 +918,11 @@
 	&__card-desc {
 
 		line-height: 142%;
-		font-size: 1.125rem;
+		font-size: 1rem;
+
+		@media (min-width:$md5) {
+			font-size: 1.125rem;
+		}
 
 		@media (min-width:$md2) {
 			font-size: 1.1875rem;
@@ -797,6 +963,11 @@
 	// .features__slider
 	&__slider {
 		margin-top: 2rem;
+		overflow: visible;
+
+		@media (min-width:$md4) {
+			overflow: hidden;
+		}
 
 		@media (min-width:$md3) {
 			.swiper-wrapper {
@@ -812,24 +983,6 @@
 		&.swiper-pagination {
 			@media (min-width:$md3) {
 				display: none;
-			}
-
-			&.swiper-pagination-bullets {
-				position: static;
-				margin-top: 0.25rem;
-				transform: none;
-
-				.swiper-pagination-bullet {
-					background: #F6F7FA;
-					opacity: 1;
-					width: rem(10);
-					height: rem(10);
-					--swiper-pagination-bullet-horizontal-gap: #{rem(6)};
-
-					&.swiper-pagination-bullet-active {
-						background: #0F2862;
-					}
-				}
 			}
 		}
 	}
@@ -864,6 +1017,9 @@
 				font-size: 1.5625rem;
 				max-width: 20rem;
 
+				@media (max-width:$md5) {
+					text-transform: uppercase;
+				}
 
 				@media (min-width:$md3) {
 					max-width: 100%;
@@ -890,7 +1046,12 @@
 
 		font-weight: 500;
 		line-height: 132%;
-		font-size: 1.25rem;
+		font-size: 1.1875rem;
+
+		@media (min-width:$md4) {
+			font-size: 1.25rem;
+
+		}
 
 		@media (min-width:$md3) {
 			font-size: 1.125rem;
@@ -906,10 +1067,15 @@
 	// .features__card-number
 	&__card-number {
 		text-align: right;
-		font-size: 2rem;
 		font-weight: 700;
 		line-height: 135%;
 		text-transform: uppercase;
+		font-size: rem(26);
+
+		@media (min-width:$md5) {
+			font-size: 2rem;
+
+		}
 	}
 
 	// .features__cta-btn
@@ -934,7 +1100,12 @@
 }
 
 .benchmarks {
-	padding: rem(40) 0;
+	padding: rem(30) 0;
+
+	@media (min-width:$md4) {
+		padding: rem(40) 0;
+
+	}
 
 	@media (min-width:$md2) {
 		padding: rem(50) 0;
@@ -984,7 +1155,11 @@
 
 	// .benchmarks__title
 	&__title {
+		hyphens: auto;
+		margin: 0 -1rem;
+
 		@media (min-width:$md3) {
+			margin: 0;
 			text-align: left;
 		}
 	}
@@ -1007,10 +1182,21 @@
 	// .benchmarks__item
 	&__item {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 1rem;
-		padding: 1.25rem 0;
+		flex-direction: column;
+		padding: 1rem 0 0.875rem;
+		gap: 0.5rem;
+
+		@media (min-width:$md5) {
+			gap: 1rem;
+			padding: 1.25rem 0;
+
+		}
+
+		@media (min-width:$md4) {
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: row;
+		}
 
 		@media (min-width:$md3) {
 			padding: 1.625rem 0 1.5rem;
@@ -1029,9 +1215,17 @@
 		font-weight: 700;
 		line-height: 116%;
 		text-transform: uppercase;
-		font-size: 1.25rem;
-		flex: 0 0 29%;
 		align-self: flex-start;
+		font-size: 1.1875rem;
+
+		@media (min-width:$md5) {
+			font-size: 1.25rem;
+		}
+
+		@media (min-width:$md4) {
+			flex: 0 0 29%;
+
+		}
 
 		@media (min-width:$md3) {
 			font-size: 1.5rem;
@@ -1044,7 +1238,12 @@
 	&__item-desc {
 		flex: 1 1 auto;
 		line-height: 142%;
-		font-size: 1.125rem;
+		font-size: 1rem;
+
+		@media (min-width:$md5) {
+			font-size: 1.125rem;
+
+		}
 
 		@media (min-width:$md3) {
 			font-size: 1.1875rem;
@@ -1054,7 +1253,12 @@
 }
 
 .wms-cases {
-	padding: rem(40) 0 rem(80);
+	padding: rem(30) 0 rem(60);
+
+	@media (min-width:$md4) {
+		padding: rem(40) 0 rem(80);
+
+	}
 
 	@media (min-width:$md2) {
 		padding: rem(50) 0 rem(100);
@@ -1081,12 +1285,14 @@
 
 	// .wms-cases__controls
 	&__controls {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		// order: 1;
-		// margin-top: 1.25rem;
-		gap: 1.25rem;
+		display: none;
+
+		@media (min-width:$md5) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1.25rem;
+		}
 
 		@media (min-width: $md4) {
 			gap: 0.94rem;
@@ -1145,6 +1351,13 @@
 		}
 
 	}
+
+	// .wms-cases__slider-pagination
+	&__slider-pagination {
+		@media (min-width:$md5) {
+			display: none;
+		}
+	}
 }
 
 .case {
@@ -1155,9 +1368,10 @@
 	border-radius: 0.75rem;
 	background: #F6F7FA;
 	color: #0F2862;
-	padding: rem(30);
+	padding: 1.25rem;
 
 	@media (min-width:$md5) {
+		padding: rem(30);
 		gap: 2rem;
 	}
 
@@ -1197,7 +1411,11 @@
 		margin-top: 0.25rem;
 
 		line-height: 142%;
-		font-size: 1.125rem;
+		font-size: 1rem;
+
+		@media (min-width:$md4) {
+			font-size: 1.125rem;
+		}
 
 		@media (min-width: $md3) {
 			margin-top: 0.5rem;
@@ -1211,7 +1429,12 @@
 		margin-bottom: auto;
 		line-height: 142%;
 		margin-top: 1.5rem;
-		font-size: 1.125rem;
+		font-size: 1rem;
+
+		@media (min-width:$md4) {
+			font-size: 1.125rem;
+
+		}
 
 		@media (min-width:$md3) {
 			font-size: 1.1875rem;
@@ -1234,7 +1457,12 @@
 			}
 
 			&:not(:last-child) {
-				margin-bottom: 0.5rem;
+				margin-bottom: 0.7rem;
+
+				@media (min-width:$md4) {
+					margin-bottom: 0.5rem;
+
+				}
 
 				@media (min-width: $md3) {
 					margin-bottom: 1rem;
@@ -1246,15 +1474,14 @@
 	// .case__client
 	&__client {
 		margin-top: rem(30);
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
+
 		gap: 0.5rem;
 		letter-spacing: 0.00513rem;
-		justify-content: flex-start;
 		font-weight: 600;
 		line-height: 142%;
 		font-size: 1.125rem;
+
+
 
 		@media (min-width: $md3) {
 			font-size: 1.1875rem;
@@ -1281,10 +1508,15 @@
 
 	// .case__actions
 	&__actions {
-		margin-top: 2rem;
-		gap: 1rem;
+		margin-top: 1.5rem;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		gap: 0.75rem;
+
+		@media (min-width:$md5) {
+			margin-top: 2rem;
+			gap: 1rem;
+			grid-template-columns: repeat(2, 1fr);
+		}
 
 		@media (min-width:$md3) {
 			display: flex;
@@ -1303,8 +1535,15 @@
 }
 
 .callback {
-	background: url("@img/callback.png") 100% 100% / 52% auto no-repeat, url("@img/callback-bg.svg") 0 0 / cover no-repeat, #EDEFF7;
-	padding: rem(80) 0;
+	position: relative;
+	background: url("@img/callback-bg.svg") 0 0 / cover no-repeat, #EDEFF7;
+	overflow: hidden;
+	padding: rem(60) 0 0;
+
+	@media (min-width:$md5) {
+		padding: rem(80) 0;
+
+	}
 
 	@media (min-width:$md2) {
 		padding: rem(100) 0 rem(120);
@@ -1317,7 +1556,10 @@
 	// .callback__offer
 	&__offer {
 
-		max-width: 26.25rem;
+		@media (min-width:$md5) {
+			max-width: 26.25rem;
+
+		}
 
 		@media (min-width:$md2) {
 			max-width: 50%;
@@ -1344,9 +1586,15 @@
 	&__subtitle {
 		font-weight: 600;
 		line-height: 132%;
-		font-size: 1.375rem;
 
-		margin-top: 1rem;
+		font-size: 1.1875rem;
+		margin-top: 0.75rem;
+
+		@media (min-width:$md5) {
+			margin-top: 1rem;
+			font-size: 1.375rem;
+
+		}
 
 		@media (min-width:$md3) {
 			margin-top: 2rem;
@@ -1357,10 +1605,29 @@
 
 	// .callback__btn
 	&__btn {
-		margin-top: 3rem;
+		margin-top: 2rem;
+		width: 100%;
+
+		@media (min-width:$md5) {
+			width: auto;
+			margin-top: 3rem;
+
+		}
 
 		@media (min-width:$md3) {
 			margin-top: 3.75rem;
+
+		}
+	}
+
+	&__image {
+		@media (min-width:$md5) {
+			width: 52%;
+			pointer-events: none;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+
 
 		}
 	}

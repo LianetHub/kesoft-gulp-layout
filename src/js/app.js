@@ -115,6 +115,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	if (document.querySelector('.wms-cases__slider')) {
 		new Swiper('.wms-cases__slider', {
+			pagination: {
+				el: '.wms-cases__slider-pagination'
+			},
 			navigation: {
 				nextEl: ".wms-cases__next",
 				prevEl: ".wms-cases__prev"
@@ -124,11 +127,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	if (document.querySelector('.features__slider')) {
 		new MobileSwiper('.features__slider', {
-			slidesPerView: 2,
 			watchOverflow: true,
-			spaceBetween: 12,
+			slidesPerView: 1.025,
+			spaceBetween: 8,
 			pagination: {
 				el: '.features__slider-pagination'
+			},
+			breakpoints: {
+				743.98: {
+					spaceBetween: 12,
+					slidesPerView: 2,
+				}
 			}
 		})
 	};

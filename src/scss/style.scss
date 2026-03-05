@@ -30,7 +30,7 @@ $md0: rem(1599.98);
 $md1: rem(1399.98);
 $md2: rem(1199.98);
 $md3: rem(991.98);
-$md4: rem(767.98);
+$md4: rem(743.98);
 $md5: rem(575.98);
 $md6: rem(459.98);
 
@@ -77,8 +77,13 @@ body {
 [class*="__container"] {
 	margin: 0 auto;
 	max-width: $maxWidthContainer;
-	box-sizing: content-box;
 	padding: 0 rem(15);
+	box-sizing: border-box;
+
+	@media (min-width:$md5) {
+		box-sizing: content-box;
+
+	}
 }
 
 //=============== ОСНОВНАЯ СЕТКА===============================
