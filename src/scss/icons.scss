@@ -18,30 +18,42 @@
   }
 }
 
+.icon-plus:before {
+  content: "\e909";
+}
+
 .icon-check:before {
   content: "\e900";
 }
+
 .icon-close:before {
   content: "\e901";
 }
+
 .icon-earth:before {
   content: "\e902";
 }
+
 .icon-gear:before {
   content: "\e903";
 }
+
 .icon-location:before {
   content: "\e904";
 }
+
 .icon-mail:before {
   content: "\e905";
 }
+
 .icon-phone:before {
   content: "\e906";
 }
+
 .icon-time:before {
   content: "\e907";
 }
+
 .icon-user:before {
   content: "\e908";
 }

@@ -3,6 +3,8 @@
 
 	.title {
 		color: #032448;
+		text-transform: uppercase;
+		font-weight: 700;
 
 		&.title-lg {
 			font-size: rem(52);
@@ -140,8 +142,6 @@
 	}
 }
 
-
-
 .opportunity {
 	padding: rem(100) 0;
 
@@ -149,10 +149,7 @@
 	&__container {}
 
 	// .opportunity__title
-	&__title {
-		text-transform: uppercase;
-		font-weight: 700;
-	}
+	&__title {}
 
 	// .opportunity__content
 	&__content {
@@ -233,6 +230,101 @@
 		gap: 1rem;
 	}
 }
+
+.variants {
+	padding: rem(100) 0;
+	background: #EDEFF7;
+	overflow: hidden;
+
+	// .variants__container
+	&__container {}
+
+	// .variants__title
+	&__title {}
+
+	// .variants__content
+	&__content {
+		margin-top: 3.25rem;
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr rem(486) 1fr;
+		gap: rem(29);
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 7.5%;
+			left: 55%;
+			width: 52.5515rem;
+			height: 52.75613rem;
+			transform: translateX(-50%) rotate(-70.763deg);
+			border-radius: 3131.25rem;
+			background: linear-gradient(239deg, #FFF 11.23%, #EDEFF7 26.43%);
+		}
+	}
+
+	// .variants__column
+	&__column {}
+
+	// .variants__column-caption
+	&__column-caption {
+		text-align: left;
+		letter-spacing: -0.0425rem;
+	}
+
+	// .variants__column-list
+	&__column-list {
+		margin-top: 2rem;
+
+		& li {
+			border-radius: 0.75rem;
+			border: 1px solid #848FAE;
+			position: relative;
+			padding: 1.45rem 1.5rem 1.45rem rem(61);
+			font-size: 1.1875rem;
+			line-height: 142%;
+
+			& strong {
+				white-space: nowrap;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+
+			&::before {
+
+				position: absolute;
+				top: 1.5rem;
+				left: 1.5rem;
+				color: #7C97C9;
+				@extend %ic, .icon-plus;
+			}
+		}
+	}
+
+	// .variants__image
+	&__image {
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -1.5rem;
+			left: 0;
+			width: 100%;
+			height: 3.5rem;
+			border-radius: 50%;
+			background: rgba(2, 29, 59, 0.30);
+			z-index: -1;
+			filter: blur(rem(25));
+		}
+	}
+}
+
+
 
 .why {
 	padding: rem(40) 0;
@@ -494,144 +586,6 @@
 	}
 }
 
-.variants {
-	padding: em(25) em(0) em(50) em(0);
-
-	@media (min-width: $md4) {
-		padding: em(50) em(0) em(100) em(0);
-	}
-
-	// .variants__container
-	&__container {}
-
-	// .variants__title
-	&__title {}
-
-	// .variants__items
-	&__items {
-		margin: rem(20) em(0) em(0) em(0);
-		display: grid;
-		gap: rem(15);
-
-		@media (min-width: $md4) {
-			gap: rem(30);
-			margin: rem(32) em(0) em(0) em(0);
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	// .variants__item
-	&__item {
-		border-radius: rem(5);
-		background: rgba(165, 170, 181, 0.1);
-		display: flex;
-		flex-direction: column;
-		padding: em(0) em(0) em(20) em(0);
-	}
-
-	// .variants__item-header
-	&__item-header {
-		background: #203b54;
-		color: #fff;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: #fff;
-
-		@media (min-width: $md3) {
-			font-size: rem(24);
-		}
-
-		font-weight: 600;
-		letter-spacing: 0.096px;
-		padding: em(31, 24) em(31, 24) em(26, 24) em(31, 24);
-		border-radius: rem(5);
-
-		&::before {
-			margin: em(0) rem(16) em(0) em(0);
-			font-size: em(40, 24);
-		}
-	}
-
-	// .variants__item-body
-	&__item-body {
-		margin: em(16) auto auto;
-
-		@media (min-width: $md4) {
-			margin: em(26) auto auto;
-		}
-
-		max-width: rem(370);
-		padding: 0 rem(20);
-	}
-
-	// .variants__item-list
-	&__item-list {
-		color: #222;
-		letter-spacing: 0.064px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		& li {
-			display: flex;
-			justify-content: flex-start;
-
-			// align-items: center;
-			&::before {
-				@extend %ic, .icon-check;
-				margin: em(4) rem(8) em(0) em(0);
-			}
-
-			&:not(:last-child) {
-				margin: em(0) em(0) em(16) em(0);
-			}
-		}
-	}
-
-	// .variants__item-footer
-	&__item-footer {
-		margin: rem(28) em(0) em(0) em(0);
-		padding: 0 em(20);
-
-		@media (min-width: $md4) {
-			margin: em(25, 20) em(0) em(0) em(0);
-		}
-
-		text-align: center;
-		color: #222;
-
-		& span {
-			color: #203b54;
-			letter-spacing: 0.08px;
-			font-weight: 600;
-			font-size: rem(18);
-
-			@media (min-width: $md4) {
-				font-size: rem(20);
-			}
-		}
-	}
-
-	// .variants__footer
-	&__footer {
-		text-align: center;
-		margin: rem(20) em(0) em(0) em(0);
-
-		@media (min-width: $md4) {
-			margin: rem(25) em(0) em(0) em(0);
-		}
-	}
-
-	// .variants__btn
-	&__btn {
-		width: 100%;
-
-		@media (min-width: $md5) {
-			width: auto;
-		}
-	}
-}
 
 .feedback {
 	padding: em(30) em(0);
