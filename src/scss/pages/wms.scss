@@ -1,3 +1,19 @@
+.wms-page {
+	font-family: $font-manrope;
+
+	.title {
+		color: #032448;
+
+		&.title-lg {
+			font-size: rem(52);
+		}
+	}
+
+	[class*="__container"] {
+		max-width: rem(1320);
+	}
+}
+
 .platform {
 	padding: em(90) em(0) em(1) em(0);
 
@@ -18,7 +34,7 @@
 
 	// .platform__container
 	&__container {
-		max-width: rem(1320);
+
 		height: 100%;
 		display: flex;
 		flex-direction: column;
@@ -30,7 +46,6 @@
 		text-align: center;
 		margin: 0 auto;
 		color: #032448;
-		font-family: Manrope;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -117,7 +132,7 @@
 		position: absolute;
 		left: rem(-16);
 		bottom: rem(-74);
-		width: rem(290);
+		max-width: 40.3%;
 
 		& img {
 			width: 100%;
@@ -125,249 +140,97 @@
 	}
 }
 
-.opportunity {
-	padding: rem(90) 0 rem(50);
 
-	@media (min-width: $md3) {
-		padding: rem(130) 0 rem(100);
-	}
+
+.opportunity {
+	padding: rem(100) 0;
 
 	// .opportunity__container
 	&__container {}
 
 	// .opportunity__title
-	&__title {}
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
 
-	// .opportunity__body
-	&__body {
+	// .opportunity__content
+	&__content {
+		margin-top: 2rem;
 		display: grid;
-		row-gap: rem(60);
-		margin: rem(20) 0 0 0;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+	}
 
-		@media (min-width: $md3) {
-			margin: rem(30) 0 0 0;
-			align-items: end;
-			grid-template-columns: 1fr 1.5fr 1fr;
+	// .opportunity__column
+	&__column {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		&.opportunity__column--large {
+			grid-column: span 2;
 		}
 	}
 
-	// .opportunity__main
-	&__main {
-		position: relative;
-		color: #fff;
-		z-index: 2;
+	// .opportunity__block
+	&__block {
+		border-radius: 0.75rem;
+		background: #F6F7FA;
+		padding: 1.875rem 1.25rem 1.25rem 1.25rem;
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
 
-		&::before {
-			content: "";
-			position: absolute;
-			width: 105%;
-			height: 105%;
-			min-width: rem(320);
-
-			@media (min-width: $md4) {
-				width: 100%;
-				height: 100%;
-			}
-
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background: url("@img/opportunity/clouds.svg") center / contain no-repeat;
-			z-index: -1;
-		}
-
-		order: -1;
-		padding: rem(56) rem(50) rem(16) rem(10);
-		margin: 0 auto;
-		max-width: rem(290);
-
-		@media (min-width: $md4) {
-			padding: rem(84) rem(107) rem(48) rem(40);
-			max-width: fit-content;
-		}
-
-		@media (min-width: $md3) {
-			margin: 0 auto rem(30);
-			order: 0;
+		&.opportunity__block--image {
+			padding: 0;
 		}
 	}
 
-	// .opportunity__main-item
-	&__main-item {
-		max-width: rem(220);
-		font-size: rem(14);
-		line-height: math.div(17, 14);
-
-		@media (min-width: $md4) {
-			line-height: math.div(22, 16);
-			font-size: rem(16);
-			max-width: rem(320);
-		}
-
-		text-align: center;
-		font-weight: 600;
-
-		&:not(:last-child) {
-			margin: 0 0 rem(15) 0;
-		}
+	// .opportunity__block-caption
+	&__block-caption {
+		color: #032448;
+		font-size: 1.375rem;
+		font-weight: 700;
+		line-height: 116%;
+		text-transform: uppercase;
 	}
 
-	// .opportunity__item
-	&__item {
-		position: relative;
-		max-width: rem(220);
-		text-align: center;
-		justify-self: center;
+	// .opportunity__block-list
+	&__block-list {
+		margin-top: 1rem;
+		font-size: 1.1875rem;
+		line-height: 142%;
 
-		&::before {
-			content: "";
-			position: absolute;
-			pointer-events: none;
-		}
+		& li {
+			position: relative;
+			padding-left: rem(27);
 
-		&:nth-child(1) {
-			@media (min-width: $md3) {
-				justify-self: start;
+			&:not(:last-child) {
+				margin-bottom: 0.75rem;
 			}
 
 			&::before {
-				left: 50%;
-				transform: translateX(-50%);
-				background: url("@img/opportunity/arrow-mobile-1.svg") 0 0 / cover no-repeat;
-				width: rem(28);
-				height: rem(90);
-				bottom: 100%;
-
-				@media (min-width: $md3) {
-					transform: translateY(-50%);
-					bottom: auto;
-					top: 31%;
-					height: rem(56);
-					width: 100%;
-					left: 87%;
-					background: url("@img/opportunity/arrow-1.svg") 20% 0 / contain no-repeat;
-				}
-			}
-		}
-
-		&:nth-child(3) {
-			@media (min-width: $md3) {
-				margin: rem(120) 0 0 0;
-				justify-self: end;
-			}
-
-			&::before {
-				left: 50%;
-				transform: translateX(-50%);
-				width: rem(28);
-				height: rem(90);
-				bottom: 100%;
-				background: url("@img/opportunity/arrow-mobile-2.svg") 0 0 / cover no-repeat;
-
-				@media (min-width: $md3) {
-					right: 93%;
-					left: auto;
-					top: 36%;
-					bottom: auto;
-					height: rem(80);
-					width: 100%;
-					transform: translateY(-50%);
-					background: url("@img/opportunity/arrow-2.svg") 100% 60% / contain no-repeat;
-				}
-			}
-		}
-
-		&:nth-child(4) {
-			@media (min-width: $md3) {
-				align-self: start;
-				justify-self: end;
-			}
-
-			&::before {
-				left: 50%;
-				transform: translateX(-50%);
-				bottom: 100%;
-				width: rem(28);
-				height: rem(90);
-				background: url("@img/opportunity/arrow-mobile-3.svg") 0 0 / cover no-repeat;
-
-				@media (min-width: $md3) {
-					transform: none;
-					bottom: 61%;
-					left: 82%;
-					width: rem(134);
-					height: rem(175);
-					background: url("@img/opportunity/arrow-3.svg") 0 0 / contain no-repeat;
-				}
-			}
-		}
-
-		&:nth-child(5) {
-			@media (min-width: $md3) {
-				margin: rem(40) 0 0 0;
-			}
-
-			&::before {
-				bottom: 100%;
-				left: 50%;
-				transform: translateX(-50%);
-				width: rem(28);
-				height: rem(90);
-				background: url("@img/opportunity/arrow-mobile-4.svg") 0 0 / cover no-repeat;
-
-				@media (min-width: $md3) {
-					bottom: 100%;
-					width: 100%;
-					height: rem(140);
-					background: url("@img/opportunity/arrow-4.svg") center 0 / contain no-repeat;
-				}
-			}
-		}
-
-		&:nth-child(6) {
-			@media (min-width: $md3) {
-				align-self: start;
-				justify-self: start;
-
-				.opportunity__item-title,
-				.opportunity__item-image {
-					transform: translateX(-20px);
-				}
-			}
-
-			&::before {
-				bottom: 100%;
-				left: 50%;
-				transform: translateX(-50%);
-				width: rem(28);
-				height: rem(90);
-				background: url("@img/opportunity/arrow-mobile-5.svg") 0 0 / cover no-repeat;
-
-				@media (min-width: $md3) {
-					left: auto;
-					transform: none;
-					bottom: 77%;
-					right: 90%;
-					width: rem(120);
-					height: rem(140);
-					background: url("@img/opportunity/arrow-5.svg") 100% / contain no-repeat;
-				}
+				content: '';
+				position: absolute;
+				top: rem(12);
+				left: rem(4);
+				width: rem(10);
+				height: rem(10);
+				border-radius: 50%;
+				background: #848FAE;
 			}
 		}
 	}
 
-	// .opportunity__item-title
-	&__item-title {
-		font-weight: 600;
-		line-height: math.div(22, 16);
-		font-size: rem(16);
-	}
+	// 
+	&__column--large {}
 
-	// .opportunity__item-image
-	&__item-image {
-		margin: rem(10) 0 0 0;
-		position: relative;
-		z-index: 2;
+	// .opportunity__row
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
 	}
 }
 
