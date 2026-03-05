@@ -2536,6 +2536,55 @@ body._touch .submenu.open {
   filter: blur(1.5625rem);
 }
 
+.implementation {
+  padding: 6.25rem 0;
+}
+.implementation__list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.implementation__card {
+  border-radius: 0.75rem;
+  background: #F6F7FA;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.25rem 1.875rem 1.25rem;
+}
+.implementation__card-image {
+  aspect-ratio: 1.2966666667;
+}
+.implementation__card-image img {
+  border-radius: 0.375rem;
+}
+.implementation__card-body {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 auto;
+}
+.implementation__card-caption {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #0F2862;
+  min-height: 4.375rem;
+}
+.implementation__card-desc {
+  font-size: 1.1875rem;
+  line-height: 142%;
+}
+.implementation__btn {
+  margin-top: 1rem;
+  display: flex;
+  max-width: calc(33.333% - 0.75rem);
+  width: 100%;
+  margin-inline: auto;
+}
+
 .why {
   padding: 2.5rem 0;
   background: rgba(165, 170, 181, 0.1);
