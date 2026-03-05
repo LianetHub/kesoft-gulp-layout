@@ -1,813 +1,759 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <title>WMS24 — Облачная система управления складом от «КЕСОФТ»</title>
-        <meta charset="UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Компания «КЕСОФТ» предлагает создание облачной системы управления складом на базе платформы WMS24, гибкие условия сотрудничества. ☎️Наш номер телефона: +7 (495) 409-00-90" />
 
-        <!-- favicon -->
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="Kesoft" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <!-- favicon -->
+<head>
+	<title>WMS24 — Облачная система управления складом от «КЕСОФТ»</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Компания «КЕСОФТ» предлагает создание облачной системы управления складом на базе платформы WMS24, гибкие условия сотрудничества. ☎️Наш номер телефона: +7 (495) 409-00-90" />
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="Kesoft" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<!-- favicon -->
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260305203818" />
+	<link rel="stylesheet" href="css/reset.min.css?_v=20260305203818" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20260305203818" />
+</head>
 
-        <link rel="stylesheet" href="css/libs/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="css/reset.min.css" />
-        <link rel="stylesheet" href="css/style.min.css" />
-        
-    </head>
-
-    <body class="wms-page">
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__wrapper lock-padding">
-                    <div class="header__container">
-                        <div class="header__body">
-                            <a href="/" class="header__logo">
-                                <img src="img/logo.svg" alt="logo" />
-                            </a>
-                            <nav class="header__menu menu">
-                                <ul class="menu__list">
-                                    <li class="menu__item">
-                                        <a href="/" class="menu__link">Главная</a>
-                                    </li>
-                                    <li class="menu__item menu__item_parent">
-                                        <a class="menu__link menu__link_parent">Услуги</a>
-                                        <ul class="menu__item-submenu submenu">
-                                            <li class="submenu__item">
-                                                <a href="/vnedrenie-wms.html" class="submenu__link">Внедрение WMS</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="/soprovozhdenie-wms.html" class="submenu__link">Сопровождение WMS</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="/obuchenie-wms.html" class="submenu__link">Обучение WMS</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="/audit-wms.html" class="submenu__link">Аудит WMS</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href="/1c-wms-logistika-upravlenie-skladom.html" class="menu__link">1С:WMS</a>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href="/wms24.html" class="menu__link active">WMS24</a>
-                                    </li>
-                                    <li class="menu__item">
-                                        <a href="/o-kompanii.html" class="menu__link">О Компании</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <a href="tel:+74951313230" class="header__phone icon-phone">
-                                <span> +7 (495) 409-00-90 </span>
-                            </a>
-                            <button type="button" class="menu__icon icon-menu">
-                                <span></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <main class="page">
-                <section class="platform">
-                    <div class="platform__content">
-                        <div class="platform__container">
-                            <div class="platform__main">
-                                <div class="platform__offer">
-                                    <h1 class="platform__title">
-                                        WMS24
-                                        <small>больше чем облако</small>
-                                    </h1>
-                                    <p class="platform__desc">Cовременная система управления складом для задач любого масштаба</p>
-                                </div>
-                                <div class="platform__btns">
-                                    <a href="#modal-free" data-modal class="platform__btn btn btn-blue">Попробовать бесплатно</a>
-                                    <a href="#modal-offer" data-modal class="platform__btn btn btn-blue-outline">Получить КП</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="platform__image">
-                        <div class="platform__image-monitor">
-                            <img src="img/hero-monitor.png" alt="Монитор">
-                        </div>
-                        <div class="platform__image-phone">
-                            <img src="img/hero-phone.png" alt="Телефон">
-                        </div>
-                    </div>
-                </section>
-                <section class="opportunity">
-                    <div class="opportunity__container">
-                        <h2 class="opportunity__title title title-lg">
-                            Функциональность облачного сервиса и&nbsp;расширенная функциональность
-                        </h2>
-                        <div class="opportunity__content">
-                            <div class="opportunity__column">
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Базовые возможности</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Адресное хранение</li>
-                                        <li>Настройка алгоритмов планирования, резервирования товаров и обхода ячеек при отборе</li>
-                                        <li>Печать этикеток с ТСД</li>
-                                        <li>Выполнение всех операций с ТСД</li>
-                                        <li>Бумажная технология</li>
-                                    </ul>
-                                </div>
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Вариативность операций</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Размещение целых паллет</li>
-                                        <li>Размещение штук и&nbsp;коробов с&nbsp;раскладыванием по&nbsp;ячейкам</li>
-                                        <li>Отгрузка позаказная</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="opportunity__column opportunity__column--large">
-                                <div class="opportunity__row">
-                                    <div class="opportunity__block">
-                                        <div class="opportunity__block-caption">Фулфилмент и 3PL</div>
-                                        <ul class="opportunity__block-list">
-                                            <li>Личный кабинет клиента</li>
-                                            <li>учет платных услуг</li>
-                                            <li>Печатные формы и аналитика</li>
-                                        </ul>
-                                    </div>
-                                    <div class="opportunity__block">
-                                        <div class="opportunity__block-caption">Аналитика</div>
-                                        <ul class="opportunity__block-list">
-                                            <li>Остатки товаров</li>
-                                            <li>Движение товаров</li>
-                                            <li>Аналитика по сотрудникам</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="opportunity__block opportunity__block--image">
-                                    <img src="img/opportunity-cloud-desktop.png" alt="Cloud storage">
-                                </div>
-
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Интеграции</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Интеграция с маркетплейсами, интеграция с 1С, API</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="opportunity__column">
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Учёт товаров</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Портящийся товар</li>
-                                        <li>Партионный учёт</li>
-                                        <li>Серийный учёт</li>
-                                        <li>Учёт маркированных товаров ЧЗ</li>
-                                        <li>Работа с грузовыми складскими единицами</li>
-                                        <li>Учёт качества товаров</li>
-                                    </ul>
-                                </div>
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Операции</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Приёмка, размещение, пересчёт, перемещение остатков</li>
-                                        <li>Отгрузка, отбор, упаковка, и контроль собранных заказов</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="opportunity__extras">
-                            <div class="opportunity__extras-column">
-                                <div class="opportunity__extras-title title title-md">расширенная функциональность</div>
-                                <div class="opportunity__visual">
-                                    <div class="opportunity__visual-text">Расширенная функциональность реализуется в рамках проекта внедрения.</div>
-                                    <div class="opportunity__visual-image">
-                                        <img src="img/extras.png" alt="Фото">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="opportunity__extras-column">
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Вариативность операций</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Доверительная приёмка</li>
-                                        <li>Различные сценарии приёмки: приёмка по заказу, приёмка без заказа (с последующим выяснением), приёмка с расхождением (брак, недопоставка, перепоставка)</li>
-                                        <li>Автоматическое планирование размещения в ячейки хранения</li>
-                                        <li>Перемещения через транзитные зоны склада</li>
-                                        <li>Различные сценарии отгрузки</li>
-                                        <li>Кластерный отбор</li>
-                                        <li>Групповой (волновой) отбор</li>
-                                        <li>Отгрузка рейсами</li>
-                                        <li>Зонный отбор</li>
-                                        <li>Кросс-докинг</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="opportunity__extras-column">
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Учёт товаров</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Мерный товар (весовой, отрезной)</li>
-                                        <li>Учёт остатков в разрезе нескольких единиц измерений</li>
-                                        <li>Товарные комплекты</li>
-                                    </ul>
-                                </div>
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Операции</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Пополнение зоны отбора</li>
-                                        <li>Инвентаризация ячеек по расписанию и другим условиям</li>
-                                        <li>Уплотнение склада и оптимизация остатков товаров в ячейках</li>
-                                    </ul>
-                                </div>
-                                <div class="opportunity__block">
-                                    <div class="opportunity__block-caption">Модули</div>
-                                    <ul class="opportunity__block-list">
-                                        <li>Управление запасами и управление двором</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="variants">
-                    <div class="variants__container">
-                        <h2 class="variants__title title title-lg">
-                            Варианты использования WMS24
-                        </h2>
-                        <div class="variants__content">
-                            <div class="variants__column">
-                                <div class="variants__column-caption title title-md">Облачный сервис</div>
-                                <ul class="variants__column-list">
-                                    <li>Быстрый запуск для простых процессов</li>
-                                    <li>Без ограничения количества пользователей</li>
-                                    <li>Включает обновления и техническую поддержку</li>
-                                    <li>Стандартные тарифы <strong>от 4 900 до 35 000 в месяц</strong></li>
-                                </ul>
-                            </div>
-                            <div class="variants__image">
-                                <img src="img/license-cloud.png" alt="Фото облачной архитектуры">
-                            </div>
-                            <div class="variants__column">
-                                <div class="variants__column-caption title title-md">собственный сервер</div>
-                                <ul class="variants__column-list">
-                                    <li>Возможность репликации базы с нашим облаком для повышения надёжности системы</li>
-                                    <li>Бесплатные техподдержка и обновления <strong>6 месяцев</strong></li>
-                                    <li>Стоимость лицензии для одного склада без ограничения количества пользователей <strong>490 000 ₽</strong></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="implementation">
-                    <div class="implementation__container">
-                        <h2 class="implementation__title title title-lg">Внедрение системы</h2>
-                        <ul class="implementation__list">
-                            <li class="implementation__card">
-                                <div class="implementation__card-image">
-                                    <img src="img/implementation/01.jpg" class="cover-image" alt="Фото">
-                                </div>
-                                <div class="implementation__card-body">
-                                    <h3 class="implementation__card-caption">самостоятельный <br> запуск</h3>
-                                    <p class="implementation__card-desc">Если хватает возможностей облачного сервиса, вы можете самостоятельно запустить систему в работу с помощью нашей техподдержки, которая входит в стоимость облачного сервиса</p>
-                                </div>
-                            </li>
-                            <li class="implementation__card">
-                                <div class="implementation__card-image">
-                                    <img src="img/implementation/02.jpg" class="cover-image" alt="Фото">
-                                </div>
-                                <div class="implementation__card-body">
-                                    <h3 class="implementation__card-caption">мини-проект</h3>
-                                    <p class="implementation__card-desc">Позволяет в короткие сроки получить адаптированную систему с подключением расширенного функционала. Уровень участия наших специалистов в разработке технологии работы склада и запуске системы зависит от ваших предпочтений</p>
-                                </div>
-                            </li>
-                            <li class="implementation__card">
-                                <div class="implementation__card-image">
-                                    <img src="img/implementation/03.jpg" class="cover-image" alt="Фото">
-                                </div>
-                                <div class="implementation__card-body">
-                                    <h3 class="implementation__card-caption">проект под ключ</h3>
-                                    <p class="implementation__card-desc">Предполагает максимальное участие наших специалистов в разработке технологии работы склада, подготовке и тестировании системы, обучении пользователей и поддержке при запуске систему в промышленную эксплуатацию</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <a href="#modal-offer" data-modal class="implementation__btn btn btn-blue">Получить КП</a>
-                    </div>
-                </section>
-                <section class="features">
-                    <div class="features__container">
-                        <h2 class="features__title title title-lg">Преимущества системы</h2>
-                        <ol class="features__list">
-                            <li class="features__card">
-                                <div class="features__card-caption">Производительный движок на базе современных веб-технологий</div>
-                                <div class="features__card-number">01</div>
-                            </li>
-                            <li class="features__card">
-                                <div class="features__card-caption">Не нужно приобретать дополнительного ПО. Вся&nbsp;программная инфраструктура строится на свободном ПО (Linux, PostgreSQL)</div>
-                                <div class="features__card-number">02</div>
-                            </li>
-                            <li class="features__card">
-                                <div class="features__card-caption">Система может быть установлена на вашем сервере, в нашем облаке или дублироваться</div>
-                                <div class="features__card-number">03</div>
-                            </li>
-                            <li class="features__card">
-                                <div class="features__card-caption">Низкие требования к&nbsp;серверу</div>
-                                <div class="features__card-number">04</div>
-                            </li>
-                            <li class="features__card">
-                                <div class="features__card-caption">После внедрения сохраняется возможность автообновления системы</div>
-                                <div class="features__card-number">05</div>
-                            </li>
-                            <li class="features__card">
-                                <div class="features__card-caption">Для работы ТСД не нужен дорогостоящий Wi-Fi с&nbsp;бесшовным роумингом (работает в том числе через мобильный интернет)</div>
-                                <div class="features__card-number">06</div>
-                            </li>
-                            <li class="features__card">
-                                <div class="features__card-caption">Быстрый запуск минимально необходимого функционала</div>
-                                <div class="features__card-number">07</div>
-                            </li>
-                            <li class="features__card features__card--cta">
-                                <div class="features__card-caption">Начните пользоваться WMS 24 уже сейчас!</div>
-                                <a href="#modal-offer" data-modal class="features__cta-btn btn btn-white">Получить КП</a>
-                            </li>
-                        </ol>
-                    </div>
-                </section>
-                <section class="benchmarks">
-                    <div class="benchmarks__container">
-                        <div class="benchmarks__image">
-                            <img src="img/benchmarks.png" alt="Фото">
-                        </div>
-                        <div class="benchmarks__content">
-                            <h2 class="benchmarks__title title title-lg">Производительность WMS24</h2>
-                            <ul class="benchmarks__list">
-                                <li class="benchmarks__item">
-                                    <div class="benchmarks__item-value">ДО 0,5 СЕКУНД</div>
-                                    <div class="benchmarks__item-desc">Открытие страниц / списков</div>
-                                </li>
-                                <li class="benchmarks__item">
-                                    <div class="benchmarks__item-value">ДО 0,3 СЕКУНД</div>
-                                    <div class="benchmarks__item-desc">Поиск товара на ПК/ТСД</div>
-                                </li>
-                                <li class="benchmarks__item">
-                                    <div class="benchmarks__item-value">ДО 0,3 СЕКУНД</div>
-                                    <div class="benchmarks__item-desc">Сканирование МХ/товаров в операциях на ТСД</div>
-                                </li>
-                                <li class="benchmarks__item">
-                                    <div class="benchmarks__item-value">ДО 1 МИНУТЫ</div>
-                                    <div class="benchmarks__item-desc">Скорость импорта в систему списка товаров (5.000)</div>
-                                </li>
-                                <li class="benchmarks__item">
-                                    <div class="benchmarks__item-value">ОТ 3 СЕКУНД</div>
-                                    <div class="benchmarks__item-desc">Скорость импорта в систему плана приёмки (500 строк)</div>
-                                </li>
-                                <li class="benchmarks__item">
-                                    <div class="benchmarks__item-value">ДО 30 СЕКУНД</div>
-                                    <div class="benchmarks__item-desc">Скорость импорта в систему плана отгрузки и резервирования остатков товаров в ячейках (500 строк)</div>
-                                </li>
-                                <li class="benchmarks__item">
-                                    <div class="benchmarks__item-value">1 СЕКУНДА</div>
-                                    <div class="benchmarks__item-desc">Скорость генерации 1.000 ячеек</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="wms-cases">
-                    <div class="wms-cases__container">
-                        <div class="wms-cases__header">
-                            <h2 class="wms-cases__title title title-lg">Кейсы</h2>
-                            <div class="wms-cases__controls">
-                                <div class="wms-cases__prev swiper-button-prev icon-left"></div>
-                                <div class="wms-cases__next swiper-button-next icon-right"></div>
-                            </div>
-                        </div>
-                        <div class="wms-cases__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide case">
-                                    <div class="case__image">
-                                        <img src="img/cases/case11.jpg" class="cover-image" alt="case">
-                                    </div>
-                                    <div class="case__body">
-                                        <div class="case__caption title title-md">
-                                            Склад книг
-                                        </div>
-                                        <div class="case__location">
-                                            г. Видное (Московская область)
-                                        </div>
-                                        <ul class="case__props">
-                                            <li>Площадь склада 2500 м2 </li>
-                                            <li>15 пользователей </li>
-                                            <li>Товарная группа - книги </li>
-                                            <li>80000 товарных позиций, из них более 60000 на остатках </li>
-                                            <li>Интеграция WMS24 с маркетплейсами OZON, Wildberries, Авито и Яндекс.Маркет</li>
-                                        </ul>
-                                        <div class="case__client">
-                                            <div class="case__client-name">Компания “Книгоед”</div> -
-                                            <a href="https://www.wildberries.ru/seller/356921" target="_blank" class="case__client-link">Маркетплейс Wildberries</a>
-                                        </div>
-                                        <div class="case__actions">
-                                            <a href="" class="case__action btn btn-blue">Подробнее</a>
-                                            <a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide case">
-                                    <div class="case__image">
-                                        <img src="img/cases/case10.jpg" class="cover-image" alt="case">
-                                    </div>
-                                    <div class="case__body">
-                                        <div class="case__caption title title-md">
-                                            Склад замороженной продукции
-                                        </div>
-                                        <div class="case__location">
-                                            г. Зеленодольск
-                                        </div>
-                                        <ul class="case__props">
-                                            <li>Площадь склада 1800 м2</li>
-                                            <li>3 пользователя</li>
-                                            <li>Товарная группа - хлебобулочные изделия</li>
-                                            <li> Используется функция «сборный штрихкод товара» для оптимизации работы на низкотемпературном складе. При выполнения операций сканируется один штрихкод, который содержит всю информацию о товаре.</li>
-
-                                        </ul>
-                                        <div class="case__client">
-                                            <div class="case__client-name">АО “Рент-Актив”</div> -
-                                            <a href="https://zelenfood.ru/" target="_blank" class="case__client-link">zelenfood.ru</a>
-                                        </div>
-                                        <div class="case__actions">
-                                            <a href="" class="case__action btn btn-blue">Подробнее</a>
-                                            <a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="swiper-slide case">
-                                    <div class="case__image">
-                                        <img src="img/cases/case14.jpg" class="cover-image" alt="case">
-                                    </div>
-                                    <div class="case__body">
-                                        <div class="case__caption title title-md">
-                                            Склад фулфилмента
-                                        </div>
-                                        <div class="case__location">
-                                            г. Подольск
-                                        </div>
-                                        <ul class="case__props">
-                                            <li>Площадь склада 1500 м2</li>
-                                            <li>10 пользователей</li>
-                                            <li>4000 товарных позиций</li>
-                                            <li>Используется функция «правила учёта» - позволяет индивидуально для каждого товара настроить различные комбинации учёта: различные партии и честный знак, в зависимости от вида товара</li>
-
-                                        </ul>
-                                        <div class="case__client">
-                                            <div class="case__client-name">Компания "SellerPort"</div> -
-                                            <a href="https://sellerport.ru/" target="_blank" class="case__client-link">sellerport.ru</a>
-                                        </div>
-                                        <div class="case__actions">
-                                            <a href="" class="case__action btn btn-blue">Подробнее</a>
-                                            <a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="swiper-slide case">
-                                    <div class="case__image">
-                                        <img src="img/cases/case12.jpg" class="cover-image" alt="case">
-                                    </div>
-                                    <div class="case__body">
-                                        <div class="case__caption title title-md">
-                                            Склад книг
-                                        </div>
-                                        <div class="case__location">
-                                            д. Островцы (Московская область)
-                                        </div>
-                                        <ul class="case__props">
-                                            <li>Площадь склада 1000 м2 </li>
-                                            <li>10 пользователей </li>
-                                            <li>Товарная группа - книги </li>
-                                            <li>460000 товарных позиций, из них более 300000 на остатках </li>
-                                            <li>Интеграция WMS24 с маркетплейсами OZON, Wildberries, Авито и Яндекс.Маркет</li>
-                                        </ul>
-                                        <div class="case__client">
-                                            <div class="case__client-name">Компания “Книгоед”</div> -
-                                            <a href="https://www.wildberries.ru/seller/356921" target="_blank" class="case__client-link">Маркетплейс Wildberries</a>
-                                        </div>
-                                        <div class="case__actions">
-                                            <a href="" class="case__action btn btn-blue">Подробнее</a>
-                                            <a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide case">
-                                    <div class="case__image">
-                                        <img src="img/cases/case13.jpg" class="cover-image" alt="case">
-                                    </div>
-                                    <div class="case__body">
-                                        <div class="case__caption title title-md">
-                                            Склад инструментов
-                                        </div>
-                                        <div class="case__location">
-                                            г. Оренбург
-                                        </div>
-                                        <ul class="case__props">
-                                            <li>Площадь склада 50 м2 </li>
-                                            <li>3 пользователя </li>
-                                            <li>Товарная группа - инструменты </li>
-                                            <li>400 товарных позиций </li>
-                                            <li> Система WMS24 используется для выдачи персоналу инструментов и комплектующих, а также отслеживания их движения и расхода </li>
-                                        </ul>
-                                        <div class="case__client">
-                                            <div class="case__client-name">ООО "Оренбургнефтемаш"</div>
-                                        </div>
-                                        <div class="case__actions">
-                                            <a href="" class="case__action btn btn-blue">Подробнее</a>
-                                            <a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="callback">
-                    <div class="callback__container">
-                        <div class="callback__offer">
-                            <h2 class="callback__title title title-lg">Остались вопросы?</h2>
-                            <p class="callback__subtitle">Оставьте заявку на консультацию. Наш менеджер свяжется с вами и ответит на ваши вопросы</p>
-                            <a href="#modal" data-modal class="callback__btn btn btn-blue">Получить консультацию</a>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="footer__container">
-                    <div class="footer__body">
-                        <div class="footer__main">
-                            <a href="/" class="footer__logo">
-                                <img src="img/logo.svg" alt="logo" />
-                            </a>
-                            <div class="footer__subtitle">
-                                ООО “Кесофт” ИНН 9705101364
-                            </div>
-                        </div>
-                        <!--
-                        <ul class="footer__menu">
-                            <li class="footer__menu-item">
-                                <a href="" class="footer__menu-link">Оферта</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="/privacy.html" class="footer__menu-link">Политика конфиденциальности</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="" class="footer__menu-link">Компания</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="" class="footer__menu-link">Контакты</a>
-                            </li>
-                        </ul>
-                        -->
-                        <ul class="footer__contacts">
-                            <li class="footer__contacts-item icon-location">
-                                Москва, ул. Кржижановского, д. 29, к. 5
-                            </li>
-                            <li class="footer__contacts-item icon-phone">
-                                <a href="tel:+74951313230" class="footer__contacts-link">
-                                    +7 (495) 409-00-90
-                                </a>
-                            </li>
-                            <li class="footer__contacts-item icon-earth">
-                                <a href="https://kesoft.ru/" class="footer__contacts-link">
-                                    https://kesoft.ru/
-                                </a>
-                            </li>
-                            <li class="footer__contacts-item icon-mail">
-                                <a href="mailto:info@kesoft.ru" class="footer__contacts-link">
-                                    info@kesoft.ru
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer__copy"></div>
-                </div>
-            </footer>
-        </div>
-        <div id="modal-free" class="popup">
-            <div class="popup__content">
-                <div class="popup__body">
-                    <button type="button" class="popup__close icon-close"></button>
-                    <form action="#" name="Бесплатная демонстрация" class="popup__form form">
-                        <div class="form__title">Бесплатная демонстрация</div>
-                        <div class="form__column">
-                            <div class="form__column-item icon-user">
-                                <input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
-                            </div>
-                            <div class="form__column-item icon-phone">
-                                <input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
-                            </div>
-                            <div class="form__column-item">
-                                <textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
-                            </div>
-                            <input tabindex="-1" type="text" autocomplete="off" style="
+<body class="wms-page">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__wrapper lock-padding">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="/" class="header__logo">
+							<img src="img/logo.svg" alt="logo" />
+						</a>
+						<nav class="header__menu menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="/" class="menu__link">Главная</a>
+								</li>
+								<li class="menu__item menu__item_parent">
+									<a class="menu__link menu__link_parent">Услуги</a>
+									<ul class="menu__item-submenu submenu">
+										<li class="submenu__item">
+											<a href="/vnedrenie-wms.html" class="submenu__link">Внедрение WMS</a>
+										</li>
+										<li class="submenu__item">
+											<a href="/soprovozhdenie-wms.html" class="submenu__link">Сопровождение WMS</a>
+										</li>
+										<li class="submenu__item">
+											<a href="/obuchenie-wms.html" class="submenu__link">Обучение WMS</a>
+										</li>
+										<li class="submenu__item">
+											<a href="/audit-wms.html" class="submenu__link">Аудит WMS</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<a href="/1c-wms-logistika-upravlenie-skladom.html" class="menu__link">1С:WMS</a>
+								</li>
+								<li class="menu__item">
+									<a href="/wms24.html" class="menu__link active">WMS24</a>
+								</li>
+								<li class="menu__item">
+									<a href="/o-kompanii.html" class="menu__link">О Компании</a>
+								</li>
+							</ul>
+						</nav>
+						<a href="tel:+74951313230" class="header__phone icon-phone">
+							<span> +7 (495) 409-00-90 </span>
+						</a>
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="platform">
+				<div class="platform__content">
+					<div class="platform__container">
+						<div class="platform__main">
+							<div class="platform__offer">
+								<h1 class="platform__title"> WMS24 <small>больше чем облако</small>
+								</h1>
+								<p class="platform__desc">Cовременная система управления складом для задач любого масштаба</p>
+							</div>
+							<div class="platform__btns">
+								<a href="#modal-free" data-modal class="platform__btn btn btn-blue">Попробовать бесплатно</a>
+								<a href="#modal-offer" data-modal class="platform__btn btn btn-blue-outline">Получить КП</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="platform__image">
+					<div class="platform__image-monitor">
+						<picture>
+							<source srcset="img/hero-monitor.webp" type="image/webp"><img src="img/hero-monitor.png" alt="Монитор">
+						</picture>
+					</div>
+					<div class="platform__image-phone">
+						<picture>
+							<source srcset="img/hero-phone.webp" type="image/webp"><img src="img/hero-phone.png" alt="Телефон">
+						</picture>
+					</div>
+				</div>
+			</section>
+			<section class="opportunity">
+				<div class="opportunity__container">
+					<h2 class="opportunity__title title title-lg"> Функциональность облачного сервиса и&nbsp;расширенная функциональность </h2>
+					<div class="opportunity__content">
+						<div class="opportunity__column">
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Базовые возможности</div>
+								<ul class="opportunity__block-list">
+									<li>Адресное хранение</li>
+									<li>Настройка алгоритмов планирования, резервирования товаров и обхода ячеек при отборе</li>
+									<li>Печать этикеток с ТСД</li>
+									<li>Выполнение всех операций с ТСД</li>
+									<li>Бумажная технология</li>
+								</ul>
+							</div>
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Вариативность операций</div>
+								<ul class="opportunity__block-list">
+									<li>Размещение целых паллет</li>
+									<li>Размещение штук и&nbsp;коробов с&nbsp;раскладыванием по&nbsp;ячейкам</li>
+									<li>Отгрузка позаказная</li>
+								</ul>
+							</div>
+						</div>
+						<div class="opportunity__column opportunity__column--large">
+							<div class="opportunity__row">
+								<div class="opportunity__block">
+									<div class="opportunity__block-caption">Фулфилмент и 3PL</div>
+									<ul class="opportunity__block-list">
+										<li>Личный кабинет клиента</li>
+										<li>учет платных услуг</li>
+										<li>Печатные формы и аналитика</li>
+									</ul>
+								</div>
+								<div class="opportunity__block">
+									<div class="opportunity__block-caption">Аналитика</div>
+									<ul class="opportunity__block-list">
+										<li>Остатки товаров</li>
+										<li>Движение товаров</li>
+										<li>Аналитика по сотрудникам</li>
+									</ul>
+								</div>
+							</div>
+							<div class="opportunity__block opportunity__block--image">
+								<picture>
+									<source srcset="img/opportunity-cloud-desktop.webp" type="image/webp"><img src="img/opportunity-cloud-desktop.png" alt="Cloud storage">
+								</picture>
+							</div>
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Интеграции</div>
+								<ul class="opportunity__block-list">
+									<li>Интеграция с маркетплейсами, интеграция с 1С, API</li>
+								</ul>
+							</div>
+						</div>
+						<div class="opportunity__column">
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Учёт товаров</div>
+								<ul class="opportunity__block-list">
+									<li>Портящийся товар</li>
+									<li>Партионный учёт</li>
+									<li>Серийный учёт</li>
+									<li>Учёт маркированных товаров ЧЗ</li>
+									<li>Работа с грузовыми складскими единицами</li>
+									<li>Учёт качества товаров</li>
+								</ul>
+							</div>
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Операции</div>
+								<ul class="opportunity__block-list">
+									<li>Приёмка, размещение, пересчёт, перемещение остатков</li>
+									<li>Отгрузка, отбор, упаковка, и контроль собранных заказов</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="opportunity__extras">
+						<div class="opportunity__extras-column">
+							<div class="opportunity__extras-title title title-md">расширенная функциональность</div>
+							<div class="opportunity__visual">
+								<div class="opportunity__visual-text">Расширенная функциональность реализуется в рамках проекта внедрения.</div>
+								<div class="opportunity__visual-image">
+									<picture>
+										<source srcset="img/extras.webp" type="image/webp"><img src="img/extras.png" alt="Фото">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="opportunity__extras-column">
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Вариативность операций</div>
+								<ul class="opportunity__block-list">
+									<li>Доверительная приёмка</li>
+									<li>Различные сценарии приёмки: приёмка по заказу, приёмка без заказа (с последующим выяснением), приёмка с расхождением (брак, недопоставка, перепоставка)</li>
+									<li>Автоматическое планирование размещения в ячейки хранения</li>
+									<li>Перемещения через транзитные зоны склада</li>
+									<li>Различные сценарии отгрузки</li>
+									<li>Кластерный отбор</li>
+									<li>Групповой (волновой) отбор</li>
+									<li>Отгрузка рейсами</li>
+									<li>Зонный отбор</li>
+									<li>Кросс-докинг</li>
+								</ul>
+							</div>
+						</div>
+						<div class="opportunity__extras-column">
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Учёт товаров</div>
+								<ul class="opportunity__block-list">
+									<li>Мерный товар (весовой, отрезной)</li>
+									<li>Учёт остатков в разрезе нескольких единиц измерений</li>
+									<li>Товарные комплекты</li>
+								</ul>
+							</div>
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Операции</div>
+								<ul class="opportunity__block-list">
+									<li>Пополнение зоны отбора</li>
+									<li>Инвентаризация ячеек по расписанию и другим условиям</li>
+									<li>Уплотнение склада и оптимизация остатков товаров в ячейках</li>
+								</ul>
+							</div>
+							<div class="opportunity__block">
+								<div class="opportunity__block-caption">Модули</div>
+								<ul class="opportunity__block-list">
+									<li>Управление запасами и управление двором</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="variants">
+				<div class="variants__container">
+					<h2 class="variants__title title title-lg"> Варианты использования WMS24 </h2>
+					<div class="variants__content">
+						<div class="variants__column">
+							<div class="variants__column-caption title title-md">Облачный сервис</div>
+							<ul class="variants__column-list">
+								<li>Быстрый запуск для простых процессов</li>
+								<li>Без ограничения количества пользователей</li>
+								<li>Включает обновления и техническую поддержку</li>
+								<li>Стандартные тарифы <strong>от 4 900 до 35 000 в месяц</strong></li>
+							</ul>
+						</div>
+						<div class="variants__image">
+							<picture>
+								<source srcset="img/license-cloud.webp" type="image/webp"><img src="img/license-cloud.png" alt="Фото облачной архитектуры">
+							</picture>
+						</div>
+						<div class="variants__column">
+							<div class="variants__column-caption title title-md">собственный сервер</div>
+							<ul class="variants__column-list">
+								<li>Возможность репликации базы с нашим облаком для повышения надёжности системы</li>
+								<li>Бесплатные техподдержка и обновления <strong>6 месяцев</strong></li>
+								<li>Стоимость лицензии для одного склада без ограничения количества пользователей <strong>490 000 ₽</strong></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="implementation">
+				<div class="implementation__container">
+					<h2 class="implementation__title title title-lg">Внедрение системы</h2>
+					<ul class="implementation__list">
+						<li class="implementation__card">
+							<div class="implementation__card-image">
+								<picture>
+									<source srcset="img/implementation/01.webp" type="image/webp"><img src="img/implementation/01.jpg" class="cover-image" alt="Фото">
+								</picture>
+							</div>
+							<div class="implementation__card-body">
+								<h3 class="implementation__card-caption">самостоятельный <br> запуск</h3>
+								<p class="implementation__card-desc">Если хватает возможностей облачного сервиса, вы можете самостоятельно запустить систему в работу с помощью нашей техподдержки, которая входит в стоимость облачного сервиса</p>
+							</div>
+						</li>
+						<li class="implementation__card">
+							<div class="implementation__card-image">
+								<picture>
+									<source srcset="img/implementation/02.webp" type="image/webp"><img src="img/implementation/02.jpg" class="cover-image" alt="Фото">
+								</picture>
+							</div>
+							<div class="implementation__card-body">
+								<h3 class="implementation__card-caption">мини-проект</h3>
+								<p class="implementation__card-desc">Позволяет в короткие сроки получить адаптированную систему с подключением расширенного функционала. Уровень участия наших специалистов в разработке технологии работы склада и запуске системы зависит от ваших предпочтений</p>
+							</div>
+						</li>
+						<li class="implementation__card">
+							<div class="implementation__card-image">
+								<picture>
+									<source srcset="img/implementation/03.webp" type="image/webp"><img src="img/implementation/03.jpg" class="cover-image" alt="Фото">
+								</picture>
+							</div>
+							<div class="implementation__card-body">
+								<h3 class="implementation__card-caption">проект под ключ</h3>
+								<p class="implementation__card-desc">Предполагает максимальное участие наших специалистов в разработке технологии работы склада, подготовке и тестировании системы, обучении пользователей и поддержке при запуске систему в промышленную эксплуатацию</p>
+							</div>
+						</li>
+					</ul>
+					<a href="#modal-offer" data-modal class="implementation__btn btn btn-blue">Получить КП</a>
+				</div>
+			</section>
+			<section class="features">
+				<div class="features__container">
+					<h2 class="features__title title title-lg">Преимущества системы</h2>
+					<div class="features__slider swiper">
+						<ol class="swiper-wrapper">
+							<li class="features__card swiper-slide">
+								<div class="features__card-caption">Производительный движок на базе современных веб-технологий</div>
+								<div class="features__card-number">01</div>
+							</li>
+							<li class="features__card swiper-slide">
+								<div class="features__card-caption">Не нужно приобретать дополнительного ПО. Вся&nbsp;программная инфраструктура строится на свободном ПО (Linux, PostgreSQL)</div>
+								<div class="features__card-number">02</div>
+							</li>
+							<li class="features__card swiper-slide">
+								<div class="features__card-caption">Система может быть установлена на вашем сервере, в нашем облаке или дублироваться</div>
+								<div class="features__card-number">03</div>
+							</li>
+							<li class="features__card swiper-slide">
+								<div class="features__card-caption">Низкие требования к&nbsp;серверу</div>
+								<div class="features__card-number">04</div>
+							</li>
+							<li class="features__card swiper-slide">
+								<div class="features__card-caption">После внедрения сохраняется возможность автообновления системы</div>
+								<div class="features__card-number">05</div>
+							</li>
+							<li class="features__card swiper-slide">
+								<div class="features__card-caption">Для работы ТСД не нужен дорогостоящий Wi-Fi с&nbsp;бесшовным роумингом (работает в том числе через мобильный интернет)</div>
+								<div class="features__card-number">06</div>
+							</li>
+							<li class="features__card swiper-slide">
+								<div class="features__card-caption">Быстрый запуск минимально необходимого функционала</div>
+								<div class="features__card-number">07</div>
+							</li>
+							<li class="features__card swiper-slide features__card--cta">
+								<div class="features__card-caption">Начните пользоваться WMS 24 уже сейчас!</div>
+								<a href="#modal-offer" data-modal class="features__cta-btn btn btn-white">Получить КП</a>
+							</li>
+						</ol>
+						<div class="features__slider-pagination swiper-pagination"></div>
+					</div>
+					<div class="features__bottom-mobile">
+						<div class="features__card features__card--cta">
+							<div class="features__card-caption">Начните пользоваться WMS 24 уже сейчас!</div>
+							<a href="#modal-offer" data-modal class="features__cta-btn btn btn-white">Получить КП</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="benchmarks">
+				<div class="benchmarks__container">
+					<div class="benchmarks__image">
+						<picture>
+							<source srcset="img/benchmarks.webp" type="image/webp"><img src="img/benchmarks.png" alt="Фото">
+						</picture>
+					</div>
+					<div class="benchmarks__content">
+						<h2 class="benchmarks__title title title-lg">Производительность WMS24</h2>
+						<ul class="benchmarks__list">
+							<li class="benchmarks__item">
+								<div class="benchmarks__item-value">ДО 0,5 СЕКУНД</div>
+								<div class="benchmarks__item-desc">Открытие страниц / списков</div>
+							</li>
+							<li class="benchmarks__item">
+								<div class="benchmarks__item-value">ДО 0,3 СЕКУНД</div>
+								<div class="benchmarks__item-desc">Поиск товара на ПК/ТСД</div>
+							</li>
+							<li class="benchmarks__item">
+								<div class="benchmarks__item-value">ДО 0,3 СЕКУНД</div>
+								<div class="benchmarks__item-desc">Сканирование МХ/товаров в операциях на ТСД</div>
+							</li>
+							<li class="benchmarks__item">
+								<div class="benchmarks__item-value">ДО 1 МИНУТЫ</div>
+								<div class="benchmarks__item-desc">Скорость импорта в систему списка товаров (5.000)</div>
+							</li>
+							<li class="benchmarks__item">
+								<div class="benchmarks__item-value">ОТ 3 СЕКУНД</div>
+								<div class="benchmarks__item-desc">Скорость импорта в&nbsp;систему плана приёмки (500&nbsp;строк)</div>
+							</li>
+							<li class="benchmarks__item">
+								<div class="benchmarks__item-value">ДО 30 СЕКУНД</div>
+								<div class="benchmarks__item-desc">Скорость импорта в систему плана отгрузки и&nbsp;резервирования остатков товаров в ячейках (500&nbsp;строк)</div>
+							</li>
+							<li class="benchmarks__item">
+								<div class="benchmarks__item-value">1 СЕКУНДА</div>
+								<div class="benchmarks__item-desc">Скорость генерации 1.000 ячеек</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="wms-cases">
+				<div class="wms-cases__container">
+					<div class="wms-cases__header">
+						<h2 class="wms-cases__title title title-lg">Кейсы</h2>
+						<div class="wms-cases__controls">
+							<div class="wms-cases__prev swiper-button-prev icon-left"></div>
+							<div class="wms-cases__next swiper-button-next icon-right"></div>
+						</div>
+					</div>
+					<div class="wms-cases__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide case">
+								<div class="case__image">
+									<picture>
+										<source srcset="img/cases/case11.webp" type="image/webp"><img src="img/cases/case11.jpg" class="cover-image" alt="case">
+									</picture>
+								</div>
+								<div class="case__body">
+									<div class="case__caption title title-md"> Склад книг </div>
+									<div class="case__location"> г. Видное (Московская область) </div>
+									<ul class="case__props">
+										<li>Площадь склада 2500 м2 </li>
+										<li>15 пользователей </li>
+										<li>Товарная группа - книги </li>
+										<li>80000 товарных позиций, из них более 60000 на остатках </li>
+										<li>Интеграция WMS24 с маркетплейсами OZON, Wildberries, Авито и Яндекс.Маркет</li>
+									</ul>
+									<div class="case__client">
+										<div class="case__client-name">Компания “Книгоед”</div> - <a href="https://www.wildberries.ru/seller/356921" target="_blank" class="case__client-link">Маркетплейс Wildberries</a>
+									</div>
+									<div class="case__actions">
+										<a href="" class="case__action btn btn-blue">Подробнее</a>
+										<a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide case">
+								<div class="case__image">
+									<picture>
+										<source srcset="img/cases/case10.webp" type="image/webp"><img src="img/cases/case10.jpg" class="cover-image" alt="case">
+									</picture>
+								</div>
+								<div class="case__body">
+									<div class="case__caption title title-md"> Склад замороженной продукции </div>
+									<div class="case__location"> г. Зеленодольск </div>
+									<ul class="case__props">
+										<li>Площадь склада 1800 м2</li>
+										<li>3 пользователя</li>
+										<li>Товарная группа - хлебобулочные изделия</li>
+										<li> Используется функция «сборный штрихкод товара» для оптимизации работы на низкотемпературном складе. При выполнения операций сканируется один штрихкод, который содержит всю информацию о товаре.</li>
+									</ul>
+									<div class="case__client">
+										<div class="case__client-name">АО “Рент-Актив”</div> - <a href="https://zelenfood.ru/" target="_blank" class="case__client-link">zelenfood.ru</a>
+									</div>
+									<div class="case__actions">
+										<a href="" class="case__action btn btn-blue">Подробнее</a>
+										<a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide case">
+								<div class="case__image">
+									<picture>
+										<source srcset="img/cases/case14.webp" type="image/webp"><img src="img/cases/case14.jpg" class="cover-image" alt="case">
+									</picture>
+								</div>
+								<div class="case__body">
+									<div class="case__caption title title-md"> Склад фулфилмента </div>
+									<div class="case__location"> г. Подольск </div>
+									<ul class="case__props">
+										<li>Площадь склада 1500 м2</li>
+										<li>10 пользователей</li>
+										<li>4000 товарных позиций</li>
+										<li>Используется функция «правила учёта» - позволяет индивидуально для каждого товара настроить различные комбинации учёта: различные партии и честный знак, в зависимости от вида товара</li>
+									</ul>
+									<div class="case__client">
+										<div class="case__client-name">Компания "SellerPort"</div> - <a href="https://sellerport.ru/" target="_blank" class="case__client-link">sellerport.ru</a>
+									</div>
+									<div class="case__actions">
+										<a href="" class="case__action btn btn-blue">Подробнее</a>
+										<a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide case">
+								<div class="case__image">
+									<picture>
+										<source srcset="img/cases/case12.webp" type="image/webp"><img src="img/cases/case12.jpg" class="cover-image" alt="case">
+									</picture>
+								</div>
+								<div class="case__body">
+									<div class="case__caption title title-md"> Склад книг </div>
+									<div class="case__location"> д. Островцы (Московская область) </div>
+									<ul class="case__props">
+										<li>Площадь склада 1000 м2 </li>
+										<li>10 пользователей </li>
+										<li>Товарная группа - книги </li>
+										<li>460000 товарных позиций, из них более 300000 на остатках </li>
+										<li>Интеграция WMS24 с маркетплейсами OZON, Wildberries, Авито и Яндекс.Маркет</li>
+									</ul>
+									<div class="case__client">
+										<div class="case__client-name">Компания “Книгоед”</div> - <a href="https://www.wildberries.ru/seller/356921" target="_blank" class="case__client-link">Маркетплейс Wildberries</a>
+									</div>
+									<div class="case__actions">
+										<a href="" class="case__action btn btn-blue">Подробнее</a>
+										<a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide case">
+								<div class="case__image">
+									<picture>
+										<source srcset="img/cases/case13.webp" type="image/webp"><img src="img/cases/case13.jpg" class="cover-image" alt="case">
+									</picture>
+								</div>
+								<div class="case__body">
+									<div class="case__caption title title-md"> Склад инструментов </div>
+									<div class="case__location"> г. Оренбург </div>
+									<ul class="case__props">
+										<li>Площадь склада 50 м2 </li>
+										<li>3 пользователя </li>
+										<li>Товарная группа - инструменты </li>
+										<li>400 товарных позиций </li>
+										<li> Система WMS24 используется для выдачи персоналу инструментов и комплектующих, а также отслеживания их движения и расхода </li>
+									</ul>
+									<div class="case__client">
+										<div class="case__client-name">ООО "Оренбургнефтемаш"</div>
+									</div>
+									<div class="case__actions">
+										<a href="" class="case__action btn btn-blue">Подробнее</a>
+										<a href="" class="case__action btn btn-blue-outline">Отзыв клиента</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="callback">
+				<div class="callback__container">
+					<div class="callback__offer">
+						<h2 class="callback__title title title-lg">Остались вопросы?</h2>
+						<p class="callback__subtitle">Оставьте заявку на консультацию. Наш менеджер свяжется с вами и&nbsp;ответит на ваши вопросы</p>
+						<a href="#modal" data-modal class="callback__btn btn btn-blue">Получить консультацию</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__main">
+						<a href="/" class="footer__logo">
+							<img src="img/logo.svg" alt="logo" />
+						</a>
+						<div class="footer__subtitle"> ООО “Кесофт” ИНН 9705101364 </div>
+					</div>
+					<!--
+            <ul class="footer__menu">
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">Оферта</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="/privacy.html" class="footer__menu-link">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">Компания</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">Контакты</a>
+                </li>
+            </ul>
+            -->
+					<ul class="footer__contacts">
+						<li class="footer__contacts-item icon-location"> Москва, ул. Кржижановского, д. 29, к. 5 </li>
+						<li class="footer__contacts-item icon-phone">
+							<a href="tel:+74951313230" class="footer__contacts-link"> +7 (495) 409-00-90 </a>
+						</li>
+						<li class="footer__contacts-item icon-earth">
+							<a href="https://kesoft.ru/" class="footer__contacts-link"> https://kesoft.ru/ </a>
+						</li>
+						<li class="footer__contacts-item icon-mail">
+							<a href="mailto:info@kesoft.ru" class="footer__contacts-link"> info@kesoft.ru </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__copy"></div>
+			</div>
+		</footer>
+	</div>
+	<div id="modal-free" class="popup">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button type="button" class="popup__close icon-close"></button>
+				<form action="#" name="Бесплатная демонстрация" class="popup__form form">
+					<div class="form__title">Бесплатная демонстрация</div>
+					<div class="form__column">
+						<div class="form__column-item icon-user">
+							<input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
+						</div>
+						<div class="form__column-item icon-phone">
+							<input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
+						</div>
+						<div class="form__column-item">
+							<textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
+						</div>
+						<input tabindex="-1" type="text" autocomplete="off" style="
                                     opacity: 0;
                                     position: absolute;
                                     top: 0;
                                     left: -5000px;
                                 " name="areYouHuman" />
-                        </div>
-                        <label class="form__privacy checkbox">
-                            <input type="checkbox" data-required class="checkbox__input hidden" hidden />
-                            <span class="checkbox__content">
-                                Соглашаюсь с
-                                <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
-                                на обработку персональных данных
-                            </span>
-                        </label>
-                        <div class="form__btn">
-                            <button type="submit" class="btn btn-blue btn-mw">
-                                Отправить
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="modal-offer" class="popup">
-            <div class="popup__content">
-                <div class="popup__body">
-                    <button type="button" class="popup__close icon-close"></button>
-                    <form action="#" name="Получить коммерческое предложение" class="popup__form form">
-                        <div class="form__title">Получить коммерческое предложение</div>
-                        <div class="form__column">
-                            <div class="form__column-item icon-user">
-                                <input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
-                            </div>
-                            <div class="form__column-item icon-phone">
-                                <input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
-                            </div>
-                            <div class="form__column-item">
-                                <textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
-                            </div>
-                            <input tabindex="-1" type="text" autocomplete="off" style="
+					</div>
+					<label class="form__privacy checkbox">
+						<input type="checkbox" data-required class="checkbox__input hidden" hidden />
+						<span class="checkbox__content"> Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a> на обработку персональных данных </span>
+					</label>
+					<div class="form__btn">
+						<button type="submit" class="btn btn-blue btn-mw"> Отправить </button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="modal-offer" class="popup">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button type="button" class="popup__close icon-close"></button>
+				<form action="#" name="Получить коммерческое предложение" class="popup__form form">
+					<div class="form__title">Получить коммерческое предложение</div>
+					<div class="form__column">
+						<div class="form__column-item icon-user">
+							<input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
+						</div>
+						<div class="form__column-item icon-phone">
+							<input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
+						</div>
+						<div class="form__column-item">
+							<textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
+						</div>
+						<input tabindex="-1" type="text" autocomplete="off" style="
                                     opacity: 0;
                                     position: absolute;
                                     top: 0;
                                     left: -5000px;
                                 " name="areYouHuman" />
-                        </div>
-                        <label class="form__privacy checkbox">
-                            <input type="checkbox" data-required class="checkbox__input hidden" hidden />
-                            <span class="checkbox__content">
-                                Соглашаюсь с
-                                <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
-                                на обработку персональных данных
-                            </span>
-                        </label>
-                        <div class="form__btn">
-                            <button type="submit" class="btn btn-blue btn-mw">
-                                Отправить
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="modal" class="popup">
-            <div class="popup__content">
-                <div class="popup__body">
-                    <button type="button" class="popup__close icon-close"></button>
-                    <form action="#" name="Получить консультацию" class="popup__form form">
-                        <div class="form__title">Получить консультацию</div>
-                        <div class="form__column">
-                            <div class="form__column-item icon-user">
-                                <input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
-                            </div>
-                            <div class="form__column-item icon-phone">
-                                <input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
-                            </div>
-                            <div class="form__column-item">
-                                <textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
-                            </div>
-                            <input tabindex="-1" type="text" autocomplete="off" style="
-                                            opacity: 0;
-                                            position: absolute;
-                                            top: 0;
-                                            left: -5000px;
-                                        " name="areYouHuman" />
-                        </div>
-                        <label class="form__privacy checkbox">
-                            <input type="checkbox" data-required class="checkbox__input hidden" hidden />
-                            <span class="checkbox__content">
-                                Соглашаюсь с
-                                <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
-                                на обработку персональных данных
-                            </span>
-                        </label>
-                        <div class="form__btn">
-                            <button type="submit" class="btn btn-blue btn-mw">
-                                Отправить
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="modal-equipment" class="popup">
-            <div class="popup__content">
-                <div class="popup__body">
-                    <button type="button" class="popup__close icon-close"></button>
-                    <form action="#" name="Получить консультацию Оборудование" class="popup__form form">
-                        <div class="form__title">Получить консультацию</div>
-                        <div class="form__column">
-                            <div class="form__column-item icon-user">
-                                <input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
-                            </div>
-                            <div class="form__column-item icon-phone">
-                                <input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
-                            </div>
-                            <div class="form__column-item">
-                                <textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
-                            </div>
-                            <input tabindex="-1" type="text" autocomplete="off" style="
-                                            opacity: 0;
-                                            position: absolute;
-                                            top: 0;
-                                            left: -5000px;
-                                        " name="areYouHuman" />
-                        </div>
-                        <label class="form__privacy checkbox">
-                            <input type="checkbox" data-required class="checkbox__input hidden" hidden />
-                            <span class="checkbox__content">
-                                Соглашаюсь с
-                                <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a>
-                                на обработку персональных данных
-                            </span>
-                        </label>
-                        <div class="form__btn">
-                            <button type="submit" class="btn btn-blue btn-mw">
-                                Отправить
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="succes" class="popup">
-            <div class="popup__content">
-                <div class="popup__body">
-                    <button type="button" class="popup__close icon-close"></button>
-                    <div class="popup__form form">
-                        <div class="form__title">
-                            Ваша заявка успешно отправлена!
-                        </div>
-                        <div class="form__subtitle">
-                            В ближайшее время с вами свяжется наш консультант
-                        </div>
-                        <div class="form__succes">
-                            <img src="img/succes.svg" alt="succes" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="error" class="popup">
-            <div class="popup__content">
-                <div class="popup__body">
-                    <button type="button" class="popup__close icon-close"></button>
-                    <div class="popup__form form">
-                        <div class="form__title">
-                            Ошибка при отправке заявки
-                        </div>
-                        <div class="form__subtitle"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cookie-block hidden">
-            <div class="cookie-block__container">
-                <div class="cookie-block__title">
-                    Наш сайт, как и большинство других, использует файлы cookie
-                    и другие похожие технологии (веб-маяки, пиксельные тэги и т.
-                    п.), чтобы предоставлять услуги, наиболее отвечающие вашим
-                    потребностям, а также накапливать статистическую информацию
-                    для анализа и улучшения наших услуг и сайтов.
-                </div>
-                <button class="cookie-block__btn btn btn-blue btn-cookie">
-                    Согласен
-                </button>
-            </div>
-        </div>
-        <script src="js/libs/swiper-bundle.min.js"></script>
-        <script src="js/app.min.js"></script>
-    </body>
+					</div>
+					<label class="form__privacy checkbox">
+						<input type="checkbox" data-required class="checkbox__input hidden" hidden />
+						<span class="checkbox__content"> Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a> на обработку персональных данных </span>
+					</label>
+					<div class="form__btn">
+						<button type="submit" class="btn btn-blue btn-mw"> Отправить </button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="modal" class="popup">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button type="button" class="popup__close icon-close"></button>
+				<form action="#" name="Получить консультацию" class="popup__form form">
+					<div class="form__title">Получить консультацию</div>
+					<div class="form__column">
+						<div class="form__column-item icon-user">
+							<input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
+						</div>
+						<div class="form__column-item icon-phone">
+							<input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
+						</div>
+						<div class="form__column-item">
+							<textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
+						</div>
+						<input tabindex="-1" type="text" autocomplete="off" style="
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: -5000px;
+                                " name="areYouHuman" />
+					</div>
+					<label class="form__privacy checkbox">
+						<input type="checkbox" data-required class="checkbox__input hidden" hidden />
+						<span class="checkbox__content"> Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a> на обработку персональных данных </span>
+					</label>
+					<div class="form__btn">
+						<button type="submit" class="btn btn-blue btn-mw"> Отправить </button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="modal-equipment" class="popup">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button type="button" class="popup__close icon-close"></button>
+				<form action="#" name="Получить консультацию Оборудование" class="popup__form form">
+					<div class="form__title">Получить консультацию</div>
+					<div class="form__column">
+						<div class="form__column-item icon-user">
+							<input type="text" name="Имя" data-required class="form__input" placeholder="Имя" />
+						</div>
+						<div class="form__column-item icon-phone">
+							<input type="tel" name="Телефон" data-required class="form__input" data-tel-input placeholder="Телефон" />
+						</div>
+						<div class="form__column-item">
+							<textarea name="Сообщение" class="form__textarea" placeholder="Сообщение"></textarea>
+						</div>
+						<input tabindex="-1" type="text" autocomplete="off" style="
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: -5000px;
+                                " name="areYouHuman" />
+					</div>
+					<label class="form__privacy checkbox">
+						<input type="checkbox" data-required class="checkbox__input hidden" hidden />
+						<span class="checkbox__content"> Соглашаюсь с <a href="/privacy.html" class="checkbox__content-link">политикой конфиденциальности</a> на обработку персональных данных </span>
+					</label>
+					<div class="form__btn">
+						<button type="submit" class="btn btn-blue btn-mw"> Отправить </button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="succes" class="popup">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button type="button" class="popup__close icon-close"></button>
+				<div class="popup__form form">
+					<div class="form__title"> Ваша заявка успешно отправлена! </div>
+					<div class="form__subtitle"> В ближайшее время с вами свяжется наш консультант </div>
+					<div class="form__succes">
+						<img src="img/succes.svg" alt="succes" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="error" class="popup">
+		<div class="popup__content">
+			<div class="popup__body">
+				<button type="button" class="popup__close icon-close"></button>
+				<div class="popup__form form">
+					<div class="form__title"> Ошибка при отправке заявки </div>
+					<div class="form__subtitle"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cookie-block hidden">
+		<div class="cookie-block__container">
+			<div class="cookie-block__title"> Наш сайт, как и большинство других, использует файлы cookie и другие похожие технологии (веб-маяки, пиксельные тэги и т. п.), чтобы предоставлять услуги, наиболее отвечающие вашим потребностям, а также накапливать статистическую информацию для анализа и улучшения наших услуг и сайтов. </div>
+			<button class="cookie-block__btn btn btn-blue btn-cookie"> Согласен </button>
+		</div>
+	</div>
+	<script src="js/libs/swiper-bundle.min.js?_v=20260305203818"></script>
+	<script src="js/app.min.js?_v=20260305203818"></script>
+</body>
+
 </html>
