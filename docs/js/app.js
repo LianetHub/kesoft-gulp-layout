@@ -22,16 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	devFunctions.burger();
 	devFunctions.footerYear();
 
-	if (document.querySelector(".video-slider")) {
-		new Swiper(".video-slider", {
-			speed: 800,
-			spaceBetween: 20,
-			navigation: {
-				nextEl: ".video__next",
-				prevEl: ".video__prev",
-			},
-		});
-	}
 	if (document.querySelector(".clients__slider")) {
 		new Swiper(".clients__slider", {
 			speed: 800,
