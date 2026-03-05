@@ -2309,7 +2309,7 @@ body._touch .submenu.open {
 
 .platform {
   padding: 5.625em 0em 0.0625em 0em;
-  background: url("../img/wms24-bg.svg") 100% 100%/contain no-repeat, #EDEFF7;
+  background: url("../img/wms24-bg.svg") center 100%/contain no-repeat, #EDEFF7;
   display: flex;
   margin-bottom: 4.625rem;
 }
@@ -2391,6 +2391,7 @@ body._touch .submenu.open {
 }
 .platform__image-monitor {
   margin-right: -15rem;
+  max-width: 95rem;
 }
 .platform__image-monitor img {
   width: 100%;
@@ -2399,7 +2400,7 @@ body._touch .submenu.open {
   position: absolute;
   left: -1rem;
   bottom: -4.625rem;
-  max-width: 40.3%;
+  max-width: 18.125rem;
 }
 .platform__image-phone img {
   width: 100%;
@@ -2625,6 +2626,70 @@ body._touch .submenu.open {
 }
 .features__cta-btn {
   align-self: flex-start;
+}
+
+.benchmarks {
+  padding: 3.125rem 0;
+}
+.benchmarks__container {
+  display: flex;
+  align-items: flex-end;
+  gap: 3.5rem;
+}
+.benchmarks__image {
+  width: 26.6375rem;
+  flex-shrink: 0;
+  margin-left: -9.5rem;
+  position: relative;
+}
+.benchmarks__image::before {
+  content: "";
+  position: absolute;
+  top: -3.5rem;
+  left: -3.5rem;
+  width: 24.92613rem;
+  height: 26.95625rem;
+  transform: rotate(-13.348deg);
+  border-radius: 26.95625rem;
+  background: rgba(4, 52, 150, 0.3);
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(4.6875rem);
+}
+.benchmarks__content {
+  flex: 1 1 auto;
+}
+.benchmarks__title {
+  text-align: left;
+}
+.benchmarks__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.benchmarks__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.625rem 0 1.5rem;
+}
+.benchmarks__item:not(:last-child) {
+  border-bottom: 0.0625rem solid rgba(4, 52, 150, 0.5);
+}
+.benchmarks__item-value {
+  color: #0F2862;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 116%;
+  text-transform: uppercase;
+  flex: 0 0 35%;
+}
+.benchmarks__item-desc {
+  flex: 1 1 auto;
+  font-size: 1.1875rem;
+  line-height: 142%;
 }
 
 .feedback {
