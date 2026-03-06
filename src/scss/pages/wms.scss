@@ -71,13 +71,19 @@
 
 .platform {
 	padding-bottom: rem(1);
-	background: url("@img/wms24-bg.svg") center 100% / contain no-repeat,
-		#EDEFF7;
+
 
 	display: flex;
 	flex-direction: column;
 	padding-top: rem(176);
 	margin-bottom: rem(43);
+	background: url("@img/wms24-bg-mobile.svg") center 100% / contain no-repeat,
+		#EDEFF7;
+
+	@media (min-width:$md5) {
+		background: url("@img/wms24-bg-tablet.svg") center 100% / contain no-repeat,
+			#EDEFF7;
+	}
 
 	@media (min-width:$md4) {
 		margin-bottom: rem(52);
@@ -91,6 +97,8 @@
 	}
 
 	@media (min-width:$md2) {
+		background: url("@img/wms24-bg.svg") center 100% / contain no-repeat,
+			#EDEFF7;
 		margin-bottom: rem(74);
 		flex-direction: row;
 	}
@@ -379,14 +387,21 @@
 		&.opportunity__block--image {
 			display: none;
 
+			& img {
+				@media (max-width:$md2) {
+					margin-left: -2rem;
+					width: calc(100% + 2rem);
+					max-width: calc(100% + 2rem);
+					height: 100%;
+				}
+			}
+
 			@media (min-width:$md4) {
 				display: block;
 				padding: 0;
 				grid-row: 1 / 4;
 				grid-column: 2 / 3;
 				order: 1;
-
-
 			}
 
 			@media (min-width:$md2) {
@@ -715,6 +730,7 @@
 			border: rem(1) solid #848FAE;
 			position: relative;
 			line-height: 142%;
+			background: #EDEFF7;
 
 
 			padding: 1.2rem 1.25rem 1.2rem rem(57);
@@ -774,12 +790,17 @@
 			position: absolute;
 			top: 7.5%;
 			left: 55%;
-			width: 52.5515rem;
-			height: 52.75613rem;
+			width: 28.31581rem;
+			height: 28.47719rem;
 			transform: translateX(-50%) rotate(-70.763deg);
 			border-radius: 3131.25rem;
 			background: linear-gradient(239deg, #FFF 11.23%, #EDEFF7 26.43%);
 			z-index: -1;
+
+			@media (min-width:$md5) {
+				width: 52.5515rem;
+				height: 52.75613rem;
+			}
 		}
 
 		&::before {
@@ -1011,7 +1032,21 @@
 
 		&.features__card--cta {
 			color: #fff;
-			background: url("@img/features-bg.png") 100% 100% / auto no-repeat, #0F2862;
+			background: url("@img/features-bg-mobile.png") 100% 100% / contain no-repeat, #0F2862;
+
+			@media (max-width:$md4) {
+				padding-right: rem(110);
+			}
+
+			@media (min-width:$md4) {
+				background: url("@img/features-bg-tablet.png") 100% 100% / auto no-repeat, #0F2862;
+
+			}
+
+			@media (min-width:$md3) {
+				background: url("@img/features-bg.png") 100% 100% / auto no-repeat, #0F2862;
+
+			}
 
 			.features__card-caption {
 				font-size: 1.5625rem;
@@ -1536,16 +1571,19 @@
 
 .callback {
 	position: relative;
-	background: url("@img/callback-bg.svg") 0 0 / cover no-repeat, #EDEFF7;
 	overflow: hidden;
 	padding: rem(60) 0 0;
 
+	background: url("@img/callback-bg-mobile.svg") 0 0 / cover no-repeat, #EDEFF7;
+
 	@media (min-width:$md5) {
+		background: url("@img/callback-bg-tablet.svg") 0 0 / cover no-repeat, #EDEFF7;
 		padding: rem(80) 0;
 
 	}
 
 	@media (min-width:$md2) {
+		background: url("@img/callback-bg.svg") 0 0 / cover no-repeat, #EDEFF7;
 		padding: rem(100) 0 rem(120);
 
 	}
