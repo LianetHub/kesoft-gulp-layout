@@ -4,11 +4,13 @@
 	left: 0;
 	width: 100%;
 	z-index: 3;
+
 	&.scroll {
 		.header__wrapper {
 			background: #fff;
 		}
 	}
+
 	// .header__wrapper
 	&__wrapper {
 		position: fixed;
@@ -18,27 +20,31 @@
 	}
 
 	// .header__container
-	&__container {
-	}
+	&__container {}
+
 	&__body {
 		padding: em(15) em(0);
 		display: flex;
 		align-items: center;
+
 		@media (min-width: $md5) {
 			padding: em(23) em(0) em(20);
 			border-bottom: 1px solid rgba($color: #222, $alpha: 0.1);
 		}
 	}
+
 	// .header__logo
 	&__logo {
 		max-width: rem(126);
+
 		@media (min-width: $md5) {
 			max-width: rem(145);
 		}
 	}
+
 	// .header__menu
-	&__menu {
-	}
+	&__menu {}
+
 	// .header__phone
 	&__phone {
 		margin-left: auto;
@@ -50,6 +56,7 @@
 		background: #e2e2e2;
 		border-radius: 50%;
 		flex-shrink: 0;
+
 		@media (min-width: $md5) {
 			width: auto;
 			height: auto;
@@ -59,18 +66,23 @@
 			font-weight: 600;
 			white-space: nowrap;
 			letter-spacing: 0.072px;
+
 			&::before {
 				margin: em(0) rem(10) em(0) em(0);
 			}
+
 			transition: color 0.3s ease 0s;
 		}
+
 		@media (any-hover: hover) {
 			&:hover {
 				color: #ce1515;
 			}
 		}
+
 		& span {
 			display: none;
+
 			@media (min-width: $md5) {
 				display: inline;
 			}
@@ -89,9 +101,11 @@
 	overflow-y: auto;
 	transition: transform 0.3s ease 0s;
 	transform: translateX(100%);
+
 	&.active {
 		transform: translateX(0);
 	}
+
 	@media (min-width: $md4) {
 		padding: em(7) em(0) em(0) em(0);
 		flex: 1 1 auto;
@@ -105,14 +119,17 @@
 		background: none;
 		transition: none;
 	}
+
 	@media (min-width: $md3) {
 		padding: em(7) em(40) em(0) em(0);
 	}
+
 	// .menu__list
 	&__list {
 		color: #222;
 		letter-spacing: 0.064px;
 		font-size: rem(24);
+
 		@media (min-width: $md4) {
 			font-size: rem(16);
 			display: flex;
@@ -120,20 +137,25 @@
 			justify-content: center;
 			align-items: center;
 		}
+
 		@media (min-width: $md3) {
 			column-gap: rem(45);
 		}
 	}
+
 	// .menu__item
 	&__item {
 		&:not(:last-child) {
 			margin: em(0) em(0) em(14) em(0);
+
 			@media (min-width: $md4) {
 				margin: 0;
 			}
 		}
+
 		&_parent {
 			position: relative;
+
 			@media (any-hover: hover) {
 				&:hover {
 					& .menu__link_parent {
@@ -141,6 +163,7 @@
 							transform: rotate(180deg);
 						}
 					}
+
 					& .submenu {
 						display: block;
 					}
@@ -148,16 +171,21 @@
 			}
 		}
 	}
+
 	// .menu__link
 	&__link {
 		position: relative;
+		cursor: pointer;
+
 		&::after {
 			content: "";
 			position: absolute;
 			top: calc(100% + rem(2));
+
 			@media (min-width: $md4) {
 				top: calc(100% + rem(20));
 			}
+
 			left: 0;
 			width: 100%;
 			height: rem(3);
@@ -166,6 +194,7 @@
 			transform: scaleX(0);
 			transition: transform 0.2s ease-in 0s;
 		}
+
 		@media (any-hover: hover) {
 			&:hover {
 				&::after {
@@ -173,11 +202,13 @@
 				}
 			}
 		}
+
 		&.active {
 			&::after {
 				transform: scaleX(1);
 			}
 		}
+
 		&_parent {
 			position: relative;
 			width: 100%;
@@ -194,15 +225,16 @@
 			// }
 		}
 	}
+
 	// .menu__icon
-	&__icon {
-	}
+	&__icon {}
 }
 
 .submenu {
 	margin: em(10) em(0) em(0) em(0);
 	display: none;
 	font-size: rem(16);
+
 	@media (min-width: $md4) {
 		padding: em(20) em(0) em(10);
 		position: absolute;
@@ -213,6 +245,7 @@
 		transform-origin: top center;
 		white-space: nowrap;
 		z-index: 3;
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -226,20 +259,25 @@
 			border-radius: 10px;
 		}
 	}
-	&__item {
-	}
+
+	&__item {}
+
 	&__link {
 		display: block;
 		padding: em(15) em(0);
+
 		@media (min-width: $md4) {
 			padding: em(10) em(20);
 		}
+
 		transition: color 0.3s ease 0s;
+
 		@media (any-hover: hover) {
 			&:hover {
 				color: #ce1515;
 			}
 		}
+
 		&.active {
 			color: #ce1515;
 		}
@@ -250,6 +288,7 @@
 	@media (min-width: $md4) {
 		display: none;
 	}
+
 	margin: em(0) em(0) em(0) rem(20);
 	position: relative;
 	width: 16px;
@@ -260,6 +299,7 @@
 	flex-shrink: 0;
 	z-index: 4;
 	transition: transform 0.3s linear 0s;
+
 	&::before,
 	&::after,
 	span {
@@ -271,21 +311,27 @@
 		width: 100%;
 		background-color: #000;
 	}
+
 	&::before {
 		top: rem(1);
 	}
+
 	&::after {
 		bottom: rem(1);
 	}
+
 	&.active {
 		transform: rotate(90deg);
+
 		& span {
 			transform: scale(0);
 		}
+
 		&::before {
 			transform: rotate(-45deg);
 			top: 50%;
 		}
+
 		&:after {
 			width: 100%;
 			transform: rotate(45deg);

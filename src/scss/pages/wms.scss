@@ -75,7 +75,7 @@
 
 	display: flex;
 	flex-direction: column;
-	padding-top: rem(176);
+	padding-top: rem(120);
 	margin-bottom: rem(43);
 	background: url("@img/wms24-bg-mobile.svg") center 100% / contain no-repeat,
 		#EDEFF7;
@@ -87,14 +87,8 @@
 
 	@media (min-width:$md4) {
 		margin-bottom: rem(52);
-		padding-top: rem(237);
-
 	}
 
-	@media (min-width:$md3) {
-		padding-top: rem(120);
-
-	}
 
 	@media (min-width:$md2) {
 		background: url("@img/wms24-bg.svg") center 100% / contain no-repeat,
@@ -103,9 +97,6 @@
 		flex-direction: row;
 	}
 
-	@media (min-width: $md1) {
-		padding-top: rem(200);
-	}
 
 
 	// .platform__content
@@ -281,7 +272,6 @@
 
 		@media (min-width:$md2) {
 			margin-right: rem(-240);
-			max-width: rem(1520);
 
 		}
 
@@ -465,12 +455,17 @@
 			&::before {
 				content: '';
 				position: absolute;
-				top: rem(12);
 				left: rem(4);
 				width: rem(10);
 				height: rem(10);
 				border-radius: 50%;
 				background: #848FAE;
+				top: rem(6);
+
+				@media (min-width:$md4) {
+					top: rem(7);
+
+				}
 			}
 		}
 	}
@@ -763,7 +758,8 @@
 
 				position: absolute;
 				font-size: 1.5625rem;
-				top: 1.75rem;
+				top: 50%;
+				transform: translateY(-50%);
 				left: 1.25rem;
 				color: #7C97C9;
 				@extend %ic, .icon-plus;
@@ -772,6 +768,7 @@
 				@media (min-width:$md4) {
 					top: 1.5rem;
 					left: 1.5rem;
+					transform: none;
 				}
 
 			}
@@ -1204,11 +1201,10 @@
 		display: flex;
 		flex-direction: column;
 		margin-top: 1.5rem;
-
-		gap: 0.75rem;
+		gap: 0.5rem;
 
 		@media (min-width:$md3) {
-			gap: 1rem;
+
 			margin-top: 2rem;
 
 		}
@@ -1218,12 +1214,12 @@
 	&__item {
 		display: flex;
 		flex-direction: column;
-		padding: 1rem 0 0.875rem;
+		padding: 1rem 0 1.5rem;
 		gap: 0.5rem;
 
 		@media (min-width:$md5) {
 			gap: 1rem;
-			padding: 1.25rem 0;
+			padding: 1.25rem 0 1.75rem;
 
 		}
 
@@ -1234,7 +1230,7 @@
 		}
 
 		@media (min-width:$md3) {
-			padding: 1.625rem 0 1.5rem;
+			padding: 1.5rem 0 2rem;
 
 		}
 
@@ -1288,6 +1284,8 @@
 }
 
 .wms-cases {
+	position: relative;
+	z-index: 1;
 	padding: rem(30) 0 rem(60);
 
 	@media (min-width:$md4) {
