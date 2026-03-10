@@ -254,6 +254,7 @@
 }
 
 // <BUTTONS (a.btn+tab)>==============================
+
 $btn-font-family-base: #{$fontfamily}, sans-serif;
 $btn-font-size-base: rem(14);
 $btn-font-weight: 400;
@@ -294,6 +295,7 @@ $btn-bg-outline: rgba(171, 184, 197, 0.3);
 }
 
 .wms-page {
+
 	--btn-font-family: #{$font-manrope},
 	sans-serif;
 	--btn-font-size: #{rem(16)};
@@ -302,17 +304,19 @@ $btn-bg-outline: rgba(171, 184, 197, 0.3);
 	--btn-letter-spacing: normal;
 
 	--btn-border-radius: #{rem(12)};
-	--btn-padding-y: #{em(21)};
-	--btn-padding-x: #{em(23.5)};
+	--btn-padding-y: #{em(18)};
+	--btn-padding-x: #{em(20)};
 
 	--btn-blue: #0F2862;
-	--btn-blue-hover: #{darken(#0F2862, 5%)};
-	--btn-blue-active: #{darken(#0F2862, 10%)};
+	--btn-blue-hover: #163a8e;
+	--btn-blue-active: #032448;
 
 	--btn-white: #f8f9fa;
 	--btn-white-hover: #{darken(#f8f9fa, 5%)};
 
 	--btn-outline-bg: transparent;
+	--btn-outline-hover: rgba(22, 58, 142, 0.1);
+	--btn-outline-hover-color: #0f2862;
 }
 
 .btn {
@@ -354,12 +358,12 @@ $btn-bg-outline: rgba(171, 184, 197, 0.3);
 		background: var(--btn-outline-bg, #{$btn-bg-outline});
 
 		&:hover {
-			background: var(--btn-blue, #{$btn-blue-base});
-			color: #fff;
+			background: var(--btn-outline-hover, #{$btn-blue-base});
+			color: var(--btn-outline-hover-color, #fff);
 		}
 
 		&:active {
-			background: var(--btn-blue-hover, #{darken($btn-blue-base, 5%)});
+			background: var(--btn-blue-active, #{darken($btn-blue-base, 10%)});
 			color: #fff;
 		}
 	}
