@@ -7,6 +7,15 @@
 }
 
 @font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Manrope-VariableFont_wght.woff") format("woff");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "NotoSans";
   src: url("../fonts/NotoSans-VariableFont_wdth,wght.woff2") format("woff2 supports variations"), url("../fonts/NotoSans-VariableFont_wdth,wght.woff2") format("woff2-variations"), url("../fonts/NotoSans-VariableFont_wdth,wght.woff") format("woff");
   font-weight: 100 900;
@@ -18,15 +27,6 @@
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Raleway-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Raleway-VariableFont_wght.woff") format("woff");
-  font-weight: 100 900;
-  font-stretch: 75% 125%;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Manrope-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
@@ -1994,7 +1994,7 @@ body._touch .submenu.open {
 
 .wms-page .title.title-md {
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.625rem;
 }
 
 .wms-page .page [class*=__container] {
