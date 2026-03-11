@@ -23,7 +23,11 @@
 		&.title-md {
 
 			font-weight: 700;
-			font-size: rem(26);
+			font-size: rem(24);
+
+			@media (min-width: 380px) {
+				font-size: rem(26);
+			}
 
 			@media (min-width:$md5) {
 				font-size: rem(29);
@@ -31,7 +35,7 @@
 			}
 
 			@media (min-width: $md3) {
-				font-size: rem(29);
+				font-size: rem(28);
 			}
 
 		}
@@ -1594,10 +1598,19 @@
 			position: absolute;
 			right: 0;
 			bottom: 0;
+			top: 0;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-start;
+			max-height: 100%;
+
+			& img,
+			& source {
+				max-height: 100%;
+				height: 100%;
+				width: auto;
+			}
 		}
 
-		@media (min-width:$md2) {
-			width: 43.68%;
-		}
 	}
 }

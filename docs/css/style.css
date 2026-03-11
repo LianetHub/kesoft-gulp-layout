@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Manrope-VariableFont_wght.woff") format("woff");
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-VariableFont_wdth,wght.woff2") format("woff2 supports variations"), url("../fonts/NotoSans-VariableFont_wdth,wght.woff2") format("woff2-variations"), url("../fonts/NotoSans-VariableFont_wdth,wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: "NotoSans";
-  src: url("../fonts/NotoSans-VariableFont_wdth,wght.woff2") format("woff2 supports variations"), url("../fonts/NotoSans-VariableFont_wdth,wght.woff2") format("woff2-variations"), url("../fonts/NotoSans-VariableFont_wdth,wght.woff") format("woff");
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Manrope-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
@@ -1994,7 +1994,7 @@ body._touch .submenu.open {
 
 .wms-page .title.title-md {
   font-weight: 700;
-  font-size: 1.625rem;
+  font-size: 1.5rem;
 }
 
 .wms-page .page [class*=__container] {
@@ -3979,6 +3979,12 @@ body._touch .submenu.open {
   margin-bottom: 2.5rem;
 }
 
+@media (min-width: 380px) {
+  .wms-page .title.title-md {
+    font-size: 1.625rem;
+  }
+}
+
 @media (min-width: 575.98px) {
   [class*=__container] {
     -webkit-box-sizing: content-box;
@@ -4340,6 +4346,24 @@ body._touch .submenu.open {
     position: absolute;
     right: 0;
     bottom: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-height: 100%;
+  }
+
+  .callback__image img,
+  .callback__image source {
+    max-height: 100%;
+    height: 100%;
+    width: auto;
   }
 
   .choose__item-image.choose__item-image_lg img {
@@ -5657,7 +5681,7 @@ body._touch .submenu.open {
   }
 
   .wms-page .title.title-md {
-    font-size: 1.8125rem;
+    font-size: 1.75rem;
   }
 
   .platform__offer {
@@ -6443,10 +6467,6 @@ body._touch .submenu.open {
 
   .callback__btn {
     margin-top: 3.15rem;
-  }
-
-  .callback__image {
-    width: 43.68%;
   }
 
   .cycle__list {
